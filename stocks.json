@@ -1,0 +1,9799 @@
+{
+  "updated": "2026-09-16T14:51:48+08:00",
+  "source": "Taiwan Stock Exchange OpenAPI",
+  "count": 1088,
+  "stocks": [
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "price": 106.25,
+      "volume": 63373313.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0051",
+      "name": "元大中型100",
+      "price": 141.0,
+      "volume": 120538.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0052",
+      "name": "富邦科技",
+      "price": 61.6,
+      "volume": 10671485.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0053",
+      "name": "元大電子",
+      "price": 237.35,
+      "volume": 281948.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0055",
+      "name": "元大MSCI金融",
+      "price": 49.76,
+      "volume": 1206727.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "price": 55.0,
+      "volume": 25385973.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0057",
+      "name": "富邦摩台",
+      "price": 317.5,
+      "volume": 15926.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "0061",
+      "name": "元大寶滬深",
+      "price": 23.91,
+      "volume": 64399.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "price": 23.8,
+      "volume": 20277886.0,
+      "pe": null,
+      "pbr": 0.77,
+      "yield": 3.36
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "price": 35.2,
+      "volume": 5120946.0,
+      "pe": 9.72,
+      "pbr": 0.68,
+      "yield": 6.53
+    },
+    {
+      "code": "1103",
+      "name": "嘉泥",
+      "price": 13.0,
+      "volume": 365933.0,
+      "pe": 9.7,
+      "pbr": 0.49,
+      "yield": 4.0
+    },
+    {
+      "code": "1104",
+      "name": "環泥",
+      "price": 26.65,
+      "volume": 413954.0,
+      "pe": 9.87,
+      "pbr": 0.74,
+      "yield": 6.94
+    },
+    {
+      "code": "1108",
+      "name": "幸福",
+      "price": 11.05,
+      "volume": 123202.0,
+      "pe": 16.25,
+      "pbr": 0.82,
+      "yield": 9.05
+    },
+    {
+      "code": "1109",
+      "name": "信大",
+      "price": 13.45,
+      "volume": 52197.0,
+      "pe": 19.49,
+      "pbr": 0.56,
+      "yield": 6.69
+    },
+    {
+      "code": "1110",
+      "name": "東泥",
+      "price": 15.4,
+      "volume": 523661.0,
+      "pe": 24.84,
+      "pbr": 0.92,
+      "yield": 1.95
+    },
+    {
+      "code": "1201",
+      "name": "味全",
+      "price": 12.05,
+      "volume": 357441.0,
+      "pe": 19.75,
+      "pbr": 0.77,
+      "yield": 1.74
+    },
+    {
+      "code": "1203",
+      "name": "味王",
+      "price": 42.65,
+      "volume": 21867.0,
+      "pe": 20.31,
+      "pbr": 1.56,
+      "yield": 2.34
+    },
+    {
+      "code": "1210",
+      "name": "大成",
+      "price": 51.6,
+      "volume": 1335950.0,
+      "pe": 12.68,
+      "pbr": 1.69,
+      "yield": 5.81
+    },
+    {
+      "code": "1213",
+      "name": "大飲",
+      "price": 7.19,
+      "volume": 36550.0,
+      "pe": null,
+      "pbr": 0.65,
+      "yield": null
+    },
+    {
+      "code": "1215",
+      "name": "卜蜂",
+      "price": 105.5,
+      "volume": 866770.0,
+      "pe": 12.15,
+      "pbr": 2.84,
+      "yield": 6.64
+    },
+    {
+      "code": "1216",
+      "name": "統一",
+      "price": 74.5,
+      "volume": 10616868.0,
+      "pe": 18.0,
+      "pbr": 3.11,
+      "yield": 4.03
+    },
+    {
+      "code": "1217",
+      "name": "愛之味",
+      "price": 9.97,
+      "volume": 340167.0,
+      "pe": 15.11,
+      "pbr": 0.64,
+      "yield": 2.51
+    },
+    {
+      "code": "1218",
+      "name": "泰山",
+      "price": 14.25,
+      "volume": 408681.0,
+      "pe": null,
+      "pbr": 0.6,
+      "yield": 9.26
+    },
+    {
+      "code": "1219",
+      "name": "福壽",
+      "price": 11.2,
+      "volume": 191741.0,
+      "pe": null,
+      "pbr": 0.96,
+      "yield": 4.46
+    },
+    {
+      "code": "1220",
+      "name": "台榮",
+      "price": 10.75,
+      "volume": 44095.0,
+      "pe": 153.57,
+      "pbr": 0.83,
+      "yield": 1.86
+    },
+    {
+      "code": "1225",
+      "name": "福懋油",
+      "price": 24.65,
+      "volume": 44496.0,
+      "pe": 117.38,
+      "pbr": 1.59,
+      "yield": 4.06
+    },
+    {
+      "code": "1227",
+      "name": "佳格",
+      "price": 28.15,
+      "volume": 475914.0,
+      "pe": 17.48,
+      "pbr": 1.4,
+      "yield": 4.76
+    },
+    {
+      "code": "1229",
+      "name": "聯華",
+      "price": 40.35,
+      "volume": 1425646.0,
+      "pe": 16.2,
+      "pbr": 1.15,
+      "yield": 4.96
+    },
+    {
+      "code": "1231",
+      "name": "聯華食",
+      "price": 79.3,
+      "volume": 381816.0,
+      "pe": 16.05,
+      "pbr": 3.16,
+      "yield": 3.15
+    },
+    {
+      "code": "1232",
+      "name": "大統益",
+      "price": 154.5,
+      "volume": 81651.0,
+      "pe": 17.11,
+      "pbr": 4.48,
+      "yield": 4.66
+    },
+    {
+      "code": "1233",
+      "name": "天仁",
+      "price": 27.85,
+      "volume": 16020.0,
+      "pe": 30.27,
+      "pbr": 1.8,
+      "yield": 0.72
+    },
+    {
+      "code": "1234",
+      "name": "黑松",
+      "price": 33.1,
+      "volume": 100499.0,
+      "pe": 20.18,
+      "pbr": 0.72,
+      "yield": 4.98
+    },
+    {
+      "code": "1235",
+      "name": "興泰",
+      "price": 36.9,
+      "volume": 11021.0,
+      "pe": null,
+      "pbr": 0.63,
+      "yield": 2.71
+    },
+    {
+      "code": "1236",
+      "name": "宏亞",
+      "price": 25.55,
+      "volume": 61821.0,
+      "pe": null,
+      "pbr": 0.85,
+      "yield": 6.46
+    },
+    {
+      "code": "1256",
+      "name": "鮮活果汁-KY",
+      "price": 171.0,
+      "volume": 27564.0,
+      "pe": 10.99,
+      "pbr": 1.46,
+      "yield": 3.86
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "price": 62.0,
+      "volume": 17895998.0,
+      "pe": 37.8,
+      "pbr": 0.69,
+      "yield": 0.81
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "price": 221.5,
+      "volume": 55715933.0,
+      "pe": 35.73,
+      "pbr": 3.68,
+      "yield": 0.36
+    },
+    {
+      "code": "1304",
+      "name": "台聚",
+      "price": 12.15,
+      "volume": 1673059.0,
+      "pe": null,
+      "pbr": 0.74,
+      "yield": 1.23
+    },
+    {
+      "code": "1305",
+      "name": "華夏",
+      "price": 11.7,
+      "volume": 1005203.0,
+      "pe": null,
+      "pbr": 0.88,
+      "yield": 0.85
+    },
+    {
+      "code": "1307",
+      "name": "三芳",
+      "price": 30.15,
+      "volume": 279688.0,
+      "pe": 9.0,
+      "pbr": 1.2,
+      "yield": 7.3
+    },
+    {
+      "code": "1308",
+      "name": "亞聚",
+      "price": 13.9,
+      "volume": 1101680.0,
+      "pe": null,
+      "pbr": 0.77,
+      "yield": 1.44
+    },
+    {
+      "code": "1309",
+      "name": "台達化",
+      "price": 13.65,
+      "volume": 1260046.0,
+      "pe": null,
+      "pbr": 1.01,
+      "yield": 1.1
+    },
+    {
+      "code": "1310",
+      "name": "台苯",
+      "price": 8.45,
+      "volume": 1468489.0,
+      "pe": null,
+      "pbr": 0.71,
+      "yield": null
+    },
+    {
+      "code": "1312",
+      "name": "國喬",
+      "price": 14.35,
+      "volume": 9867693.0,
+      "pe": null,
+      "pbr": 0.55,
+      "yield": null
+    },
+    {
+      "code": "1313",
+      "name": "聯成",
+      "price": 11.8,
+      "volume": 1678846.0,
+      "pe": null,
+      "pbr": 0.52,
+      "yield": 0.85
+    },
+    {
+      "code": "1314",
+      "name": "中石化",
+      "price": 8.11,
+      "volume": 12078524.0,
+      "pe": null,
+      "pbr": 0.41,
+      "yield": null
+    },
+    {
+      "code": "1315",
+      "name": "達新",
+      "price": 65.8,
+      "volume": 16053.0,
+      "pe": 26.97,
+      "pbr": 0.47,
+      "yield": 6.84
+    },
+    {
+      "code": "1316",
+      "name": "上曜",
+      "price": 10.4,
+      "volume": 1750884.0,
+      "pe": null,
+      "pbr": 0.87,
+      "yield": null
+    },
+    {
+      "code": "1319",
+      "name": "東陽",
+      "price": 79.0,
+      "volume": 950303.0,
+      "pe": 12.82,
+      "pbr": 1.73,
+      "yield": 6.33
+    },
+    {
+      "code": "1321",
+      "name": "大洋",
+      "price": 32.15,
+      "volume": 36026.0,
+      "pe": 247.31,
+      "pbr": 1.17,
+      "yield": null
+    },
+    {
+      "code": "1323",
+      "name": "永裕",
+      "price": 21.35,
+      "volume": 73861.0,
+      "pe": 16.81,
+      "pbr": 0.74,
+      "yield": 4.22
+    },
+    {
+      "code": "1324",
+      "name": "地球",
+      "price": 10.0,
+      "volume": 53590.0,
+      "pe": null,
+      "pbr": 0.84,
+      "yield": null
+    },
+    {
+      "code": "1325",
+      "name": "恆大",
+      "price": 25.35,
+      "volume": 122292.0,
+      "pe": null,
+      "pbr": 0.84,
+      "yield": null
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "price": 65.8,
+      "volume": 23789944.0,
+      "pe": 27.88,
+      "pbr": 0.74,
+      "yield": 0.91
+    },
+    {
+      "code": "1337",
+      "name": "再生-KY",
+      "price": 4.39,
+      "volume": 269204.0,
+      "pe": null,
+      "pbr": 0.33,
+      "yield": null
+    },
+    {
+      "code": "1338",
+      "name": "廣華-KY",
+      "price": 14.3,
+      "volume": 95767.0,
+      "pe": null,
+      "pbr": 0.2,
+      "yield": 2.17
+    },
+    {
+      "code": "1339",
+      "name": "昭輝",
+      "price": 42.7,
+      "volume": 36880.0,
+      "pe": 7.35,
+      "pbr": 0.77,
+      "yield": 5.85
+    },
+    {
+      "code": "1340",
+      "name": "勝悅-KY",
+      "price": 5.07,
+      "volume": 110986.0,
+      "pe": null,
+      "pbr": 0.29,
+      "yield": null
+    },
+    {
+      "code": "1341",
+      "name": "富林-KY",
+      "price": 59.4,
+      "volume": 3510.0,
+      "pe": 12.07,
+      "pbr": 2.54,
+      "yield": 6.73
+    },
+    {
+      "code": "1342",
+      "name": "八貫",
+      "price": 100.5,
+      "volume": 74895.0,
+      "pe": 14.21,
+      "pbr": 3.48,
+      "yield": 5.97
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "price": 27.8,
+      "volume": 9055012.0,
+      "pe": 14.4,
+      "pbr": 0.64,
+      "yield": 4.5
+    },
+    {
+      "code": "1409",
+      "name": "新纖",
+      "price": 23.9,
+      "volume": 9754438.0,
+      "pe": 10.86,
+      "pbr": 0.8,
+      "yield": 3.77
+    },
+    {
+      "code": "1410",
+      "name": "南染",
+      "price": 23.9,
+      "volume": 208159.0,
+      "pe": 32.74,
+      "pbr": 1.41,
+      "yield": 0.84
+    },
+    {
+      "code": "1413",
+      "name": "宏洲",
+      "price": 9.22,
+      "volume": 2000.0,
+      "pe": 29.74,
+      "pbr": 1.05,
+      "yield": null
+    },
+    {
+      "code": "1414",
+      "name": "東和",
+      "price": 17.2,
+      "volume": 102554.0,
+      "pe": 30.71,
+      "pbr": 1.14,
+      "yield": 1.16
+    },
+    {
+      "code": "1416",
+      "name": "廣豐",
+      "price": 11.25,
+      "volume": 309661.0,
+      "pe": 9.53,
+      "pbr": 0.47,
+      "yield": 5.07
+    },
+    {
+      "code": "1417",
+      "name": "嘉裕",
+      "price": 7.98,
+      "volume": 315338.0,
+      "pe": 15.65,
+      "pbr": 0.64,
+      "yield": 3.13
+    },
+    {
+      "code": "1418",
+      "name": "東華",
+      "price": 17.55,
+      "volume": 5242.0,
+      "pe": null,
+      "pbr": 0.84,
+      "yield": null
+    },
+    {
+      "code": "1419",
+      "name": "新紡",
+      "price": 65.9,
+      "volume": 128424.0,
+      "pe": 4.74,
+      "pbr": 0.87,
+      "yield": 2.73
+    },
+    {
+      "code": "1423",
+      "name": "利華",
+      "price": 35.25,
+      "volume": 2001.0,
+      "pe": 10.34,
+      "pbr": 1.03,
+      "yield": 10.21
+    },
+    {
+      "code": "1432",
+      "name": "大魯閣",
+      "price": 14.95,
+      "volume": 103442.0,
+      "pe": 2.93,
+      "pbr": 1.22,
+      "yield": 13.38
+    },
+    {
+      "code": "1434",
+      "name": "福懋",
+      "price": 17.5,
+      "volume": 1208799.0,
+      "pe": 19.02,
+      "pbr": 0.61,
+      "yield": 2.86
+    },
+    {
+      "code": "1435",
+      "name": "中福",
+      "price": 21.75,
+      "volume": 5278.0,
+      "pe": null,
+      "pbr": 3.31,
+      "yield": null
+    },
+    {
+      "code": "1436",
+      "name": "華友聯",
+      "price": 36.1,
+      "volume": 62288.0,
+      "pe": 12.8,
+      "pbr": 1.26,
+      "yield": 13.99
+    },
+    {
+      "code": "1437",
+      "name": "勤益控",
+      "price": 32.25,
+      "volume": 125672.0,
+      "pe": 7.45,
+      "pbr": 0.76,
+      "yield": 2.98
+    },
+    {
+      "code": "1438",
+      "name": "三地開發",
+      "price": 21.2,
+      "volume": 19606.0,
+      "pe": 8.19,
+      "pbr": 0.75,
+      "yield": 0.94
+    },
+    {
+      "code": "1439",
+      "name": "雋揚",
+      "price": 27.7,
+      "volume": 57437.0,
+      "pe": 9.02,
+      "pbr": 0.85,
+      "yield": 1.81
+    },
+    {
+      "code": "1440",
+      "name": "南紡",
+      "price": 13.05,
+      "volume": 1700760.0,
+      "pe": 435.0,
+      "pbr": 0.76,
+      "yield": 2.3
+    },
+    {
+      "code": "1441",
+      "name": "大東",
+      "price": 8.61,
+      "volume": 21949.0,
+      "pe": null,
+      "pbr": 1.7,
+      "yield": null
+    },
+    {
+      "code": "1442",
+      "name": "名軒",
+      "price": 29.9,
+      "volume": 119625.0,
+      "pe": 17.49,
+      "pbr": 1.48,
+      "yield": 8.03
+    },
+    {
+      "code": "1443",
+      "name": "立益物流",
+      "price": 23.0,
+      "volume": 7032.0,
+      "pe": 11.33,
+      "pbr": 1.3,
+      "yield": null
+    },
+    {
+      "code": "1444",
+      "name": "力麗",
+      "price": 6.66,
+      "volume": 884227.0,
+      "pe": null,
+      "pbr": 0.65,
+      "yield": null
+    },
+    {
+      "code": "1445",
+      "name": "大宇",
+      "price": 10.15,
+      "volume": 59192.0,
+      "pe": null,
+      "pbr": 0.62,
+      "yield": 4.93
+    },
+    {
+      "code": "1446",
+      "name": "宏和",
+      "price": 13.3,
+      "volume": 79045.0,
+      "pe": 14.15,
+      "pbr": 0.69,
+      "yield": 11.28
+    },
+    {
+      "code": "1447",
+      "name": "力鵬",
+      "price": 6.31,
+      "volume": 736501.0,
+      "pe": null,
+      "pbr": 0.66,
+      "yield": null
+    },
+    {
+      "code": "1449",
+      "name": "佳和",
+      "price": 12.1,
+      "volume": 204958.0,
+      "pe": null,
+      "pbr": 0.62,
+      "yield": null
+    },
+    {
+      "code": "1451",
+      "name": "年興",
+      "price": 16.9,
+      "volume": 97725.0,
+      "pe": 11.19,
+      "pbr": 0.45,
+      "yield": 5.92
+    },
+    {
+      "code": "1452",
+      "name": "宏益",
+      "price": 11.0,
+      "volume": 14255.0,
+      "pe": null,
+      "pbr": 0.54,
+      "yield": 1.82
+    },
+    {
+      "code": "1453",
+      "name": "大將",
+      "price": 10.8,
+      "volume": 47026.0,
+      "pe": 15.43,
+      "pbr": 0.81,
+      "yield": 2.78
+    },
+    {
+      "code": "1454",
+      "name": "台富",
+      "price": 12.55,
+      "volume": 43194.0,
+      "pe": null,
+      "pbr": 1.18,
+      "yield": 0.8
+    },
+    {
+      "code": "1455",
+      "name": "集盛",
+      "price": 9.6,
+      "volume": 470308.0,
+      "pe": 18.11,
+      "pbr": 0.82,
+      "yield": 1.67
+    },
+    {
+      "code": "1456",
+      "name": "怡華",
+      "price": 13.9,
+      "volume": 241173.0,
+      "pe": 4.79,
+      "pbr": 0.71,
+      "yield": null
+    },
+    {
+      "code": "1457",
+      "name": "宜進",
+      "price": 14.35,
+      "volume": 37872.0,
+      "pe": 10.63,
+      "pbr": 0.64,
+      "yield": 6.97
+    },
+    {
+      "code": "1459",
+      "name": "聯發",
+      "price": 15.35,
+      "volume": 172508.0,
+      "pe": 5.95,
+      "pbr": 1.18,
+      "yield": 1.3
+    },
+    {
+      "code": "1460",
+      "name": "宏遠",
+      "price": 6.28,
+      "volume": 386923.0,
+      "pe": null,
+      "pbr": 0.75,
+      "yield": null
+    },
+    {
+      "code": "1463",
+      "name": "強盛新",
+      "price": 17.6,
+      "volume": 281006.0,
+      "pe": null,
+      "pbr": 1.18,
+      "yield": 0.74
+    },
+    {
+      "code": "1464",
+      "name": "得力",
+      "price": 9.96,
+      "volume": 492932.0,
+      "pe": 12.0,
+      "pbr": 0.78,
+      "yield": 2.51
+    },
+    {
+      "code": "1465",
+      "name": "偉全",
+      "price": 11.95,
+      "volume": 30280.0,
+      "pe": 20.6,
+      "pbr": 0.79,
+      "yield": 2.51
+    },
+    {
+      "code": "1466",
+      "name": "聚隆",
+      "price": 14.7,
+      "volume": 171002.0,
+      "pe": null,
+      "pbr": 1.04,
+      "yield": 1.36
+    },
+    {
+      "code": "1467",
+      "name": "南緯",
+      "price": 7.9,
+      "volume": 62059.0,
+      "pe": 30.38,
+      "pbr": 0.64,
+      "yield": null
+    },
+    {
+      "code": "1468",
+      "name": "昶和",
+      "price": 13.1,
+      "volume": 92000.0,
+      "pe": 14.72,
+      "pbr": 1.44,
+      "yield": null
+    },
+    {
+      "code": "1470",
+      "name": "大統新創",
+      "price": 23.85,
+      "volume": 4003.0,
+      "pe": 18.35,
+      "pbr": 2.03,
+      "yield": 2.73
+    },
+    {
+      "code": "1471",
+      "name": "首利",
+      "price": 9.3,
+      "volume": 114788.0,
+      "pe": 46.5,
+      "pbr": 0.96,
+      "yield": null
+    },
+    {
+      "code": "1472",
+      "name": "三洋實業",
+      "price": 88.3,
+      "volume": 25050.0,
+      "pe": 13.8,
+      "pbr": 2.13,
+      "yield": 6.8
+    },
+    {
+      "code": "1473",
+      "name": "台南",
+      "price": 19.65,
+      "volume": 164728.0,
+      "pe": 56.14,
+      "pbr": 0.74,
+      "yield": 2.54
+    },
+    {
+      "code": "1474",
+      "name": "弘裕",
+      "price": 9.72,
+      "volume": 81744.0,
+      "pe": 36.0,
+      "pbr": 0.58,
+      "yield": 2.57
+    },
+    {
+      "code": "1475",
+      "name": "業旺",
+      "price": 26.25,
+      "volume": 18528.0,
+      "pe": 6.75,
+      "pbr": 1.14,
+      "yield": 5.71
+    },
+    {
+      "code": "1476",
+      "name": "儒鴻",
+      "price": 285.0,
+      "volume": 1039100.0,
+      "pe": 11.81,
+      "pbr": 2.69,
+      "yield": 5.26
+    },
+    {
+      "code": "1477",
+      "name": "聚陽",
+      "price": 192.0,
+      "volume": 726664.0,
+      "pe": 13.11,
+      "pbr": 3.44,
+      "yield": 7.81
+    },
+    {
+      "code": "1503",
+      "name": "士電",
+      "price": 195.0,
+      "volume": 839563.0,
+      "pe": 26.86,
+      "pbr": 2.63,
+      "yield": 2.56
+    },
+    {
+      "code": "1504",
+      "name": "東元",
+      "price": 69.0,
+      "volume": 3641620.0,
+      "pe": 25.0,
+      "pbr": 1.68,
+      "yield": 2.9
+    },
+    {
+      "code": "1506",
+      "name": "正道",
+      "price": 9.77,
+      "volume": 274176.0,
+      "pe": 195.4,
+      "pbr": 1.05,
+      "yield": null
+    },
+    {
+      "code": "1512",
+      "name": "瑞利",
+      "price": 6.13,
+      "volume": 20719.0,
+      "pe": 32.26,
+      "pbr": 0.9,
+      "yield": null
+    },
+    {
+      "code": "1513",
+      "name": "中興電",
+      "price": 162.0,
+      "volume": 1255434.0,
+      "pe": 18.22,
+      "pbr": 3.84,
+      "yield": 3.7
+    },
+    {
+      "code": "1514",
+      "name": "亞力",
+      "price": 99.6,
+      "volume": 595972.0,
+      "pe": 27.29,
+      "pbr": 4.28,
+      "yield": 2.21
+    },
+    {
+      "code": "1515",
+      "name": "力山",
+      "price": 29.15,
+      "volume": 516938.0,
+      "pe": 19.56,
+      "pbr": 1.36,
+      "yield": 2.06
+    },
+    {
+      "code": "1516",
+      "name": "川飛",
+      "price": 14.4,
+      "volume": 24241.0,
+      "pe": 1440.0,
+      "pbr": 2.86,
+      "yield": null
+    },
+    {
+      "code": "1517",
+      "name": "利奇",
+      "price": 10.5,
+      "volume": 253540.0,
+      "pe": null,
+      "pbr": 0.69,
+      "yield": 1.9
+    },
+    {
+      "code": "1519",
+      "name": "華城",
+      "price": 694.0,
+      "volume": 1232165.0,
+      "pe": 45.42,
+      "pbr": 23.82,
+      "yield": 1.73
+    },
+    {
+      "code": "1521",
+      "name": "大億",
+      "price": 24.75,
+      "volume": 26502.0,
+      "pe": 15.57,
+      "pbr": 1.0,
+      "yield": 3.03
+    },
+    {
+      "code": "1522",
+      "name": "堤維西",
+      "price": 25.05,
+      "volume": 355332.0,
+      "pe": 26.09,
+      "pbr": 0.9,
+      "yield": 4.79
+    },
+    {
+      "code": "1524",
+      "name": "耿鼎",
+      "price": 25.8,
+      "volume": 117411.0,
+      "pe": 12.65,
+      "pbr": 1.44,
+      "yield": 5.43
+    },
+    {
+      "code": "1525",
+      "name": "江申",
+      "price": 64.2,
+      "volume": 1001.0,
+      "pe": 43.67,
+      "pbr": 0.94,
+      "yield": 4.36
+    },
+    {
+      "code": "1526",
+      "name": "日馳",
+      "price": 14.7,
+      "volume": 83980.0,
+      "pe": null,
+      "pbr": 0.67,
+      "yield": null
+    },
+    {
+      "code": "1527",
+      "name": "鑽全",
+      "price": 32.2,
+      "volume": 130444.0,
+      "pe": 15.26,
+      "pbr": 0.93,
+      "yield": 4.66
+    },
+    {
+      "code": "1528",
+      "name": "恩德",
+      "price": 24.65,
+      "volume": 37110090.0,
+      "pe": null,
+      "pbr": 2.22,
+      "yield": null
+    },
+    {
+      "code": "1529",
+      "name": "樂事綠能",
+      "price": 15.25,
+      "volume": 431421.0,
+      "pe": 23.46,
+      "pbr": 1.3,
+      "yield": 6.56
+    },
+    {
+      "code": "1530",
+      "name": "亞崴",
+      "price": 27.25,
+      "volume": 23037.0,
+      "pe": 14.49,
+      "pbr": 0.8,
+      "yield": 3.67
+    },
+    {
+      "code": "1531",
+      "name": "高林股",
+      "price": 11.55,
+      "volume": 44280.0,
+      "pe": 42.78,
+      "pbr": 0.6,
+      "yield": 8.66
+    },
+    {
+      "code": "1532",
+      "name": "勤美",
+      "price": 22.3,
+      "volume": 315519.0,
+      "pe": 18.13,
+      "pbr": 0.61,
+      "yield": 3.59
+    },
+    {
+      "code": "1533",
+      "name": "車王電",
+      "price": 29.95,
+      "volume": 81172.0,
+      "pe": 11.13,
+      "pbr": 1.19,
+      "yield": null
+    },
+    {
+      "code": "1535",
+      "name": "中宇",
+      "price": 44.35,
+      "volume": 53337.0,
+      "pe": 11.73,
+      "pbr": 1.47,
+      "yield": 6.76
+    },
+    {
+      "code": "1536",
+      "name": "和大",
+      "price": 46.0,
+      "volume": 1446637.0,
+      "pe": null,
+      "pbr": 1.73,
+      "yield": null
+    },
+    {
+      "code": "1537",
+      "name": "廣隆",
+      "price": 114.0,
+      "volume": 28063.0,
+      "pe": 13.78,
+      "pbr": 2.21,
+      "yield": 6.32
+    },
+    {
+      "code": "1539",
+      "name": "巨庭",
+      "price": 15.5,
+      "volume": 11315.0,
+      "pe": 18.45,
+      "pbr": 0.63,
+      "yield": null
+    },
+    {
+      "code": "1540",
+      "name": "喬福",
+      "price": 19.1,
+      "volume": 110532.0,
+      "pe": 15.66,
+      "pbr": 1.15,
+      "yield": 5.24
+    },
+    {
+      "code": "1541",
+      "name": "錩泰",
+      "price": 20.75,
+      "volume": 27193.0,
+      "pe": 7.69,
+      "pbr": 0.76,
+      "yield": null
+    },
+    {
+      "code": "1558",
+      "name": "伸興",
+      "price": 108.5,
+      "volume": 107345.0,
+      "pe": 13.51,
+      "pbr": 1.35,
+      "yield": 4.61
+    },
+    {
+      "code": "1560",
+      "name": "中砂",
+      "price": 735.0,
+      "volume": 702383.0,
+      "pe": 62.5,
+      "pbr": 12.13,
+      "yield": 0.67
+    },
+    {
+      "code": "1563",
+      "name": "巧新",
+      "price": 74.0,
+      "volume": 419146.0,
+      "pe": 69.81,
+      "pbr": 1.94,
+      "yield": 2.7
+    },
+    {
+      "code": "1568",
+      "name": "倉佑",
+      "price": 28.8,
+      "volume": 105428.0,
+      "pe": 15.24,
+      "pbr": 1.56,
+      "yield": 3.47
+    },
+    {
+      "code": "1582",
+      "name": "信錦",
+      "price": 69.1,
+      "volume": 275233.0,
+      "pe": 21.53,
+      "pbr": 1.35,
+      "yield": 4.34
+    },
+    {
+      "code": "1583",
+      "name": "程泰",
+      "price": 46.85,
+      "volume": 11167.0,
+      "pe": 10.7,
+      "pbr": 0.9,
+      "yield": 2.13
+    },
+    {
+      "code": "1587",
+      "name": "吉茂",
+      "price": 23.25,
+      "volume": 147335.0,
+      "pe": 110.71,
+      "pbr": 1.15,
+      "yield": null
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "price": 1280.0,
+      "volume": 445567.0,
+      "pe": 24.59,
+      "pbr": 4.67,
+      "yield": 2.27
+    },
+    {
+      "code": "1597",
+      "name": "直得",
+      "price": 133.5,
+      "volume": 1501685.0,
+      "pe": 65.44,
+      "pbr": 4.72,
+      "yield": 0.52
+    },
+    {
+      "code": "1598",
+      "name": "岱宇",
+      "price": 20.1,
+      "volume": 132445.0,
+      "pe": null,
+      "pbr": 0.8,
+      "yield": 2.49
+    },
+    {
+      "code": "1603",
+      "name": "華電",
+      "price": 29.95,
+      "volume": 142859.0,
+      "pe": 10.73,
+      "pbr": 0.59,
+      "yield": 6.68
+    },
+    {
+      "code": "1604",
+      "name": "聲寶",
+      "price": 23.35,
+      "volume": 280935.0,
+      "pe": 13.34,
+      "pbr": 0.94,
+      "yield": 6.42
+    },
+    {
+      "code": "1605",
+      "name": "華新",
+      "price": 36.35,
+      "volume": 12337053.0,
+      "pe": 11.02,
+      "pbr": 0.79,
+      "yield": 1.38
+    },
+    {
+      "code": "1608",
+      "name": "華榮",
+      "price": 35.4,
+      "volume": 1271056.0,
+      "pe": 3.07,
+      "pbr": 1.33,
+      "yield": 5.65
+    },
+    {
+      "code": "1609",
+      "name": "大亞",
+      "price": 37.2,
+      "volume": 1529214.0,
+      "pe": 13.73,
+      "pbr": 1.56,
+      "yield": 1.88
+    },
+    {
+      "code": "1611",
+      "name": "中電",
+      "price": 11.3,
+      "volume": 341988.0,
+      "pe": 25.11,
+      "pbr": 0.9,
+      "yield": 7.08
+    },
+    {
+      "code": "1612",
+      "name": "宏泰",
+      "price": 34.5,
+      "volume": 317949.0,
+      "pe": 8.85,
+      "pbr": 1.16,
+      "yield": 7.25
+    },
+    {
+      "code": "1614",
+      "name": "三洋電",
+      "price": 30.9,
+      "volume": 34728.0,
+      "pe": 24.52,
+      "pbr": 1.41,
+      "yield": 3.14
+    },
+    {
+      "code": "1615",
+      "name": "大山",
+      "price": 43.05,
+      "volume": 47605.0,
+      "pe": 8.33,
+      "pbr": 1.8,
+      "yield": 6.04
+    },
+    {
+      "code": "1616",
+      "name": "億泰",
+      "price": 18.35,
+      "volume": 157515.0,
+      "pe": 41.7,
+      "pbr": 1.69,
+      "yield": 7.41
+    },
+    {
+      "code": "1617",
+      "name": "榮星",
+      "price": 17.6,
+      "volume": 203969.0,
+      "pe": 12.94,
+      "pbr": 1.28,
+      "yield": 3.41
+    },
+    {
+      "code": "1618",
+      "name": "合機",
+      "price": 38.45,
+      "volume": 185429.0,
+      "pe": 7.93,
+      "pbr": 1.09,
+      "yield": 4.42
+    },
+    {
+      "code": "1623",
+      "name": "大東電",
+      "price": 204.0,
+      "volume": 52457.0,
+      "pe": 16.43,
+      "pbr": 3.28,
+      "yield": 3.92
+    },
+    {
+      "code": "1626",
+      "name": "艾美特-KY",
+      "price": 9.41,
+      "volume": 47811.0,
+      "pe": null,
+      "pbr": 0.52,
+      "yield": null
+    },
+    {
+      "code": "1702",
+      "name": "南僑",
+      "price": 32.35,
+      "volume": 122852.0,
+      "pe": 49.02,
+      "pbr": 0.67,
+      "yield": 4.95
+    },
+    {
+      "code": "1707",
+      "name": "葡萄王",
+      "price": 86.3,
+      "volume": 345389.0,
+      "pe": 11.14,
+      "pbr": 1.25,
+      "yield": 6.95
+    },
+    {
+      "code": "1708",
+      "name": "東鹼",
+      "price": 48.0,
+      "volume": 873025.0,
+      "pe": 11.62,
+      "pbr": 1.57,
+      "yield": 3.33
+    },
+    {
+      "code": "1709",
+      "name": "和益",
+      "price": 35.5,
+      "volume": 8469055.0,
+      "pe": 17.66,
+      "pbr": 1.88,
+      "yield": 2.82
+    },
+    {
+      "code": "1710",
+      "name": "東聯",
+      "price": 15.7,
+      "volume": 3352053.0,
+      "pe": null,
+      "pbr": 1.24,
+      "yield": null
+    },
+    {
+      "code": "1711",
+      "name": "永光",
+      "price": 38.1,
+      "volume": 2825800.0,
+      "pe": 293.08,
+      "pbr": 2.34,
+      "yield": null
+    },
+    {
+      "code": "1712",
+      "name": "興農",
+      "price": 39.9,
+      "volume": 366057.0,
+      "pe": 15.06,
+      "pbr": 2.04,
+      "yield": 6.27
+    },
+    {
+      "code": "1713",
+      "name": "國化",
+      "price": 42.05,
+      "volume": 440957.0,
+      "pe": 8.87,
+      "pbr": 1.73,
+      "yield": 7.37
+    },
+    {
+      "code": "1714",
+      "name": "和桐",
+      "price": 15.15,
+      "volume": 5071270.0,
+      "pe": 12.84,
+      "pbr": 1.12,
+      "yield": 1.19
+    },
+    {
+      "code": "1717",
+      "name": "長興",
+      "price": 68.1,
+      "volume": 4705926.0,
+      "pe": 35.84,
+      "pbr": 2.56,
+      "yield": 1.47
+    },
+    {
+      "code": "1718",
+      "name": "中纖",
+      "price": 10.4,
+      "volume": 6493005.0,
+      "pe": 17.63,
+      "pbr": 0.58,
+      "yield": null
+    },
+    {
+      "code": "1720",
+      "name": "生達",
+      "price": 56.1,
+      "volume": 73488.0,
+      "pe": 9.76,
+      "pbr": 1.62,
+      "yield": 5.35
+    },
+    {
+      "code": "1721",
+      "name": "國慶科技",
+      "price": 21.1,
+      "volume": 501644.0,
+      "pe": null,
+      "pbr": 2.43,
+      "yield": null
+    },
+    {
+      "code": "1722",
+      "name": "台肥",
+      "price": 42.0,
+      "volume": 3554623.0,
+      "pe": 50.0,
+      "pbr": 0.78,
+      "yield": 4.76
+    },
+    {
+      "code": "1723",
+      "name": "中碳",
+      "price": 81.3,
+      "volume": 274991.0,
+      "pe": 26.14,
+      "pbr": 2.36,
+      "yield": 2.28
+    },
+    {
+      "code": "1725",
+      "name": "元禎",
+      "price": 32.65,
+      "volume": 51131.0,
+      "pe": 13.33,
+      "pbr": 0.69,
+      "yield": 3.28
+    },
+    {
+      "code": "1726",
+      "name": "永記",
+      "price": 76.5,
+      "volume": 18872.0,
+      "pe": 11.93,
+      "pbr": 1.17,
+      "yield": 4.84
+    },
+    {
+      "code": "1727",
+      "name": "中華化",
+      "price": 90.1,
+      "volume": 2685038.0,
+      "pe": 130.58,
+      "pbr": 5.34,
+      "yield": 0.17
+    },
+    {
+      "code": "1730",
+      "name": "花仙子",
+      "price": 51.2,
+      "volume": 23148.0,
+      "pe": 10.71,
+      "pbr": 1.6,
+      "yield": 5.86
+    },
+    {
+      "code": "1731",
+      "name": "美吾華",
+      "price": 20.75,
+      "volume": 45977.0,
+      "pe": 13.74,
+      "pbr": 1.26,
+      "yield": 5.88
+    },
+    {
+      "code": "1732",
+      "name": "毛寶",
+      "price": 25.85,
+      "volume": 39067.0,
+      "pe": 21.02,
+      "pbr": 2.17,
+      "yield": 2.32
+    },
+    {
+      "code": "1733",
+      "name": "五鼎",
+      "price": 29.9,
+      "volume": 114872.0,
+      "pe": 15.74,
+      "pbr": 1.61,
+      "yield": 4.35
+    },
+    {
+      "code": "1734",
+      "name": "杏輝",
+      "price": 31.3,
+      "volume": 163938.0,
+      "pe": 16.92,
+      "pbr": 1.73,
+      "yield": 5.11
+    },
+    {
+      "code": "1735",
+      "name": "日勝化",
+      "price": 19.3,
+      "volume": 72692.0,
+      "pe": 16.5,
+      "pbr": 1.24,
+      "yield": 3.37
+    },
+    {
+      "code": "1736",
+      "name": "喬山",
+      "price": 125.0,
+      "volume": 274367.0,
+      "pe": 11.3,
+      "pbr": 2.77,
+      "yield": 3.6
+    },
+    {
+      "code": "1737",
+      "name": "臺鹽",
+      "price": 30.4,
+      "volume": 235619.0,
+      "pe": 15.59,
+      "pbr": 0.91,
+      "yield": 4.61
+    },
+    {
+      "code": "1752",
+      "name": "南光",
+      "price": 31.2,
+      "volume": 63210.0,
+      "pe": 15.37,
+      "pbr": 1.31,
+      "yield": 5.13
+    },
+    {
+      "code": "1760",
+      "name": "寶齡富錦",
+      "price": 53.8,
+      "volume": 102984.0,
+      "pe": 21.43,
+      "pbr": 2.46,
+      "yield": 3.72
+    },
+    {
+      "code": "1762",
+      "name": "中化生",
+      "price": 33.5,
+      "volume": 30739.0,
+      "pe": null,
+      "pbr": 0.8,
+      "yield": null
+    },
+    {
+      "code": "1773",
+      "name": "勝一",
+      "price": 157.5,
+      "volume": 284373.0,
+      "pe": 19.64,
+      "pbr": 4.13,
+      "yield": 2.54
+    },
+    {
+      "code": "1776",
+      "name": "展宇",
+      "price": 17.75,
+      "volume": 53577.0,
+      "pe": 19.51,
+      "pbr": 1.2,
+      "yield": 3.38
+    },
+    {
+      "code": "1783",
+      "name": "和康生",
+      "price": 36.2,
+      "volume": 56653.0,
+      "pe": 11.14,
+      "pbr": 2.17,
+      "yield": 5.52
+    },
+    {
+      "code": "1786",
+      "name": "科妍",
+      "price": 43.05,
+      "volume": 75399.0,
+      "pe": 17.64,
+      "pbr": 1.76,
+      "yield": 4.44
+    },
+    {
+      "code": "1789",
+      "name": "神隆",
+      "price": 18.1,
+      "volume": 313893.0,
+      "pe": 362.0,
+      "pbr": 1.37,
+      "yield": 1.6
+    },
+    {
+      "code": "1795",
+      "name": "美時",
+      "price": 178.5,
+      "volume": 725132.0,
+      "pe": 12.61,
+      "pbr": 1.96,
+      "yield": 1.51
+    },
+    {
+      "code": "1802",
+      "name": "台玻",
+      "price": 56.0,
+      "volume": 10001475.0,
+      "pe": 65.12,
+      "pbr": 3.15,
+      "yield": null
+    },
+    {
+      "code": "1805",
+      "name": "寶徠",
+      "price": 10.1,
+      "volume": 22556.0,
+      "pe": 84.17,
+      "pbr": 0.83,
+      "yield": null
+    },
+    {
+      "code": "1806",
+      "name": "冠軍",
+      "price": 7.99,
+      "volume": 91760.0,
+      "pe": 49.94,
+      "pbr": 0.59,
+      "yield": 1.88
+    },
+    {
+      "code": "1808",
+      "name": "潤隆",
+      "price": 33.0,
+      "volume": 1211558.0,
+      "pe": 7.8,
+      "pbr": 2.13,
+      "yield": 4.55
+    },
+    {
+      "code": "1809",
+      "name": "中釉",
+      "price": 36.0,
+      "volume": 778635.0,
+      "pe": 180.0,
+      "pbr": 2.05,
+      "yield": 0.69
+    },
+    {
+      "code": "1810",
+      "name": "和成",
+      "price": 23.45,
+      "volume": 861105.0,
+      "pe": 6.41,
+      "pbr": 0.83,
+      "yield": 0.85
+    },
+    {
+      "code": "1817",
+      "name": "凱撒衛",
+      "price": 40.2,
+      "volume": 9362.0,
+      "pe": 8.01,
+      "pbr": 1.26,
+      "yield": 5.47
+    },
+    {
+      "code": "1903",
+      "name": "士紙",
+      "price": 47.2,
+      "volume": 47531.0,
+      "pe": 34.71,
+      "pbr": 2.23,
+      "yield": null
+    },
+    {
+      "code": "1904",
+      "name": "正隆",
+      "price": 24.4,
+      "volume": 1308734.0,
+      "pe": 11.24,
+      "pbr": 0.88,
+      "yield": 1.84
+    },
+    {
+      "code": "1905",
+      "name": "華紙",
+      "price": 13.05,
+      "volume": 1357003.0,
+      "pe": null,
+      "pbr": 0.84,
+      "yield": null
+    },
+    {
+      "code": "1906",
+      "name": "寶隆",
+      "price": 10.75,
+      "volume": 39045.0,
+      "pe": 17.62,
+      "pbr": 0.59,
+      "yield": null
+    },
+    {
+      "code": "1907",
+      "name": "永豐餘",
+      "price": 28.85,
+      "volume": 561160.0,
+      "pe": 16.97,
+      "pbr": 0.53,
+      "yield": 3.47
+    },
+    {
+      "code": "1909",
+      "name": "榮成",
+      "price": 10.1,
+      "volume": 1943300.0,
+      "pe": 43.91,
+      "pbr": 0.63,
+      "yield": null
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "price": 18.65,
+      "volume": 30609530.0,
+      "pe": null,
+      "pbr": 0.95,
+      "yield": 0.8
+    },
+    {
+      "code": "2006",
+      "name": "東和鋼鐵",
+      "price": 80.9,
+      "volume": 1149181.0,
+      "pe": 10.74,
+      "pbr": 1.73,
+      "yield": 5.32
+    },
+    {
+      "code": "2007",
+      "name": "燁興",
+      "price": 6.65,
+      "volume": 253053.0,
+      "pe": null,
+      "pbr": 0.9,
+      "yield": null
+    },
+    {
+      "code": "2008",
+      "name": "高興昌",
+      "price": 30.5,
+      "volume": 39282.0,
+      "pe": 47.66,
+      "pbr": 1.41,
+      "yield": 3.28
+    },
+    {
+      "code": "2009",
+      "name": "第一銅",
+      "price": 38.2,
+      "volume": 868888.0,
+      "pe": 37.09,
+      "pbr": 1.57,
+      "yield": 1.05
+    },
+    {
+      "code": "2010",
+      "name": "春源",
+      "price": 21.55,
+      "volume": 544328.0,
+      "pe": 8.59,
+      "pbr": 1.11,
+      "yield": 9.28
+    },
+    {
+      "code": "2012",
+      "name": "春雨",
+      "price": 13.95,
+      "volume": 22527.0,
+      "pe": null,
+      "pbr": 1.04,
+      "yield": 2.15
+    },
+    {
+      "code": "2013",
+      "name": "中鋼構",
+      "price": 41.4,
+      "volume": 33224.0,
+      "pe": 12.66,
+      "pbr": 1.5,
+      "yield": 5.8
+    },
+    {
+      "code": "2014",
+      "name": "中鴻",
+      "price": 16.25,
+      "volume": 2321052.0,
+      "pe": null,
+      "pbr": 1.9,
+      "yield": null
+    },
+    {
+      "code": "2015",
+      "name": "豐興",
+      "price": 64.5,
+      "volume": 89765.0,
+      "pe": 15.07,
+      "pbr": 1.7,
+      "yield": 5.12
+    },
+    {
+      "code": "2017",
+      "name": "官田鋼",
+      "price": 8.62,
+      "volume": 340434.0,
+      "pe": null,
+      "pbr": 0.57,
+      "yield": null
+    },
+    {
+      "code": "2020",
+      "name": "美亞",
+      "price": 21.55,
+      "volume": 387958.0,
+      "pe": 10.41,
+      "pbr": 1.35,
+      "yield": 8.35
+    },
+    {
+      "code": "2022",
+      "name": "聚亨",
+      "price": 7.19,
+      "volume": 310625.0,
+      "pe": null,
+      "pbr": 0.73,
+      "yield": null
+    },
+    {
+      "code": "2023",
+      "name": "燁輝",
+      "price": 13.7,
+      "volume": 1486524.0,
+      "pe": null,
+      "pbr": 0.79,
+      "yield": null
+    },
+    {
+      "code": "2024",
+      "name": "志聯",
+      "price": 12.85,
+      "volume": 14997.0,
+      "pe": 44.31,
+      "pbr": 1.1,
+      "yield": null
+    },
+    {
+      "code": "2025",
+      "name": "千興",
+      "price": 11.85,
+      "volume": 392957.0,
+      "pe": 9.19,
+      "pbr": 0.98,
+      "yield": null
+    },
+    {
+      "code": "2027",
+      "name": "大成鋼",
+      "price": 45.0,
+      "volume": 12037554.0,
+      "pe": 8.88,
+      "pbr": 1.32,
+      "yield": 3.33
+    },
+    {
+      "code": "2028",
+      "name": "威致",
+      "price": 15.6,
+      "volume": 65002.0,
+      "pe": 36.28,
+      "pbr": 1.06,
+      "yield": 1.28
+    },
+    {
+      "code": "2029",
+      "name": "盛餘",
+      "price": 20.65,
+      "volume": 326731.0,
+      "pe": 17.21,
+      "pbr": 0.65,
+      "yield": 2.91
+    },
+    {
+      "code": "2030",
+      "name": "彰源",
+      "price": 22.2,
+      "volume": 2317619.0,
+      "pe": 11.33,
+      "pbr": 1.15,
+      "yield": 2.25
+    },
+    {
+      "code": "2031",
+      "name": "新光鋼",
+      "price": 43.3,
+      "volume": 228735.0,
+      "pe": 6.7,
+      "pbr": 1.16,
+      "yield": 5.77
+    },
+    {
+      "code": "2032",
+      "name": "新鋼",
+      "price": 16.85,
+      "volume": 300586.0,
+      "pe": 11.54,
+      "pbr": 1.22,
+      "yield": 2.97
+    },
+    {
+      "code": "2033",
+      "name": "佳大",
+      "price": 25.5,
+      "volume": 768559.0,
+      "pe": 75.0,
+      "pbr": 1.92,
+      "yield": null
+    },
+    {
+      "code": "2034",
+      "name": "允強",
+      "price": 20.45,
+      "volume": 1226459.0,
+      "pe": 48.69,
+      "pbr": 1.2,
+      "yield": 4.89
+    },
+    {
+      "code": "2038",
+      "name": "海光",
+      "price": 11.75,
+      "volume": 299531.0,
+      "pe": null,
+      "pbr": 0.6,
+      "yield": null
+    },
+    {
+      "code": "2049",
+      "name": "上銀",
+      "price": 329.0,
+      "volume": 5290726.0,
+      "pe": 49.85,
+      "pbr": 2.97,
+      "yield": 0.61
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "price": 11715.0,
+      "volume": 211570.0,
+      "pe": 64.58,
+      "pbr": 33.07,
+      "yield": 0.44
+    },
+    {
+      "code": "2062",
+      "name": "橋椿",
+      "price": 18.0,
+      "volume": 88301.0,
+      "pe": 64.29,
+      "pbr": 0.47,
+      "yield": 5.56
+    },
+    {
+      "code": "2069",
+      "name": "運錩",
+      "price": 22.8,
+      "volume": 1388503.0,
+      "pe": 8.91,
+      "pbr": 0.86,
+      "yield": 4.39
+    },
+    {
+      "code": "2072",
+      "name": "世紀風電",
+      "price": 127.5,
+      "volume": 157128.0,
+      "pe": 8.63,
+      "pbr": 1.01,
+      "yield": 5.55
+    },
+    {
+      "code": "2101",
+      "name": "南港",
+      "price": 30.0,
+      "volume": 843126.0,
+      "pe": 5.23,
+      "pbr": 1.44,
+      "yield": 2.33
+    },
+    {
+      "code": "2102",
+      "name": "泰豐",
+      "price": 17.8,
+      "volume": 120061.0,
+      "pe": 2.08,
+      "pbr": 0.85,
+      "yield": null
+    },
+    {
+      "code": "2103",
+      "name": "台橡",
+      "price": 25.75,
+      "volume": 1765093.0,
+      "pe": 10.34,
+      "pbr": 0.96,
+      "yield": 1.05
+    },
+    {
+      "code": "2104",
+      "name": "國際中橡",
+      "price": 10.3,
+      "volume": 823029.0,
+      "pe": null,
+      "pbr": 0.43,
+      "yield": null
+    },
+    {
+      "code": "2105",
+      "name": "正新",
+      "price": 30.0,
+      "volume": 4049274.0,
+      "pe": 16.48,
+      "pbr": 1.12,
+      "yield": 6.0
+    },
+    {
+      "code": "2106",
+      "name": "建大",
+      "price": 16.6,
+      "volume": 707336.0,
+      "pe": 35.32,
+      "pbr": 0.8,
+      "yield": 3.92
+    },
+    {
+      "code": "2107",
+      "name": "厚生",
+      "price": 26.7,
+      "volume": 202629.0,
+      "pe": 14.13,
+      "pbr": 0.54,
+      "yield": 5.24
+    },
+    {
+      "code": "2108",
+      "name": "南帝",
+      "price": 27.75,
+      "volume": 561831.0,
+      "pe": 15.59,
+      "pbr": 0.93,
+      "yield": 3.6
+    },
+    {
+      "code": "2109",
+      "name": "華豐",
+      "price": 14.7,
+      "volume": 136987.0,
+      "pe": 10.65,
+      "pbr": 1.16,
+      "yield": 6.8
+    },
+    {
+      "code": "2114",
+      "name": "鑫永銓",
+      "price": 88.6,
+      "volume": 4239.0,
+      "pe": 14.13,
+      "pbr": 2.28,
+      "yield": 5.64
+    },
+    {
+      "code": "2115",
+      "name": "六暉-KY",
+      "price": 23.7,
+      "volume": 53840.0,
+      "pe": 15.0,
+      "pbr": 0.75,
+      "yield": 6.33
+    },
+    {
+      "code": "2201",
+      "name": "裕隆",
+      "price": 29.65,
+      "volume": 2929514.0,
+      "pe": 33.31,
+      "pbr": 0.49,
+      "yield": 1.89
+    },
+    {
+      "code": "2204",
+      "name": "中華",
+      "price": 52.0,
+      "volume": 699842.0,
+      "pe": 8.47,
+      "pbr": 0.75,
+      "yield": 6.92
+    },
+    {
+      "code": "2206",
+      "name": "三陽工業",
+      "price": 63.4,
+      "volume": 1052906.0,
+      "pe": 10.62,
+      "pbr": 1.86,
+      "yield": 4.83
+    },
+    {
+      "code": "2207",
+      "name": "和泰車",
+      "price": 530.0,
+      "volume": 172922.0,
+      "pe": 13.03,
+      "pbr": 3.45,
+      "yield": 3.77
+    },
+    {
+      "code": "2208",
+      "name": "台船",
+      "price": 18.75,
+      "volume": 928659.0,
+      "pe": 38.27,
+      "pbr": 3.15,
+      "yield": null
+    },
+    {
+      "code": "2211",
+      "name": "長榮鋼",
+      "price": 80.1,
+      "volume": 586677.0,
+      "pe": 10.85,
+      "pbr": 1.21,
+      "yield": 8.11
+    },
+    {
+      "code": "2227",
+      "name": "裕日車",
+      "price": 45.6,
+      "volume": 114872.0,
+      "pe": null,
+      "pbr": 0.77,
+      "yield": 1.84
+    },
+    {
+      "code": "2228",
+      "name": "劍麟",
+      "price": 74.9,
+      "volume": 72925.0,
+      "pe": 18.45,
+      "pbr": 1.21,
+      "yield": 6.01
+    },
+    {
+      "code": "2231",
+      "name": "為升",
+      "price": 89.0,
+      "volume": 84419.0,
+      "pe": null,
+      "pbr": 3.57,
+      "yield": 0.56
+    },
+    {
+      "code": "2233",
+      "name": "宇隆",
+      "price": 156.5,
+      "volume": 263805.0,
+      "pe": 23.05,
+      "pbr": 2.28,
+      "yield": 2.56
+    },
+    {
+      "code": "2236",
+      "name": "百達-KY",
+      "price": 118.0,
+      "volume": 314246.0,
+      "pe": null,
+      "pbr": 3.08,
+      "yield": 0.55
+    },
+    {
+      "code": "2237",
+      "name": "華德動能-創",
+      "price": 26.8,
+      "volume": 39290.0,
+      "pe": 8.7,
+      "pbr": 2.19,
+      "yield": null
+    },
+    {
+      "code": "2239",
+      "name": "英利-KY",
+      "price": 19.3,
+      "volume": 16200.0,
+      "pe": null,
+      "pbr": 0.19,
+      "yield": null
+    },
+    {
+      "code": "2241",
+      "name": "艾姆勒",
+      "price": 33.35,
+      "volume": 155149.0,
+      "pe": null,
+      "pbr": 2.66,
+      "yield": null
+    },
+    {
+      "code": "2243",
+      "name": "宏旭-KY",
+      "price": 47.45,
+      "volume": 127776.0,
+      "pe": 45.19,
+      "pbr": 3.43,
+      "yield": null
+    },
+    {
+      "code": "2247",
+      "name": "汎德永業",
+      "price": 229.5,
+      "volume": 26645.0,
+      "pe": 16.56,
+      "pbr": 1.45,
+      "yield": 6.32
+    },
+    {
+      "code": "2248",
+      "name": "華勝-KY",
+      "price": 59.3,
+      "volume": 26006.0,
+      "pe": 8.2,
+      "pbr": 1.6,
+      "yield": 5.24
+    },
+    {
+      "code": "2250",
+      "name": "IKKA-KY",
+      "price": 54.8,
+      "volume": 54040.0,
+      "pe": 21.0,
+      "pbr": 0.99,
+      "yield": 5.47
+    },
+    {
+      "code": "2254",
+      "name": "巨鎧精密-創",
+      "price": 73.1,
+      "volume": 1509097.0,
+      "pe": null,
+      "pbr": 4.82,
+      "yield": null
+    },
+    {
+      "code": "2258",
+      "name": "鴻華先進-創",
+      "price": 30.05,
+      "volume": 286831.0,
+      "pe": null,
+      "pbr": 4.62,
+      "yield": null
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "price": 274.0,
+      "volume": 17907973.0,
+      "pe": 32.05,
+      "pbr": 6.49,
+      "yield": 1.82
+    },
+    {
+      "code": "2302",
+      "name": "麗正",
+      "price": 40.2,
+      "volume": 1486684.0,
+      "pe": 37.57,
+      "pbr": 3.64,
+      "yield": 0.87
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "price": 138.5,
+      "volume": 102009653.0,
+      "pe": 20.83,
+      "pbr": 3.91,
+      "yield": 1.88
+    },
+    {
+      "code": "2305",
+      "name": "全友",
+      "price": 44.95,
+      "volume": 93620288.0,
+      "pe": 54.82,
+      "pbr": 3.74,
+      "yield": null
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "price": 1670.0,
+      "volume": 14802962.0,
+      "pe": 53.15,
+      "pbr": 14.77,
+      "yield": 0.69
+    },
+    {
+      "code": "2312",
+      "name": "金寶",
+      "price": 31.1,
+      "volume": 8006946.0,
+      "pe": 26.13,
+      "pbr": 1.93,
+      "yield": 1.93
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "price": 218.5,
+      "volume": 11772158.0,
+      "pe": 35.19,
+      "pbr": 5.36,
+      "yield": 1.28
+    },
+    {
+      "code": "2314",
+      "name": "台揚",
+      "price": 11.0,
+      "volume": 90417.0,
+      "pe": null,
+      "pbr": 40.74,
+      "yield": null
+    },
+    {
+      "code": "2316",
+      "name": "楠梓電",
+      "price": 155.0,
+      "volume": 1022268.0,
+      "pe": 10.83,
+      "pbr": 1.95,
+      "yield": 1.29
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "price": 246.5,
+      "volume": 15812094.0,
+      "pe": 16.25,
+      "pbr": 1.81,
+      "yield": 2.91
+    },
+    {
+      "code": "2323",
+      "name": "中環",
+      "price": 10.4,
+      "volume": 3498973.0,
+      "pe": 3.43,
+      "pbr": 0.56,
+      "yield": 1.92
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "price": 36.95,
+      "volume": 46454725.0,
+      "pe": 18.57,
+      "pbr": 1.14,
+      "yield": 2.98
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "price": 537.0,
+      "volume": 22575963.0,
+      "pe": 36.16,
+      "pbr": 6.24,
+      "yield": 1.12
+    },
+    {
+      "code": "2328",
+      "name": "廣宇",
+      "price": 44.9,
+      "volume": 1828166.0,
+      "pe": 104.42,
+      "pbr": 1.59,
+      "yield": 2.0
+    },
+    {
+      "code": "2329",
+      "name": "華泰",
+      "price": 41.45,
+      "volume": 1213027.0,
+      "pe": 18.5,
+      "pbr": 1.66,
+      "yield": 2.41
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "price": 2385.0,
+      "volume": 15215752.0,
+      "pe": 27.65,
+      "pbr": 9.61,
+      "yield": 0.92
+    },
+    {
+      "code": "2331",
+      "name": "精英",
+      "price": 18.5,
+      "volume": 728374.0,
+      "pe": 18.32,
+      "pbr": 0.95,
+      "yield": null
+    },
+    {
+      "code": "2332",
+      "name": "友訊",
+      "price": 18.8,
+      "volume": 8493922.0,
+      "pe": null,
+      "pbr": 1.37,
+      "yield": null
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "price": 114.5,
+      "volume": 28359737.0,
+      "pe": 27.13,
+      "pbr": 3.66,
+      "yield": null
+    },
+    {
+      "code": "2338",
+      "name": "光罩",
+      "price": 46.1,
+      "volume": 29585483.0,
+      "pe": null,
+      "pbr": 2.45,
+      "yield": null
+    },
+    {
+      "code": "2340",
+      "name": "台亞",
+      "price": 31.15,
+      "volume": 1931697.0,
+      "pe": null,
+      "pbr": 2.15,
+      "yield": null
+    },
+    {
+      "code": "2342",
+      "name": "茂矽",
+      "price": 38.4,
+      "volume": 5432362.0,
+      "pe": null,
+      "pbr": 2.63,
+      "yield": null
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "price": 159.5,
+      "volume": 71179694.0,
+      "pe": 17.59,
+      "pbr": 4.35,
+      "yield": 0.31
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "price": 1840.0,
+      "volume": 2272078.0,
+      "pe": 28.91,
+      "pbr": 14.9,
+      "yield": 0.82
+    },
+    {
+      "code": "2347",
+      "name": "聯強",
+      "price": 88.5,
+      "volume": 2705824.0,
+      "pe": 12.11,
+      "pbr": 1.71,
+      "yield": 4.75
+    },
+    {
+      "code": "2348",
+      "name": "海悅",
+      "price": 70.2,
+      "volume": 171609.0,
+      "pe": 16.75,
+      "pbr": 1.65,
+      "yield": 7.83
+    },
+    {
+      "code": "2349",
+      "name": "錸德",
+      "price": 10.1,
+      "volume": 1210342.0,
+      "pe": null,
+      "pbr": 1.25,
+      "yield": null
+    },
+    {
+      "code": "2351",
+      "name": "順德",
+      "price": 251.5,
+      "volume": 12699025.0,
+      "pe": 64.32,
+      "pbr": 5.96,
+      "yield": 0.41
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "price": 28.3,
+      "volume": 3647989.0,
+      "pe": 36.75,
+      "pbr": 1.12,
+      "yield": 3.53
+    },
+    {
+      "code": "2353",
+      "name": "宏碁",
+      "price": 30.9,
+      "volume": 9020306.0,
+      "pe": 18.39,
+      "pbr": 1.2,
+      "yield": 4.21
+    },
+    {
+      "code": "2354",
+      "name": "鴻準",
+      "price": 64.6,
+      "volume": 6936955.0,
+      "pe": 27.37,
+      "pbr": 0.8,
+      "yield": 2.32
+    },
+    {
+      "code": "2355",
+      "name": "敬鵬",
+      "price": 40.4,
+      "volume": 1165926.0,
+      "pe": 21.26,
+      "pbr": 0.92,
+      "yield": 2.48
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "price": 60.5,
+      "volume": 9229037.0,
+      "pe": 19.52,
+      "pbr": 2.79,
+      "yield": 3.31
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "price": 928.0,
+      "volume": 2598522.0,
+      "pe": 13.57,
+      "pbr": 2.29,
+      "yield": 4.53
+    },
+    {
+      "code": "2359",
+      "name": "所羅門",
+      "price": 125.0,
+      "volume": 2049232.0,
+      "pe": 18.63,
+      "pbr": 3.35,
+      "yield": 0.8
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "price": 2080.0,
+      "volume": 985458.0,
+      "pe": 53.06,
+      "pbr": 26.71,
+      "yield": 0.94
+    },
+    {
+      "code": "2362",
+      "name": "藍天",
+      "price": 46.25,
+      "volume": 613204.0,
+      "pe": 7.61,
+      "pbr": 0.57,
+      "yield": 4.32
+    },
+    {
+      "code": "2363",
+      "name": "矽統",
+      "price": 50.3,
+      "volume": 2106753.0,
+      "pe": 93.15,
+      "pbr": 0.53,
+      "yield": 1.21
+    },
+    {
+      "code": "2364",
+      "name": "倫飛",
+      "price": 64.0,
+      "volume": 164571.0,
+      "pe": 10.81,
+      "pbr": 3.74,
+      "yield": 4.69
+    },
+    {
+      "code": "2365",
+      "name": "昆盈",
+      "price": 27.1,
+      "volume": 781512.0,
+      "pe": 49.27,
+      "pbr": 1.95,
+      "yield": 1.11
+    },
+    {
+      "code": "2367",
+      "name": "燿華",
+      "price": 39.55,
+      "volume": 2130451.0,
+      "pe": null,
+      "pbr": 2.27,
+      "yield": 0.51
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "price": 972.0,
+      "volume": 6666940.0,
+      "pe": 34.89,
+      "pbr": 11.93,
+      "yield": 1.01
+    },
+    {
+      "code": "2369",
+      "name": "菱生",
+      "price": 28.85,
+      "volume": 1907224.0,
+      "pe": null,
+      "pbr": 2.2,
+      "yield": null
+    },
+    {
+      "code": "2371",
+      "name": "大同",
+      "price": 28.1,
+      "volume": 7713128.0,
+      "pe": null,
+      "pbr": 1.19,
+      "yield": null
+    },
+    {
+      "code": "2373",
+      "name": "震旦行",
+      "price": 52.5,
+      "volume": 39389.0,
+      "pe": 14.04,
+      "pbr": 1.59,
+      "yield": 7.05
+    },
+    {
+      "code": "2374",
+      "name": "佳能",
+      "price": 65.7,
+      "volume": 1326411.0,
+      "pe": 20.28,
+      "pbr": 2.49,
+      "yield": 3.03
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "price": 117.5,
+      "volume": 1600067.0,
+      "pe": 28.25,
+      "pbr": 1.2,
+      "yield": 1.02
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "price": 343.0,
+      "volume": 2237694.0,
+      "pe": 12.84,
+      "pbr": 3.45,
+      "yield": 3.5
+    },
+    {
+      "code": "2377",
+      "name": "微星",
+      "price": 148.0,
+      "volume": 3410222.0,
+      "pe": 12.84,
+      "pbr": 2.15,
+      "yield": 2.84
+    },
+    {
+      "code": "2379",
+      "name": "瑞昱",
+      "price": 703.0,
+      "volume": 1859893.0,
+      "pe": 25.49,
+      "pbr": 7.19,
+      "yield": 3.56
+    },
+    {
+      "code": "2380",
+      "name": "虹光",
+      "price": 16.8,
+      "volume": 37785.0,
+      "pe": null,
+      "pbr": 1.71,
+      "yield": null
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "price": 333.0,
+      "volume": 7988351.0,
+      "pe": 14.51,
+      "pbr": 5.27,
+      "yield": 4.68
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "price": 5115.0,
+      "volume": 1525730.0,
+      "pe": 79.98,
+      "pbr": 31.42,
+      "yield": 0.49
+    },
+    {
+      "code": "2385",
+      "name": "群光",
+      "price": 105.5,
+      "volume": 1455229.0,
+      "pe": 11.84,
+      "pbr": 1.72,
+      "yield": 6.82
+    },
+    {
+      "code": "2387",
+      "name": "精元",
+      "price": 36.1,
+      "volume": 121236.0,
+      "pe": 12.11,
+      "pbr": 0.67,
+      "yield": 11.08
+    },
+    {
+      "code": "2388",
+      "name": "威盛",
+      "price": 69.4,
+      "volume": 3721940.0,
+      "pe": 43.38,
+      "pbr": 1.74,
+      "yield": 0.07
+    },
+    {
+      "code": "2390",
+      "name": "云辰",
+      "price": 9.94,
+      "volume": 239914.0,
+      "pe": null,
+      "pbr": 0.81,
+      "yield": null
+    },
+    {
+      "code": "2392",
+      "name": "正崴",
+      "price": 41.1,
+      "volume": 1985053.0,
+      "pe": 5.3,
+      "pbr": 0.67,
+      "yield": 2.43
+    },
+    {
+      "code": "2393",
+      "name": "億光",
+      "price": 61.7,
+      "volume": 516010.0,
+      "pe": 13.16,
+      "pbr": 1.42,
+      "yield": 7.29
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "price": 685.0,
+      "volume": 3502426.0,
+      "pe": 43.38,
+      "pbr": 10.76,
+      "yield": 1.63
+    },
+    {
+      "code": "2397",
+      "name": "友通",
+      "price": 59.0,
+      "volume": 136367.0,
+      "pe": 21.61,
+      "pbr": 2.0,
+      "yield": 4.15
+    },
+    {
+      "code": "2399",
+      "name": "映泰",
+      "price": 46.0,
+      "volume": 4643801.0,
+      "pe": 11.59,
+      "pbr": 2.89,
+      "yield": null
+    },
+    {
+      "code": "2401",
+      "name": "凌陽",
+      "price": 23.75,
+      "volume": 1721054.0,
+      "pe": 237.5,
+      "pbr": 1.65,
+      "yield": null
+    },
+    {
+      "code": "2402",
+      "name": "毅嘉",
+      "price": 53.4,
+      "volume": 1091415.0,
+      "pe": 31.98,
+      "pbr": 2.26,
+      "yield": 3.75
+    },
+    {
+      "code": "2404",
+      "name": "漢唐",
+      "price": 1035.0,
+      "volume": 965057.0,
+      "pe": 15.61,
+      "pbr": 10.91,
+      "yield": 3.86
+    },
+    {
+      "code": "2405",
+      "name": "輔信",
+      "price": 14.65,
+      "volume": 497201.0,
+      "pe": null,
+      "pbr": 1.46,
+      "yield": 0.68
+    },
+    {
+      "code": "2406",
+      "name": "國碩",
+      "price": 25.85,
+      "volume": 1698955.0,
+      "pe": 143.61,
+      "pbr": 2.45,
+      "yield": null
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "price": 465.5,
+      "volume": 34239430.0,
+      "pe": 18.06,
+      "pbr": 4.98,
+      "yield": 0.29
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "price": 27.9,
+      "volume": 238024652.0,
+      "pe": 116.25,
+      "pbr": 1.36,
+      "yield": 1.43
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "price": 143.5,
+      "volume": 16914018.0,
+      "pe": 28.19,
+      "pbr": 3.04,
+      "yield": 3.62
+    },
+    {
+      "code": "2413",
+      "name": "環科",
+      "price": 48.2,
+      "volume": 3950916.0,
+      "pe": 12.85,
+      "pbr": 2.72,
+      "yield": 1.04
+    },
+    {
+      "code": "2414",
+      "name": "精技",
+      "price": 52.5,
+      "volume": 129546.0,
+      "pe": 12.77,
+      "pbr": 2.69,
+      "yield": 5.71
+    },
+    {
+      "code": "2415",
+      "name": "錩新",
+      "price": 26.95,
+      "volume": 39205.0,
+      "pe": 17.17,
+      "pbr": 1.4,
+      "yield": 5.9
+    },
+    {
+      "code": "2417",
+      "name": "圓剛",
+      "price": 37.95,
+      "volume": 277605.0,
+      "pe": 27.3,
+      "pbr": 1.76,
+      "yield": 0.66
+    },
+    {
+      "code": "2419",
+      "name": "仲琦",
+      "price": 26.6,
+      "volume": 493599.0,
+      "pe": 665.0,
+      "pbr": 1.77,
+      "yield": null
+    },
+    {
+      "code": "2420",
+      "name": "新巨",
+      "price": 53.4,
+      "volume": 233052.0,
+      "pe": 11.95,
+      "pbr": 2.09,
+      "yield": 5.62
+    },
+    {
+      "code": "2421",
+      "name": "建準",
+      "price": 158.0,
+      "volume": 2719238.0,
+      "pe": 16.99,
+      "pbr": 4.29,
+      "yield": 3.32
+    },
+    {
+      "code": "2423",
+      "name": "固緯",
+      "price": 72.0,
+      "volume": 44303.0,
+      "pe": 17.06,
+      "pbr": 3.49,
+      "yield": 3.47
+    },
+    {
+      "code": "2424",
+      "name": "隴華",
+      "price": 7.97,
+      "volume": 16185.0,
+      "pe": null,
+      "pbr": 1.88,
+      "yield": null
+    },
+    {
+      "code": "2425",
+      "name": "承啟",
+      "price": 35.6,
+      "volume": 539910.0,
+      "pe": 20.0,
+      "pbr": 1.37,
+      "yield": 0.28
+    },
+    {
+      "code": "2426",
+      "name": "鼎元",
+      "price": 90.8,
+      "volume": 26180761.0,
+      "pe": 908.0,
+      "pbr": 7.12,
+      "yield": 0.11
+    },
+    {
+      "code": "2427",
+      "name": "三商電",
+      "price": 24.35,
+      "volume": 5301477.0,
+      "pe": 17.15,
+      "pbr": 1.38,
+      "yield": 2.87
+    },
+    {
+      "code": "2428",
+      "name": "興勤",
+      "price": 253.0,
+      "volume": 794119.0,
+      "pe": 17.98,
+      "pbr": 2.74,
+      "yield": 2.33
+    },
+    {
+      "code": "2429",
+      "name": "銘旺科",
+      "price": 30.05,
+      "volume": 113436.0,
+      "pe": null,
+      "pbr": 3.62,
+      "yield": null
+    },
+    {
+      "code": "2430",
+      "name": "燦坤",
+      "price": 18.0,
+      "volume": 34539.0,
+      "pe": 36.73,
+      "pbr": 0.49,
+      "yield": 4.44
+    },
+    {
+      "code": "2431",
+      "name": "聯昌",
+      "price": 9.76,
+      "volume": 206137.0,
+      "pe": null,
+      "pbr": 1.0,
+      "yield": null
+    },
+    {
+      "code": "2432",
+      "name": "倚天酷碁-創",
+      "price": 27.05,
+      "volume": 46000.0,
+      "pe": 12.3,
+      "pbr": 1.44,
+      "yield": 6.28
+    },
+    {
+      "code": "2433",
+      "name": "互盛電",
+      "price": 40.25,
+      "volume": 77767.0,
+      "pe": 13.37,
+      "pbr": 1.78,
+      "yield": 6.71
+    },
+    {
+      "code": "2434",
+      "name": "統懋",
+      "price": 59.3,
+      "volume": 323108.0,
+      "pe": null,
+      "pbr": 4.89,
+      "yield": null
+    },
+    {
+      "code": "2436",
+      "name": "偉詮電",
+      "price": 66.3,
+      "volume": 3379379.0,
+      "pe": 12.19,
+      "pbr": 2.78,
+      "yield": 2.96
+    },
+    {
+      "code": "2438",
+      "name": "翔耀",
+      "price": 19.8,
+      "volume": 84810.0,
+      "pe": null,
+      "pbr": 3.55,
+      "yield": null
+    },
+    {
+      "code": "2439",
+      "name": "美律",
+      "price": 76.6,
+      "volume": 920480.0,
+      "pe": 13.98,
+      "pbr": 1.13,
+      "yield": 5.33
+    },
+    {
+      "code": "2440",
+      "name": "太空梭",
+      "price": 13.8,
+      "volume": 214588.0,
+      "pe": 98.57,
+      "pbr": 1.06,
+      "yield": null
+    },
+    {
+      "code": "2441",
+      "name": "超豐",
+      "price": 115.0,
+      "volume": 6099917.0,
+      "pe": 21.3,
+      "pbr": 2.38,
+      "yield": 2.62
+    },
+    {
+      "code": "2442",
+      "name": "新美齊",
+      "price": 14.45,
+      "volume": 1093630.0,
+      "pe": 2.84,
+      "pbr": 0.68,
+      "yield": 18.96
+    },
+    {
+      "code": "2444",
+      "name": "兆勁",
+      "price": 11.65,
+      "volume": 250935.0,
+      "pe": null,
+      "pbr": 1.77,
+      "yield": null
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "price": 257.0,
+      "volume": 7605273.0,
+      "pe": 33.68,
+      "pbr": 5.01,
+      "yield": 0.58
+    },
+    {
+      "code": "2450",
+      "name": "神腦",
+      "price": 28.25,
+      "volume": 47457.0,
+      "pe": 17.44,
+      "pbr": 1.17,
+      "yield": 5.49
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "price": 273.0,
+      "volume": 1233606.0,
+      "pe": 4.75,
+      "pbr": 3.06,
+      "yield": 4.32
+    },
+    {
+      "code": "2453",
+      "name": "凌群",
+      "price": 53.6,
+      "volume": 1042773.0,
+      "pe": 16.96,
+      "pbr": 2.53,
+      "yield": 5.22
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "price": 4430.0,
+      "volume": 6209254.0,
+      "pe": 73.16,
+      "pbr": 16.67,
+      "yield": 1.21
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "price": 520.0,
+      "volume": 1671642.0,
+      "pe": 127.45,
+      "pbr": 26.33,
+      "yield": 0.5
+    },
+    {
+      "code": "2457",
+      "name": "飛宏",
+      "price": 21.05,
+      "volume": 1203973.0,
+      "pe": null,
+      "pbr": 1.01,
+      "yield": null
+    },
+    {
+      "code": "2458",
+      "name": "義隆",
+      "price": 125.0,
+      "volume": 724849.0,
+      "pe": 11.62,
+      "pbr": 3.19,
+      "yield": 5.66
+    },
+    {
+      "code": "2459",
+      "name": "敦吉",
+      "price": 65.3,
+      "volume": 31265.0,
+      "pe": 11.68,
+      "pbr": 1.16,
+      "yield": 6.43
+    },
+    {
+      "code": "2460",
+      "name": "建通",
+      "price": 28.8,
+      "volume": 347798.0,
+      "pe": null,
+      "pbr": 2.99,
+      "yield": null
+    },
+    {
+      "code": "2461",
+      "name": "光群雷",
+      "price": 17.4,
+      "volume": 246569.0,
+      "pe": 39.55,
+      "pbr": 0.94,
+      "yield": null
+    },
+    {
+      "code": "2462",
+      "name": "良得電",
+      "price": 18.9,
+      "volume": 148131.0,
+      "pe": 30.98,
+      "pbr": 0.86,
+      "yield": 1.06
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "price": 176.0,
+      "volume": 6261941.0,
+      "pe": 463.16,
+      "pbr": 6.68,
+      "yield": 0.27
+    },
+    {
+      "code": "2465",
+      "name": "麗臺",
+      "price": 89.5,
+      "volume": 1093990.0,
+      "pe": 33.03,
+      "pbr": 6.17,
+      "yield": null
+    },
+    {
+      "code": "2466",
+      "name": "冠西電",
+      "price": 102.0,
+      "volume": 701940.0,
+      "pe": 64.97,
+      "pbr": 9.13,
+      "yield": null
+    },
+    {
+      "code": "2467",
+      "name": "志聖",
+      "price": 516.0,
+      "volume": 794077.0,
+      "pe": 51.5,
+      "pbr": 5.14,
+      "yield": 1.07
+    },
+    {
+      "code": "2468",
+      "name": "華經",
+      "price": 43.25,
+      "volume": 7140627.0,
+      "pe": 31.8,
+      "pbr": 2.42,
+      "yield": 2.31
+    },
+    {
+      "code": "2471",
+      "name": "資通",
+      "price": 51.7,
+      "volume": 1987251.0,
+      "pe": 10.68,
+      "pbr": 2.82,
+      "yield": 6.4
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "price": 208.0,
+      "volume": 2251524.0,
+      "pe": 21.18,
+      "pbr": 3.59,
+      "yield": 1.68
+    },
+    {
+      "code": "2474",
+      "name": "可成",
+      "price": 203.5,
+      "volume": 1707551.0,
+      "pe": 13.54,
+      "pbr": 0.79,
+      "yield": 5.05
+    },
+    {
+      "code": "2476",
+      "name": "鉅祥",
+      "price": 117.0,
+      "volume": 691939.0,
+      "pe": 19.02,
+      "pbr": 2.81,
+      "yield": 2.54
+    },
+    {
+      "code": "2477",
+      "name": "美隆電",
+      "price": 21.75,
+      "volume": 71307.0,
+      "pe": 24.72,
+      "pbr": 0.85,
+      "yield": 6.44
+    },
+    {
+      "code": "2478",
+      "name": "大毅",
+      "price": 117.0,
+      "volume": 1494229.0,
+      "pe": 24.07,
+      "pbr": 2.3,
+      "yield": 1.71
+    },
+    {
+      "code": "2480",
+      "name": "敦陽科",
+      "price": 161.0,
+      "volume": 428248.0,
+      "pe": 18.38,
+      "pbr": 5.23,
+      "yield": 4.84
+    },
+    {
+      "code": "2481",
+      "name": "強茂",
+      "price": 153.5,
+      "volume": 58386182.0,
+      "pe": 40.72,
+      "pbr": 3.89,
+      "yield": 1.17
+    },
+    {
+      "code": "2482",
+      "name": "連宇",
+      "price": 15.65,
+      "volume": 34970.0,
+      "pe": null,
+      "pbr": 1.1,
+      "yield": 0.64
+    },
+    {
+      "code": "2483",
+      "name": "百容",
+      "price": 30.3,
+      "volume": 304112.0,
+      "pe": 121.2,
+      "pbr": 1.19,
+      "yield": 0.99
+    },
+    {
+      "code": "2484",
+      "name": "希華",
+      "price": 68.0,
+      "volume": 4704529.0,
+      "pe": 48.92,
+      "pbr": 2.64,
+      "yield": 1.03
+    },
+    {
+      "code": "2485",
+      "name": "兆赫",
+      "price": 37.55,
+      "volume": 1328003.0,
+      "pe": 42.67,
+      "pbr": 2.23,
+      "yield": null
+    },
+    {
+      "code": "2486",
+      "name": "一詮",
+      "price": 228.0,
+      "volume": 3063177.0,
+      "pe": 196.55,
+      "pbr": 8.87,
+      "yield": 0.22
+    },
+    {
+      "code": "2488",
+      "name": "漢平",
+      "price": 48.3,
+      "volume": 55198.0,
+      "pe": 9.92,
+      "pbr": 1.39,
+      "yield": 6.21
+    },
+    {
+      "code": "2489",
+      "name": "瑞軒",
+      "price": 37.5,
+      "volume": 15674743.0,
+      "pe": 26.98,
+      "pbr": 1.73,
+      "yield": 3.2
+    },
+    {
+      "code": "2491",
+      "name": "吉祥全",
+      "price": 39.95,
+      "volume": 628740.0,
+      "pe": 1.25,
+      "pbr": 0.8,
+      "yield": null
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "price": 300.0,
+      "volume": 21610352.0,
+      "pe": 33.71,
+      "pbr": 2.19,
+      "yield": 0.83
+    },
+    {
+      "code": "2493",
+      "name": "揚博",
+      "price": 171.0,
+      "volume": 522879.0,
+      "pe": 32.7,
+      "pbr": 7.03,
+      "yield": 2.34
+    },
+    {
+      "code": "2495",
+      "name": "普安",
+      "price": 36.45,
+      "volume": 1455835.0,
+      "pe": 17.96,
+      "pbr": 2.2,
+      "yield": 2.19
+    },
+    {
+      "code": "2496",
+      "name": "卓越",
+      "price": 54.9,
+      "volume": 3531.0,
+      "pe": 9.12,
+      "pbr": 1.26,
+      "yield": 9.11
+    },
+    {
+      "code": "2497",
+      "name": "怡利電",
+      "price": 42.95,
+      "volume": 155751.0,
+      "pe": 13.46,
+      "pbr": 1.92,
+      "yield": 4.66
+    },
+    {
+      "code": "2498",
+      "name": "宏達電",
+      "price": 39.25,
+      "volume": 2667623.0,
+      "pe": 15.15,
+      "pbr": 1.25,
+      "yield": 1.27
+    },
+    {
+      "code": "2501",
+      "name": "國建",
+      "price": 21.3,
+      "volume": 3634884.0,
+      "pe": 7.42,
+      "pbr": 0.77,
+      "yield": 5.63
+    },
+    {
+      "code": "2504",
+      "name": "國產",
+      "price": 30.5,
+      "volume": 1858662.0,
+      "pe": 9.56,
+      "pbr": 1.39,
+      "yield": 8.52
+    },
+    {
+      "code": "2505",
+      "name": "國揚",
+      "price": 17.15,
+      "volume": 253507.0,
+      "pe": 8.66,
+      "pbr": 0.61,
+      "yield": 5.83
+    },
+    {
+      "code": "2506",
+      "name": "太設",
+      "price": 8.57,
+      "volume": 146181.0,
+      "pe": 23.81,
+      "pbr": 0.39,
+      "yield": 2.33
+    },
+    {
+      "code": "2509",
+      "name": "全坤建",
+      "price": 14.05,
+      "volume": 95860.0,
+      "pe": null,
+      "pbr": 0.82,
+      "yield": null
+    },
+    {
+      "code": "2511",
+      "name": "太子",
+      "price": 8.37,
+      "volume": 480766.0,
+      "pe": 23.91,
+      "pbr": 0.53,
+      "yield": 3.58
+    },
+    {
+      "code": "2514",
+      "name": "龍邦",
+      "price": 11.5,
+      "volume": 137769.0,
+      "pe": 29.49,
+      "pbr": 0.33,
+      "yield": null
+    },
+    {
+      "code": "2515",
+      "name": "中工",
+      "price": 11.75,
+      "volume": 5105437.0,
+      "pe": 24.48,
+      "pbr": 0.81,
+      "yield": 4.26
+    },
+    {
+      "code": "2516",
+      "name": "新建",
+      "price": 14.35,
+      "volume": 57316.0,
+      "pe": 9.57,
+      "pbr": 1.47,
+      "yield": null
+    },
+    {
+      "code": "2520",
+      "name": "冠德",
+      "price": 36.5,
+      "volume": 1083142.0,
+      "pe": 10.86,
+      "pbr": 0.9,
+      "yield": 4.44
+    },
+    {
+      "code": "2524",
+      "name": "京城",
+      "price": 33.3,
+      "volume": 88830.0,
+      "pe": 40.61,
+      "pbr": 0.57,
+      "yield": null
+    },
+    {
+      "code": "2527",
+      "name": "宏璟",
+      "price": 42.5,
+      "volume": 499243.0,
+      "pe": 7.47,
+      "pbr": 0.3,
+      "yield": 3.53
+    },
+    {
+      "code": "2528",
+      "name": "皇普",
+      "price": 19.5,
+      "volume": 221913.0,
+      "pe": 7.93,
+      "pbr": 1.13,
+      "yield": 15.38
+    },
+    {
+      "code": "2530",
+      "name": "華建",
+      "price": 20.15,
+      "volume": 805807.0,
+      "pe": 30.53,
+      "pbr": 1.7,
+      "yield": 11.46
+    },
+    {
+      "code": "2534",
+      "name": "宏盛",
+      "price": 16.7,
+      "volume": 213067.0,
+      "pe": 334.0,
+      "pbr": 0.55,
+      "yield": 8.98
+    },
+    {
+      "code": "2535",
+      "name": "達欣工",
+      "price": 88.6,
+      "volume": 170019.0,
+      "pe": 8.68,
+      "pbr": 2.13,
+      "yield": 5.19
+    },
+    {
+      "code": "2536",
+      "name": "宏普",
+      "price": 19.1,
+      "volume": 438700.0,
+      "pe": 4.6,
+      "pbr": 0.5,
+      "yield": 10.47
+    },
+    {
+      "code": "2537",
+      "name": "聯上發",
+      "price": 11.05,
+      "volume": 616251.0,
+      "pe": 27.63,
+      "pbr": 0.73,
+      "yield": null
+    },
+    {
+      "code": "2538",
+      "name": "基泰",
+      "price": 8.63,
+      "volume": 633201.0,
+      "pe": 14.38,
+      "pbr": 0.7,
+      "yield": 5.79
+    },
+    {
+      "code": "2539",
+      "name": "櫻花建",
+      "price": 34.05,
+      "volume": 908259.0,
+      "pe": 8.09,
+      "pbr": 2.03,
+      "yield": 8.22
+    },
+    {
+      "code": "2540",
+      "name": "愛山林",
+      "price": 47.5,
+      "volume": 406019.0,
+      "pe": null,
+      "pbr": 4.17,
+      "yield": 12.63
+    },
+    {
+      "code": "2542",
+      "name": "興富發",
+      "price": 45.25,
+      "volume": 9711683.0,
+      "pe": 10.47,
+      "pbr": 1.93,
+      "yield": 8.84
+    },
+    {
+      "code": "2543",
+      "name": "皇昌",
+      "price": 37.35,
+      "volume": 525134.0,
+      "pe": 12.92,
+      "pbr": 2.05,
+      "yield": 4.1
+    },
+    {
+      "code": "2545",
+      "name": "皇翔",
+      "price": 33.15,
+      "volume": 84780.0,
+      "pe": 34.89,
+      "pbr": 0.86,
+      "yield": 8.45
+    },
+    {
+      "code": "2546",
+      "name": "根基",
+      "price": 105.5,
+      "volume": 238982.0,
+      "pe": 7.06,
+      "pbr": 2.1,
+      "yield": 5.69
+    },
+    {
+      "code": "2547",
+      "name": "日勝生",
+      "price": 9.69,
+      "volume": 2249415.0,
+      "pe": 80.75,
+      "pbr": 0.74,
+      "yield": 8.26
+    },
+    {
+      "code": "2548",
+      "name": "華固",
+      "price": 91.6,
+      "volume": 1610583.0,
+      "pe": 7.41,
+      "pbr": 1.41,
+      "yield": 9.28
+    },
+    {
+      "code": "2597",
+      "name": "潤弘",
+      "price": 169.5,
+      "volume": 115120.0,
+      "pe": 14.54,
+      "pbr": 7.08,
+      "yield": 5.71
+    },
+    {
+      "code": "2601",
+      "name": "益航",
+      "price": 6.23,
+      "volume": 2025754.0,
+      "pe": null,
+      "pbr": 0.7,
+      "yield": null
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "price": 233.5,
+      "volume": 6962846.0,
+      "pe": 9.26,
+      "pbr": 0.9,
+      "yield": 6.85
+    },
+    {
+      "code": "2605",
+      "name": "新興",
+      "price": 35.05,
+      "volume": 8993430.0,
+      "pe": 7.15,
+      "pbr": 1.06,
+      "yield": 2.85
+    },
+    {
+      "code": "2606",
+      "name": "裕民",
+      "price": 74.6,
+      "volume": 4503726.0,
+      "pe": 11.0,
+      "pbr": 1.56,
+      "yield": 3.75
+    },
+    {
+      "code": "2607",
+      "name": "榮運",
+      "price": 53.0,
+      "volume": 194503.0,
+      "pe": 10.58,
+      "pbr": 0.9,
+      "yield": 5.09
+    },
+    {
+      "code": "2608",
+      "name": "嘉里大榮",
+      "price": 28.6,
+      "volume": 112075.0,
+      "pe": 14.9,
+      "pbr": 1.1,
+      "yield": 5.77
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "price": 58.8,
+      "volume": 22032722.0,
+      "pe": 13.24,
+      "pbr": 0.63,
+      "yield": 3.4
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "price": 19.9,
+      "volume": 22908902.0,
+      "pe": 9.21,
+      "pbr": 1.22,
+      "yield": 4.07
+    },
+    {
+      "code": "2611",
+      "name": "志信",
+      "price": 14.0,
+      "volume": 427341.0,
+      "pe": 7.91,
+      "pbr": 0.95,
+      "yield": 3.71
+    },
+    {
+      "code": "2612",
+      "name": "中航",
+      "price": 61.5,
+      "volume": 594852.0,
+      "pe": 11.94,
+      "pbr": 0.88,
+      "yield": 3.58
+    },
+    {
+      "code": "2613",
+      "name": "中櫃",
+      "price": 21.8,
+      "volume": 192836.0,
+      "pe": 16.39,
+      "pbr": 0.92,
+      "yield": 4.59
+    },
+    {
+      "code": "2614",
+      "name": "東森",
+      "price": 17.7,
+      "volume": 444311.0,
+      "pe": 8.63,
+      "pbr": 1.3,
+      "yield": 6.78
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "price": 112.0,
+      "volume": 8078477.0,
+      "pe": 7.69,
+      "pbr": 1.09,
+      "yield": 2.68
+    },
+    {
+      "code": "2616",
+      "name": "山隆",
+      "price": 13.25,
+      "volume": 61118.0,
+      "pe": null,
+      "pbr": 0.73,
+      "yield": 2.26
+    },
+    {
+      "code": "2617",
+      "name": "台航",
+      "price": 32.4,
+      "volume": 1456809.0,
+      "pe": 8.71,
+      "pbr": 0.75,
+      "yield": 4.63
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "price": 41.2,
+      "volume": 20290683.0,
+      "pe": 8.67,
+      "pbr": 1.6,
+      "yield": 4.85
+    },
+    {
+      "code": "2630",
+      "name": "亞航",
+      "price": 46.25,
+      "volume": 778426.0,
+      "pe": 81.14,
+      "pbr": 2.86,
+      "yield": 1.95
+    },
+    {
+      "code": "2633",
+      "name": "台灣高鐵",
+      "price": 25.85,
+      "volume": 4195719.0,
+      "pe": 21.19,
+      "pbr": 2.08,
+      "yield": 4.45
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "price": 62.0,
+      "volume": 7430842.0,
+      "pe": 29.95,
+      "pbr": 3.18,
+      "yield": 1.26
+    },
+    {
+      "code": "2636",
+      "name": "台驊控股",
+      "price": 69.2,
+      "volume": 233086.0,
+      "pe": 9.83,
+      "pbr": 0.98,
+      "yield": 7.23
+    },
+    {
+      "code": "2637",
+      "name": "慧洋-KY",
+      "price": 96.9,
+      "volume": 3917647.0,
+      "pe": 10.78,
+      "pbr": 1.46,
+      "yield": 3.61
+    },
+    {
+      "code": "2642",
+      "name": "宅配通",
+      "price": 20.2,
+      "volume": 23178.0,
+      "pe": null,
+      "pbr": 1.06,
+      "yield": 2.48
+    },
+    {
+      "code": "2645",
+      "name": "長榮航太",
+      "price": 170.0,
+      "volume": 860644.0,
+      "pe": 21.68,
+      "pbr": 4.75,
+      "yield": 2.94
+    },
+    {
+      "code": "2646",
+      "name": "星宇航空",
+      "price": 20.1,
+      "volume": 5088904.0,
+      "pe": null,
+      "pbr": 1.97,
+      "yield": null
+    },
+    {
+      "code": "2701",
+      "name": "萬企",
+      "price": 10.3,
+      "volume": 60709.0,
+      "pe": 17.46,
+      "pbr": 0.55,
+      "yield": 2.72
+    },
+    {
+      "code": "2702",
+      "name": "華園",
+      "price": 12.65,
+      "volume": 21010.0,
+      "pe": 15.62,
+      "pbr": 0.6,
+      "yield": null
+    },
+    {
+      "code": "2704",
+      "name": "國賓",
+      "price": 44.95,
+      "volume": 47671.0,
+      "pe": 16.9,
+      "pbr": 0.51,
+      "yield": 1.11
+    },
+    {
+      "code": "2705",
+      "name": "六福",
+      "price": 15.25,
+      "volume": 113760.0,
+      "pe": 20.61,
+      "pbr": 0.59,
+      "yield": null
+    },
+    {
+      "code": "2706",
+      "name": "第一店",
+      "price": 12.1,
+      "volume": 67560.0,
+      "pe": 17.79,
+      "pbr": 0.59,
+      "yield": 2.89
+    },
+    {
+      "code": "2707",
+      "name": "晶華",
+      "price": 177.5,
+      "volume": 62775.0,
+      "pe": 12.29,
+      "pbr": 5.82,
+      "yield": 6.06
+    },
+    {
+      "code": "2712",
+      "name": "遠雄來",
+      "price": 13.8,
+      "volume": 77000.0,
+      "pe": null,
+      "pbr": 1.44,
+      "yield": null
+    },
+    {
+      "code": "2722",
+      "name": "夏都",
+      "price": 21.15,
+      "volume": 51811.0,
+      "pe": null,
+      "pbr": 1.22,
+      "yield": null
+    },
+    {
+      "code": "2723",
+      "name": "美食-KY",
+      "price": 77.6,
+      "volume": 171562.0,
+      "pe": null,
+      "pbr": 1.3,
+      "yield": null
+    },
+    {
+      "code": "2727",
+      "name": "王品",
+      "price": 228.5,
+      "volume": 94232.0,
+      "pe": 12.69,
+      "pbr": 4.45,
+      "yield": 7.05
+    },
+    {
+      "code": "2731",
+      "name": "雄獅",
+      "price": 141.5,
+      "volume": 207010.0,
+      "pe": 8.71,
+      "pbr": 2.96,
+      "yield": 9.05
+    },
+    {
+      "code": "2739",
+      "name": "寒舍",
+      "price": 36.5,
+      "volume": 62619.0,
+      "pe": 9.06,
+      "pbr": 2.04,
+      "yield": 7.07
+    },
+    {
+      "code": "2748",
+      "name": "雲品",
+      "price": 38.95,
+      "volume": 34475.0,
+      "pe": 15.33,
+      "pbr": 1.39,
+      "yield": 4.49
+    },
+    {
+      "code": "2753",
+      "name": "八方雲集",
+      "price": 176.5,
+      "volume": 174259.0,
+      "pe": 12.58,
+      "pbr": 3.12,
+      "yield": 6.8
+    },
+    {
+      "code": "2762",
+      "name": "世界健身-KY",
+      "price": 79.4,
+      "volume": 32376.0,
+      "pe": 12.07,
+      "pbr": 3.23,
+      "yield": 7.49
+    },
+    {
+      "code": "2801",
+      "name": "彰銀",
+      "price": 28.0,
+      "volume": 38455068.0,
+      "pe": 16.47,
+      "pbr": 1.43,
+      "yield": 3.75
+    },
+    {
+      "code": "2812",
+      "name": "台中銀",
+      "price": 19.35,
+      "volume": 14214013.0,
+      "pe": 11.52,
+      "pbr": 1.21,
+      "yield": 5.48
+    },
+    {
+      "code": "2816",
+      "name": "旺旺保",
+      "price": 39.1,
+      "volume": 380707.0,
+      "pe": 3.4,
+      "pbr": 0.91,
+      "yield": 3.84
+    },
+    {
+      "code": "2820",
+      "name": "華票",
+      "price": 17.35,
+      "volume": 2974451.0,
+      "pe": 10.27,
+      "pbr": 0.84,
+      "yield": 5.19
+    },
+    {
+      "code": "2832",
+      "name": "台產",
+      "price": 57.5,
+      "volume": 346402.0,
+      "pe": 9.57,
+      "pbr": 1.2,
+      "yield": 6.09
+    },
+    {
+      "code": "2834",
+      "name": "臺企銀",
+      "price": 18.0,
+      "volume": 42777943.0,
+      "pe": 13.24,
+      "pbr": 1.13,
+      "yield": 5.56
+    },
+    {
+      "code": "2836",
+      "name": "高雄銀",
+      "price": 12.25,
+      "volume": 1143253.0,
+      "pe": 16.12,
+      "pbr": 0.82,
+      "yield": 3.67
+    },
+    {
+      "code": "2838",
+      "name": "聯邦銀",
+      "price": 21.45,
+      "volume": 1711368.0,
+      "pe": 13.75,
+      "pbr": 1.12,
+      "yield": 4.94
+    },
+    {
+      "code": "2845",
+      "name": "遠東銀",
+      "price": 13.6,
+      "volume": 7755084.0,
+      "pe": 13.47,
+      "pbr": 0.92,
+      "yield": 4.63
+    },
+    {
+      "code": "2849",
+      "name": "安泰銀",
+      "price": 15.75,
+      "volume": 211497.0,
+      "pe": 16.24,
+      "pbr": 0.85,
+      "yield": 3.24
+    },
+    {
+      "code": "2850",
+      "name": "新產",
+      "price": 155.5,
+      "volume": 150623.0,
+      "pe": 10.12,
+      "pbr": 2.23,
+      "yield": 4.68
+    },
+    {
+      "code": "2851",
+      "name": "中再保",
+      "price": 46.5,
+      "volume": 2135227.0,
+      "pe": 4.4,
+      "pbr": 1.42,
+      "yield": 4.73
+    },
+    {
+      "code": "2852",
+      "name": "第一保",
+      "price": 27.75,
+      "volume": 261957.0,
+      "pe": 8.51,
+      "pbr": 0.9,
+      "yield": 5.98
+    },
+    {
+      "code": "2855",
+      "name": "統一證",
+      "price": 51.5,
+      "volume": 5011104.0,
+      "pe": 5.35,
+      "pbr": 1.72,
+      "yield": 4.1
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "price": 46.9,
+      "volume": 15252989.0,
+      "pe": 20.3,
+      "pbr": 2.7,
+      "yield": 3.09
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "price": 151.0,
+      "volume": 15894184.0,
+      "pe": 14.11,
+      "pbr": 1.86,
+      "yield": 2.81
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "price": 110.0,
+      "volume": 16604431.0,
+      "pe": 12.97,
+      "pbr": 1.59,
+      "yield": 3.18
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "price": 38.15,
+      "volume": 54357732.0,
+      "pe": 13.34,
+      "pbr": 1.51,
+      "yield": 2.62
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "price": 45.65,
+      "volume": 35427709.0,
+      "pe": 18.94,
+      "pbr": 2.62,
+      "yield": 3.07
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "price": 68.3,
+      "volume": 23441138.0,
+      "pe": 16.0,
+      "pbr": 2.38,
+      "yield": 3.22
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "price": 51.8,
+      "volume": 20370352.0,
+      "pe": 20.16,
+      "pbr": 1.91,
+      "yield": 3.38
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "price": 43.4,
+      "volume": 43388044.0,
+      "pe": 16.07,
+      "pbr": 1.6,
+      "yield": 2.53
+    },
+    {
+      "code": "2889",
+      "name": "國票金",
+      "price": 16.85,
+      "volume": 12957544.0,
+      "pe": 13.81,
+      "pbr": 1.29,
+      "yield": 3.5
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "price": 44.55,
+      "volume": 26932735.0,
+      "pe": 16.81,
+      "pbr": 2.44,
+      "yield": 2.92
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "price": 69.7,
+      "volume": 59318127.0,
+      "pe": 16.67,
+      "pbr": 1.99,
+      "yield": 3.59
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "price": 39.55,
+      "volume": 30707411.0,
+      "pe": 18.48,
+      "pbr": 1.89,
+      "yield": 3.29
+    },
+    {
+      "code": "2897",
+      "name": "王道銀行",
+      "price": 11.2,
+      "volume": 6343448.0,
+      "pe": 14.0,
+      "pbr": 0.75,
+      "yield": 4.64
+    },
+    {
+      "code": "2901",
+      "name": "欣欣",
+      "price": 22.7,
+      "volume": 33874.0,
+      "pe": 51.59,
+      "pbr": 1.9,
+      "yield": 1.63
+    },
+    {
+      "code": "2903",
+      "name": "遠百",
+      "price": 21.85,
+      "volume": 1529035.0,
+      "pe": 14.66,
+      "pbr": 1.02,
+      "yield": 5.72
+    },
+    {
+      "code": "2904",
+      "name": "匯僑",
+      "price": 12.55,
+      "volume": 53802.0,
+      "pe": 24.13,
+      "pbr": 0.78,
+      "yield": 5.58
+    },
+    {
+      "code": "2905",
+      "name": "三商",
+      "price": 18.85,
+      "volume": 2369419.0,
+      "pe": 6.96,
+      "pbr": 0.45,
+      "yield": 1.59
+    },
+    {
+      "code": "2906",
+      "name": "高林",
+      "price": 13.6,
+      "volume": 143868.0,
+      "pe": 16.39,
+      "pbr": 0.83,
+      "yield": 4.41
+    },
+    {
+      "code": "2908",
+      "name": "特力",
+      "price": 21.85,
+      "volume": 179016.0,
+      "pe": 17.76,
+      "pbr": 1.54,
+      "yield": 2.52
+    },
+    {
+      "code": "2910",
+      "name": "統領",
+      "price": 23.3,
+      "volume": 11064.0,
+      "pe": 12.73,
+      "pbr": 1.48,
+      "yield": 4.46
+    },
+    {
+      "code": "2911",
+      "name": "麗嬰房",
+      "price": 6.32,
+      "volume": 29837.0,
+      "pe": 1.59,
+      "pbr": 0.49,
+      "yield": null
+    },
+    {
+      "code": "2912",
+      "name": "統一超",
+      "price": 215.5,
+      "volume": 1125625.0,
+      "pe": 19.41,
+      "pbr": 5.47,
+      "yield": 4.18
+    },
+    {
+      "code": "2913",
+      "name": "農林",
+      "price": 10.95,
+      "volume": 651398.0,
+      "pe": null,
+      "pbr": 0.7,
+      "yield": null
+    },
+    {
+      "code": "2915",
+      "name": "潤泰全",
+      "price": 56.9,
+      "volume": 867924.0,
+      "pe": 4.09,
+      "pbr": 0.37,
+      "yield": 3.34
+    },
+    {
+      "code": "2923",
+      "name": "鼎固-KY",
+      "price": 23.0,
+      "volume": 327576.0,
+      "pe": null,
+      "pbr": 0.86,
+      "yield": 0.52
+    },
+    {
+      "code": "2929",
+      "name": "淘帝-KY",
+      "price": 5.72,
+      "volume": 53522.0,
+      "pe": null,
+      "pbr": 0.23,
+      "yield": null
+    },
+    {
+      "code": "2939",
+      "name": "永邑-KY",
+      "price": 19.4,
+      "volume": 21002.0,
+      "pe": null,
+      "pbr": 1.64,
+      "yield": null
+    },
+    {
+      "code": "2945",
+      "name": "三商家購",
+      "price": 39.05,
+      "volume": 13483.0,
+      "pe": 21.22,
+      "pbr": 1.37,
+      "yield": 3.84
+    },
+    {
+      "code": "3002",
+      "name": "歐格",
+      "price": 16.65,
+      "volume": 35302.0,
+      "pe": 166.5,
+      "pbr": 1.32,
+      "yield": 1.98
+    },
+    {
+      "code": "3003",
+      "name": "健和興",
+      "price": 56.6,
+      "volume": 356754.0,
+      "pe": 22.82,
+      "pbr": 1.34,
+      "yield": 1.77
+    },
+    {
+      "code": "3004",
+      "name": "豐達科",
+      "price": 114.0,
+      "volume": 184882.0,
+      "pe": 17.73,
+      "pbr": 1.94,
+      "yield": 2.24
+    },
+    {
+      "code": "3005",
+      "name": "神基",
+      "price": 115.0,
+      "volume": 1588708.0,
+      "pe": 13.66,
+      "pbr": 2.82,
+      "yield": 5.9
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "price": 264.0,
+      "volume": 9092194.0,
+      "pe": 8.33,
+      "pbr": 3.95,
+      "yield": 0.38
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "price": 6055.0,
+      "volume": 2988683.0,
+      "pe": 32.2,
+      "pbr": 4.13,
+      "yield": 1.32
+    },
+    {
+      "code": "3010",
+      "name": "華立",
+      "price": 122.5,
+      "volume": 488994.0,
+      "pe": 10.95,
+      "pbr": 1.16,
+      "yield": 4.33
+    },
+    {
+      "code": "3011",
+      "name": "今皓",
+      "price": 9.44,
+      "volume": 988520.0,
+      "pe": null,
+      "pbr": 0.92,
+      "yield": null
+    },
+    {
+      "code": "3013",
+      "name": "晟銘電",
+      "price": 81.5,
+      "volume": 634971.0,
+      "pe": 15.61,
+      "pbr": 3.04,
+      "yield": 0.98
+    },
+    {
+      "code": "3014",
+      "name": "聯陽",
+      "price": 130.5,
+      "volume": 288580.0,
+      "pe": 13.18,
+      "pbr": 2.95,
+      "yield": 6.51
+    },
+    {
+      "code": "3015",
+      "name": "全漢",
+      "price": 50.6,
+      "volume": 356508.0,
+      "pe": 19.92,
+      "pbr": 0.63,
+      "yield": 4.35
+    },
+    {
+      "code": "3016",
+      "name": "嘉晶",
+      "price": 110.0,
+      "volume": 30912478.0,
+      "pe": 91.67,
+      "pbr": 6.13,
+      "yield": 0.45
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "price": 3115.0,
+      "volume": 3217593.0,
+      "pe": 41.52,
+      "pbr": 22.16,
+      "yield": 0.67
+    },
+    {
+      "code": "3018",
+      "name": "隆銘綠能",
+      "price": 11.25,
+      "volume": 9361.0,
+      "pe": null,
+      "pbr": 2.13,
+      "yield": null
+    },
+    {
+      "code": "3019",
+      "name": "亞光",
+      "price": 132.0,
+      "volume": 2307775.0,
+      "pe": 22.26,
+      "pbr": 2.48,
+      "yield": 3.48
+    },
+    {
+      "code": "3021",
+      "name": "鴻名",
+      "price": 24.65,
+      "volume": 660797.0,
+      "pe": 32.43,
+      "pbr": 1.47,
+      "yield": 2.43
+    },
+    {
+      "code": "3022",
+      "name": "威強電",
+      "price": 85.2,
+      "volume": 1114601.0,
+      "pe": 11.31,
+      "pbr": 1.32,
+      "yield": 4.11
+    },
+    {
+      "code": "3023",
+      "name": "信邦",
+      "price": 318.5,
+      "volume": 769688.0,
+      "pe": 23.82,
+      "pbr": 4.7,
+      "yield": 3.14
+    },
+    {
+      "code": "3024",
+      "name": "憶聲",
+      "price": 14.3,
+      "volume": 1009988.0,
+      "pe": 357.5,
+      "pbr": 1.32,
+      "yield": 1.54
+    },
+    {
+      "code": "3025",
+      "name": "星通",
+      "price": 50.3,
+      "volume": 51844.0,
+      "pe": 10.7,
+      "pbr": 3.68,
+      "yield": 6.36
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "price": 726.0,
+      "volume": 6230611.0,
+      "pe": 70.83,
+      "pbr": 11.66,
+      "yield": 0.8
+    },
+    {
+      "code": "3027",
+      "name": "盛達",
+      "price": 17.55,
+      "volume": 167679.0,
+      "pe": null,
+      "pbr": 1.06,
+      "yield": null
+    },
+    {
+      "code": "3028",
+      "name": "增你強",
+      "price": 60.7,
+      "volume": 446467.0,
+      "pe": 8.45,
+      "pbr": 1.99,
+      "yield": 4.94
+    },
+    {
+      "code": "3029",
+      "name": "零壹",
+      "price": 118.5,
+      "volume": 7857851.0,
+      "pe": 16.9,
+      "pbr": 3.74,
+      "yield": 4.64
+    },
+    {
+      "code": "3030",
+      "name": "德律",
+      "price": 258.5,
+      "volume": 377353.0,
+      "pe": 19.58,
+      "pbr": 6.27,
+      "yield": 2.71
+    },
+    {
+      "code": "3031",
+      "name": "佰鴻",
+      "price": 23.0,
+      "volume": 229023.0,
+      "pe": 25.27,
+      "pbr": 1.38,
+      "yield": 4.35
+    },
+    {
+      "code": "3032",
+      "name": "偉訓",
+      "price": 70.5,
+      "volume": 310804.0,
+      "pe": null,
+      "pbr": 2.74,
+      "yield": null
+    },
+    {
+      "code": "3033",
+      "name": "威健",
+      "price": 40.8,
+      "volume": 2357253.0,
+      "pe": 8.97,
+      "pbr": 1.68,
+      "yield": 4.71
+    },
+    {
+      "code": "3034",
+      "name": "聯詠",
+      "price": 541.0,
+      "volume": 3608523.0,
+      "pe": 18.88,
+      "pbr": 4.77,
+      "yield": 4.25
+    },
+    {
+      "code": "3035",
+      "name": "智原",
+      "price": 170.0,
+      "volume": 1298444.0,
+      "pe": 66.93,
+      "pbr": 2.59,
+      "yield": 1.06
+    },
+    {
+      "code": "3036",
+      "name": "文曄",
+      "price": 192.5,
+      "volume": 7214663.0,
+      "pe": 9.88,
+      "pbr": 1.96,
+      "yield": 4.05
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "price": 951.0,
+      "volume": 9646657.0,
+      "pe": 63.32,
+      "pbr": 12.21,
+      "yield": 0.21
+    },
+    {
+      "code": "3038",
+      "name": "全台",
+      "price": 20.05,
+      "volume": 62416.0,
+      "pe": 13.28,
+      "pbr": 1.13,
+      "yield": 5.99
+    },
+    {
+      "code": "3040",
+      "name": "遠見",
+      "price": 34.3,
+      "volume": 352277.0,
+      "pe": null,
+      "pbr": 1.55,
+      "yield": 10.2
+    },
+    {
+      "code": "3041",
+      "name": "揚智",
+      "price": 21.95,
+      "volume": 516002.0,
+      "pe": null,
+      "pbr": 2.19,
+      "yield": null
+    },
+    {
+      "code": "3042",
+      "name": "晶技",
+      "price": 181.0,
+      "volume": 8407802.0,
+      "pe": 31.26,
+      "pbr": 3.91,
+      "yield": 2.65
+    },
+    {
+      "code": "3043",
+      "name": "科風",
+      "price": 20.1,
+      "volume": 43669.0,
+      "pe": null,
+      "pbr": 1.06,
+      "yield": null
+    },
+    {
+      "code": "3044",
+      "name": "健鼎",
+      "price": 490.5,
+      "volume": 2732822.0,
+      "pe": 21.02,
+      "pbr": 4.63,
+      "yield": 2.59
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "price": 124.0,
+      "volume": 10604689.0,
+      "pe": 23.44,
+      "pbr": 4.49,
+      "yield": 3.82
+    },
+    {
+      "code": "3046",
+      "name": "建碁",
+      "price": 52.2,
+      "volume": 126639.0,
+      "pe": 10.76,
+      "pbr": 2.45,
+      "yield": 5.75
+    },
+    {
+      "code": "3047",
+      "name": "訊舟",
+      "price": 13.4,
+      "volume": 251967.0,
+      "pe": null,
+      "pbr": 1.22,
+      "yield": null
+    },
+    {
+      "code": "3048",
+      "name": "益登",
+      "price": 49.4,
+      "volume": 669936.0,
+      "pe": 10.49,
+      "pbr": 1.81,
+      "yield": 2.02
+    },
+    {
+      "code": "3049",
+      "name": "精金",
+      "price": 11.8,
+      "volume": 2397221.0,
+      "pe": 35.76,
+      "pbr": 1.16,
+      "yield": null
+    },
+    {
+      "code": "3050",
+      "name": "鈺德",
+      "price": 11.05,
+      "volume": 498124.0,
+      "pe": 20.85,
+      "pbr": 0.7,
+      "yield": 2.26
+    },
+    {
+      "code": "3051",
+      "name": "力特",
+      "price": 20.9,
+      "volume": 354649.0,
+      "pe": 11.81,
+      "pbr": 1.34,
+      "yield": 2.39
+    },
+    {
+      "code": "3052",
+      "name": "夆典",
+      "price": 10.2,
+      "volume": 264661.0,
+      "pe": 9.11,
+      "pbr": 0.59,
+      "yield": 5.88
+    },
+    {
+      "code": "3054",
+      "name": "立萬利",
+      "price": 54.7,
+      "volume": 34437.0,
+      "pe": 11.26,
+      "pbr": 2.87,
+      "yield": 1.46
+    },
+    {
+      "code": "3055",
+      "name": "蔚華科",
+      "price": 157.5,
+      "volume": 1373705.0,
+      "pe": null,
+      "pbr": 10.95,
+      "yield": 0.32
+    },
+    {
+      "code": "3056",
+      "name": "富華新",
+      "price": 13.6,
+      "volume": 369668.0,
+      "pe": null,
+      "pbr": 0.77,
+      "yield": 4.56
+    },
+    {
+      "code": "3057",
+      "name": "喬鼎",
+      "price": 15.65,
+      "volume": 107861.0,
+      "pe": null,
+      "pbr": 1.7,
+      "yield": null
+    },
+    {
+      "code": "3058",
+      "name": "立德",
+      "price": 7.94,
+      "volume": 675087.0,
+      "pe": null,
+      "pbr": 1.02,
+      "yield": null
+    },
+    {
+      "code": "3059",
+      "name": "華晶科",
+      "price": 37.3,
+      "volume": 949694.0,
+      "pe": 29.6,
+      "pbr": 1.13,
+      "yield": 2.68
+    },
+    {
+      "code": "3060",
+      "name": "銘異",
+      "price": 25.5,
+      "volume": 735525.0,
+      "pe": 38.06,
+      "pbr": 1.28,
+      "yield": 0.78
+    },
+    {
+      "code": "3062",
+      "name": "建漢",
+      "price": 20.25,
+      "volume": 848680.0,
+      "pe": null,
+      "pbr": 1.64,
+      "yield": null
+    },
+    {
+      "code": "3090",
+      "name": "日電貿",
+      "price": 159.0,
+      "volume": 2541717.0,
+      "pe": 21.06,
+      "pbr": 2.46,
+      "yield": 3.02
+    },
+    {
+      "code": "3092",
+      "name": "鴻碩",
+      "price": 21.6,
+      "volume": 251283.0,
+      "pe": null,
+      "pbr": 1.86,
+      "yield": null
+    },
+    {
+      "code": "3094",
+      "name": "聯傑",
+      "price": 42.25,
+      "volume": 4642507.0,
+      "pe": 68.15,
+      "pbr": 3.38,
+      "yield": 0.59
+    },
+    {
+      "code": "3130",
+      "name": "一零四",
+      "price": 208.0,
+      "volume": 25374.0,
+      "pe": 12.52,
+      "pbr": 4.41,
+      "yield": 7.07
+    },
+    {
+      "code": "3135",
+      "name": "凌航",
+      "price": 158.5,
+      "volume": 482885.0,
+      "pe": 6.84,
+      "pbr": 3.3,
+      "yield": 2.36
+    },
+    {
+      "code": "3138",
+      "name": "耀登",
+      "price": 86.5,
+      "volume": 117058.0,
+      "pe": 34.33,
+      "pbr": 1.78,
+      "yield": 1.79
+    },
+    {
+      "code": "3149",
+      "name": "正達",
+      "price": 59.4,
+      "volume": 2834368.0,
+      "pe": null,
+      "pbr": 5.67,
+      "yield": null
+    },
+    {
+      "code": "3150",
+      "name": "鈺寶-創",
+      "price": 15.05,
+      "volume": 47000.0,
+      "pe": null,
+      "pbr": 1.13,
+      "yield": 3.32
+    },
+    {
+      "code": "3164",
+      "name": "景岳",
+      "price": 15.7,
+      "volume": 8673.0,
+      "pe": 19.63,
+      "pbr": 1.03,
+      "yield": 5.1
+    },
+    {
+      "code": "3167",
+      "name": "大量",
+      "price": 792.0,
+      "volume": 3934764.0,
+      "pe": 55.54,
+      "pbr": 16.51,
+      "yield": 0.49
+    },
+    {
+      "code": "3168",
+      "name": "眾福科",
+      "price": 43.0,
+      "volume": 25035.0,
+      "pe": 14.88,
+      "pbr": 1.92,
+      "yield": 6.98
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "price": 795.0,
+      "volume": 7509520.0,
+      "pe": 147.5,
+      "pbr": 9.42,
+      "yield": 0.19
+    },
+    {
+      "code": "3209",
+      "name": "全科",
+      "price": 44.25,
+      "volume": 570765.0,
+      "pe": 7.39,
+      "pbr": 1.85,
+      "yield": 5.65
+    },
+    {
+      "code": "3229",
+      "name": "晟鈦",
+      "price": 60.3,
+      "volume": 7363074.0,
+      "pe": 45.34,
+      "pbr": 5.68,
+      "yield": null
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "price": 182.5,
+      "volume": 21186201.0,
+      "pe": 14.5,
+      "pbr": 2.99,
+      "yield": 3.01
+    },
+    {
+      "code": "3257",
+      "name": "虹冠電",
+      "price": 46.6,
+      "volume": 167692.0,
+      "pe": 18.42,
+      "pbr": 2.31,
+      "yield": 6.01
+    },
+    {
+      "code": "3266",
+      "name": "昇陽",
+      "price": 13.75,
+      "volume": 36270.0,
+      "pe": 28.65,
+      "pbr": 0.78,
+      "yield": 3.64
+    },
+    {
+      "code": "3296",
+      "name": "勝德",
+      "price": 27.0,
+      "volume": 217217.0,
+      "pe": null,
+      "pbr": 2.04,
+      "yield": null
+    },
+    {
+      "code": "3305",
+      "name": "昇貿",
+      "price": 98.1,
+      "volume": 748240.0,
+      "pe": 17.77,
+      "pbr": 2.27,
+      "yield": 2.32
+    },
+    {
+      "code": "3308",
+      "name": "聯德",
+      "price": 22.0,
+      "volume": 39565.0,
+      "pe": 13.92,
+      "pbr": 1.14,
+      "yield": null
+    },
+    {
+      "code": "3311",
+      "name": "閎暉",
+      "price": 36.8,
+      "volume": 2318623.0,
+      "pe": 20.33,
+      "pbr": 1.01,
+      "yield": 1.63
+    },
+    {
+      "code": "3312",
+      "name": "弘憶股",
+      "price": 46.7,
+      "volume": 287469.0,
+      "pe": 12.16,
+      "pbr": 2.12,
+      "yield": 2.78
+    },
+    {
+      "code": "3321",
+      "name": "同泰",
+      "price": 16.8,
+      "volume": 139415.0,
+      "pe": null,
+      "pbr": 2.15,
+      "yield": null
+    },
+    {
+      "code": "3338",
+      "name": "泰碩",
+      "price": 64.7,
+      "volume": 176725.0,
+      "pe": 55.3,
+      "pbr": 2.87,
+      "yield": 2.01
+    },
+    {
+      "code": "3346",
+      "name": "麗清",
+      "price": 19.3,
+      "volume": 186617.0,
+      "pe": null,
+      "pbr": 0.65,
+      "yield": 0.57
+    },
+    {
+      "code": "3376",
+      "name": "新日興",
+      "price": 173.0,
+      "volume": 6133879.0,
+      "pe": 119.31,
+      "pbr": 2.05,
+      "yield": 2.31
+    },
+    {
+      "code": "3380",
+      "name": "明泰",
+      "price": 29.55,
+      "volume": 1117376.0,
+      "pe": 211.07,
+      "pbr": 1.74,
+      "yield": 1.69
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "price": 915.0,
+      "volume": 9449175.0,
+      "pe": 24.76,
+      "pbr": 3.81,
+      "yield": 1.86
+    },
+    {
+      "code": "3413",
+      "name": "京鼎",
+      "price": 274.0,
+      "volume": 404311.0,
+      "pe": 13.65,
+      "pbr": 1.84,
+      "yield": 4.01
+    },
+    {
+      "code": "3416",
+      "name": "融程電",
+      "price": 160.0,
+      "volume": 106860.0,
+      "pe": 18.58,
+      "pbr": 3.6,
+      "yield": 3.19
+    },
+    {
+      "code": "3419",
+      "name": "譁裕",
+      "price": 10.75,
+      "volume": 93009.0,
+      "pe": null,
+      "pbr": 1.45,
+      "yield": null
+    },
+    {
+      "code": "3437",
+      "name": "榮創",
+      "price": 17.5,
+      "volume": 471448.0,
+      "pe": null,
+      "pbr": 1.14,
+      "yield": null
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "price": 6035.0,
+      "volume": 2199061.0,
+      "pe": 154.7,
+      "pbr": 60.06,
+      "yield": 0.33
+    },
+    {
+      "code": "3447",
+      "name": "展達",
+      "price": 26.8,
+      "volume": 99200.0,
+      "pe": 13.74,
+      "pbr": 1.67,
+      "yield": 4.1
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "price": 492.5,
+      "volume": 8062676.0,
+      "pe": 99.9,
+      "pbr": 12.85,
+      "yield": 0.2
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "price": 46.8,
+      "volume": 77381620.0,
+      "pe": 60.0,
+      "pbr": 1.66,
+      "yield": 2.14
+    },
+    {
+      "code": "3494",
+      "name": "誠研",
+      "price": 7.07,
+      "volume": 17116.0,
+      "pe": null,
+      "pbr": 1.28,
+      "yield": null
+    },
+    {
+      "code": "3501",
+      "name": "維熹",
+      "price": 38.2,
+      "volume": 58221.0,
+      "pe": 22.08,
+      "pbr": 0.64,
+      "yield": 5.24
+    },
+    {
+      "code": "3504",
+      "name": "揚明光",
+      "price": 77.0,
+      "volume": 1419165.0,
+      "pe": null,
+      "pbr": 3.09,
+      "yield": null
+    },
+    {
+      "code": "3515",
+      "name": "華擎",
+      "price": 201.0,
+      "volume": 291043.0,
+      "pe": 12.98,
+      "pbr": 2.14,
+      "yield": 5.47
+    },
+    {
+      "code": "3518",
+      "name": "柏騰",
+      "price": 29.7,
+      "volume": 430131.0,
+      "pe": 14.08,
+      "pbr": 1.78,
+      "yield": null
+    },
+    {
+      "code": "3528",
+      "name": "安馳",
+      "price": 80.4,
+      "volume": 213618.0,
+      "pe": 8.84,
+      "pbr": 2.36,
+      "yield": 1.72
+    },
+    {
+      "code": "3530",
+      "name": "晶相光",
+      "price": 55.6,
+      "volume": 47410.0,
+      "pe": 17.94,
+      "pbr": 1.74,
+      "yield": 1.44
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "price": 407.0,
+      "volume": 9430827.0,
+      "pe": 313.08,
+      "pbr": 6.5,
+      "yield": 0.25
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤",
+      "price": 1520.0,
+      "volume": 746610.0,
+      "pe": 18.53,
+      "pbr": 4.17,
+      "yield": 2.3
+    },
+    {
+      "code": "3535",
+      "name": "晶彩科",
+      "price": 81.1,
+      "volume": 303185.0,
+      "pe": 46.88,
+      "pbr": 5.7,
+      "yield": null
+    },
+    {
+      "code": "3543",
+      "name": "州巧",
+      "price": 42.0,
+      "volume": 424798.0,
+      "pe": null,
+      "pbr": 1.49,
+      "yield": 1.43
+    },
+    {
+      "code": "3545",
+      "name": "敦泰",
+      "price": 48.45,
+      "volume": 415935.0,
+      "pe": null,
+      "pbr": 1.18,
+      "yield": 1.67
+    },
+    {
+      "code": "3550",
+      "name": "聯穎",
+      "price": 21.2,
+      "volume": 615041.0,
+      "pe": 176.67,
+      "pbr": 1.3,
+      "yield": null
+    },
+    {
+      "code": "3557",
+      "name": "嘉威",
+      "price": 22.75,
+      "volume": 22119.0,
+      "pe": null,
+      "pbr": 0.75,
+      "yield": 1.32
+    },
+    {
+      "code": "3563",
+      "name": "牧德",
+      "price": 643.0,
+      "volume": 236655.0,
+      "pe": 37.73,
+      "pbr": 7.41,
+      "yield": 2.18
+    },
+    {
+      "code": "3576",
+      "name": "聯合再生",
+      "price": 16.05,
+      "volume": 4939724.0,
+      "pe": 29.72,
+      "pbr": 2.02,
+      "yield": null
+    },
+    {
+      "code": "3583",
+      "name": "辛耘",
+      "price": 664.0,
+      "volume": 647457.0,
+      "pe": 40.74,
+      "pbr": 5.47,
+      "yield": 0.87
+    },
+    {
+      "code": "3588",
+      "name": "通嘉",
+      "price": 50.6,
+      "volume": 77169.0,
+      "pe": 42.52,
+      "pbr": 1.73,
+      "yield": 0.99
+    },
+    {
+      "code": "3592",
+      "name": "瑞鼎",
+      "price": 219.5,
+      "volume": 149879.0,
+      "pe": 12.89,
+      "pbr": 1.46,
+      "yield": 6.65
+    },
+    {
+      "code": "3593",
+      "name": "力銘",
+      "price": 9.95,
+      "volume": 13235.0,
+      "pe": null,
+      "pbr": 2.91,
+      "yield": null
+    },
+    {
+      "code": "3596",
+      "name": "智易",
+      "price": 155.0,
+      "volume": 869537.0,
+      "pe": 11.92,
+      "pbr": 2.08,
+      "yield": 5.81
+    },
+    {
+      "code": "3605",
+      "name": "宏致",
+      "price": 127.5,
+      "volume": 7841855.0,
+      "pe": 33.55,
+      "pbr": 2.5,
+      "yield": 1.23
+    },
+    {
+      "code": "3607",
+      "name": "谷崧",
+      "price": 13.55,
+      "volume": 145208.0,
+      "pe": 28.83,
+      "pbr": 0.96,
+      "yield": 5.9
+    },
+    {
+      "code": "3617",
+      "name": "碩天",
+      "price": 236.0,
+      "volume": 251146.0,
+      "pe": 11.31,
+      "pbr": 2.26,
+      "yield": 4.21
+    },
+    {
+      "code": "3622",
+      "name": "洋華",
+      "price": 44.8,
+      "volume": 203040.0,
+      "pe": 8.78,
+      "pbr": 0.86,
+      "yield": 7.14
+    },
+    {
+      "code": "3645",
+      "name": "達邁",
+      "price": 66.8,
+      "volume": 735490.0,
+      "pe": 25.79,
+      "pbr": 2.73,
+      "yield": 1.8
+    },
+    {
+      "code": "3652",
+      "name": "精聯",
+      "price": 33.15,
+      "volume": 62773.0,
+      "pe": 16.09,
+      "pbr": 1.29,
+      "yield": 3.62
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "price": 5310.0,
+      "volume": 2469366.0,
+      "pe": 119.84,
+      "pbr": 33.04,
+      "yield": 0.41
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "price": 3355.0,
+      "volume": 2699862.0,
+      "pe": 49.21,
+      "pbr": 4.79,
+      "yield": 0.97
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "price": 1980.0,
+      "volume": 2594783.0,
+      "pe": 36.36,
+      "pbr": 7.79,
+      "yield": 0.77
+    },
+    {
+      "code": "3669",
+      "name": "圓展",
+      "price": 32.0,
+      "volume": 79060.0,
+      "pe": 10.85,
+      "pbr": 0.85,
+      "yield": 3.13
+    },
+    {
+      "code": "3673",
+      "name": "TPK-KY",
+      "price": 61.5,
+      "volume": 2301828.0,
+      "pe": 13.43,
+      "pbr": 0.62,
+      "yield": 2.93
+    },
+    {
+      "code": "3679",
+      "name": "新至陞",
+      "price": 108.0,
+      "volume": 26550.0,
+      "pe": 9.14,
+      "pbr": 1.41,
+      "yield": 8.33
+    },
+    {
+      "code": "3686",
+      "name": "達能",
+      "price": 14.1,
+      "volume": 73742.0,
+      "pe": null,
+      "pbr": 1.64,
+      "yield": null
+    },
+    {
+      "code": "3694",
+      "name": "海華",
+      "price": 48.5,
+      "volume": 387294.0,
+      "pe": 12.28,
+      "pbr": 2.05,
+      "yield": 4.74
+    },
+    {
+      "code": "3701",
+      "name": "大眾控",
+      "price": 38.8,
+      "volume": 335733.0,
+      "pe": null,
+      "pbr": 1.94,
+      "yield": 0.52
+    },
+    {
+      "code": "3702",
+      "name": "大聯大",
+      "price": 107.0,
+      "volume": 4409655.0,
+      "pe": 9.16,
+      "pbr": 1.92,
+      "yield": 3.4
+    },
+    {
+      "code": "3703",
+      "name": "欣陸",
+      "price": 19.5,
+      "volume": 579720.0,
+      "pe": 9.9,
+      "pbr": 0.59,
+      "yield": 5.38
+    },
+    {
+      "code": "3704",
+      "name": "合勤控",
+      "price": 39.8,
+      "volume": 10631775.0,
+      "pe": 11.92,
+      "pbr": 1.34,
+      "yield": 1.01
+    },
+    {
+      "code": "3705",
+      "name": "永信",
+      "price": 56.0,
+      "volume": 208172.0,
+      "pe": 16.62,
+      "pbr": 1.91,
+      "yield": 5.36
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "price": 77.6,
+      "volume": 7205968.0,
+      "pe": 13.86,
+      "pbr": 1.35,
+      "yield": 5.15
+    },
+    {
+      "code": "3708",
+      "name": "上緯投控",
+      "price": 95.4,
+      "volume": 237684.0,
+      "pe": 2.31,
+      "pbr": 0.4,
+      "yield": 6.81
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "price": 592.0,
+      "volume": 14790324.0,
+      "pe": 42.84,
+      "pbr": 6.69,
+      "yield": 1.11
+    },
+    {
+      "code": "3712",
+      "name": "永崴投控",
+      "price": 20.55,
+      "volume": 684780.0,
+      "pe": null,
+      "pbr": 1.16,
+      "yield": null
+    },
+    {
+      "code": "3714",
+      "name": "富采",
+      "price": 60.1,
+      "volume": 3640157.0,
+      "pe": null,
+      "pbr": 1.02,
+      "yield": 1.5
+    },
+    {
+      "code": "3715",
+      "name": "定穎投控",
+      "price": 119.5,
+      "volume": 3599210.0,
+      "pe": null,
+      "pbr": 3.24,
+      "yield": 0.9
+    },
+    {
+      "code": "3716",
+      "name": "中化控股",
+      "price": 33.7,
+      "volume": 220294.0,
+      "pe": 9.63,
+      "pbr": 0.64,
+      "yield": 2.97
+    },
+    {
+      "code": "3717",
+      "name": "聯嘉投控",
+      "price": 21.0,
+      "volume": 470577.0,
+      "pe": 262.5,
+      "pbr": 1.24,
+      "yield": 0.95
+    },
+    {
+      "code": "4104",
+      "name": "佳醫",
+      "price": 71.7,
+      "volume": 115452.0,
+      "pe": 15.09,
+      "pbr": 1.38,
+      "yield": 6.0
+    },
+    {
+      "code": "4106",
+      "name": "雃博",
+      "price": 24.4,
+      "volume": 47869.0,
+      "pe": 13.26,
+      "pbr": 0.97,
+      "yield": 4.1
+    },
+    {
+      "code": "4108",
+      "name": "懷特",
+      "price": 11.3,
+      "volume": 228173.0,
+      "pe": null,
+      "pbr": 1.16,
+      "yield": null
+    },
+    {
+      "code": "4119",
+      "name": "旭富",
+      "price": 59.6,
+      "volume": 318971.0,
+      "pe": 119.2,
+      "pbr": 1.34,
+      "yield": 1.26
+    },
+    {
+      "code": "4133",
+      "name": "亞諾法",
+      "price": 20.2,
+      "volume": 29332.0,
+      "pe": 27.3,
+      "pbr": 0.96,
+      "yield": 0.54
+    },
+    {
+      "code": "4137",
+      "name": "麗豐-KY",
+      "price": 76.6,
+      "volume": 170363.0,
+      "pe": 11.35,
+      "pbr": 1.28,
+      "yield": 13.05
+    },
+    {
+      "code": "4142",
+      "name": "國光生",
+      "price": 17.2,
+      "volume": 668255.0,
+      "pe": null,
+      "pbr": 1.57,
+      "yield": null
+    },
+    {
+      "code": "4148",
+      "name": "全宇生技-KY",
+      "price": 33.55,
+      "volume": 77786.0,
+      "pe": 12.16,
+      "pbr": 0.81,
+      "yield": 2.98
+    },
+    {
+      "code": "4155",
+      "name": "訊映",
+      "price": 14.7,
+      "volume": 72600.0,
+      "pe": 8.55,
+      "pbr": 0.82,
+      "yield": 2.04
+    },
+    {
+      "code": "4164",
+      "name": "承業醫",
+      "price": 25.4,
+      "volume": 316644.0,
+      "pe": 21.71,
+      "pbr": 0.66,
+      "yield": 4.37
+    },
+    {
+      "code": "4169",
+      "name": "泰宗",
+      "price": 143.0,
+      "volume": 86980.0,
+      "pe": null,
+      "pbr": 4.86,
+      "yield": 0.22
+    },
+    {
+      "code": "4178",
+      "name": "永笙-KY",
+      "price": 16.45,
+      "volume": 151071.0,
+      "pe": null,
+      "pbr": 1.73,
+      "yield": null
+    },
+    {
+      "code": "4190",
+      "name": "佐登-KY",
+      "price": 25.4,
+      "volume": 3631.0,
+      "pe": null,
+      "pbr": 0.94,
+      "yield": 1.97
+    },
+    {
+      "code": "4195",
+      "name": "基米-創",
+      "price": 13.3,
+      "volume": 53892.0,
+      "pe": null,
+      "pbr": 1.6,
+      "yield": null
+    },
+    {
+      "code": "4306",
+      "name": "炎洲",
+      "price": 14.4,
+      "volume": 720958.0,
+      "pe": 15.82,
+      "pbr": 0.67,
+      "yield": 4.86
+    },
+    {
+      "code": "4414",
+      "name": "如興",
+      "price": 8.1,
+      "volume": 56853.0,
+      "pe": 54.0,
+      "pbr": 0.56,
+      "yield": 1.36
+    },
+    {
+      "code": "4426",
+      "name": "利勤",
+      "price": 7.47,
+      "volume": 109179.0,
+      "pe": null,
+      "pbr": 0.74,
+      "yield": null
+    },
+    {
+      "code": "4438",
+      "name": "廣越",
+      "price": 56.3,
+      "volume": 53313.0,
+      "pe": 8.27,
+      "pbr": 0.73,
+      "yield": 4.09
+    },
+    {
+      "code": "4439",
+      "name": "冠星-KY",
+      "price": 93.5,
+      "volume": 3791.0,
+      "pe": 9.97,
+      "pbr": 1.02,
+      "yield": 4.33
+    },
+    {
+      "code": "4440",
+      "name": "宜新實業",
+      "price": 17.65,
+      "volume": 30254.0,
+      "pe": 9.01,
+      "pbr": 0.89,
+      "yield": 5.67
+    },
+    {
+      "code": "4441",
+      "name": "振大環球",
+      "price": 171.0,
+      "volume": 30680.0,
+      "pe": 9.47,
+      "pbr": 1.7,
+      "yield": 6.32
+    },
+    {
+      "code": "4526",
+      "name": "東台",
+      "price": 29.8,
+      "volume": 882665.0,
+      "pe": null,
+      "pbr": 1.5,
+      "yield": 3.36
+    },
+    {
+      "code": "4532",
+      "name": "瑞智",
+      "price": 23.35,
+      "volume": 308610.0,
+      "pe": 12.35,
+      "pbr": 1.07,
+      "yield": 6.42
+    },
+    {
+      "code": "4536",
+      "name": "拓凱",
+      "price": 162.5,
+      "volume": 91920.0,
+      "pe": 12.26,
+      "pbr": 1.56,
+      "yield": 4.92
+    },
+    {
+      "code": "4540",
+      "name": "全球傳動",
+      "price": 57.3,
+      "volume": 2223370.0,
+      "pe": null,
+      "pbr": 1.89,
+      "yield": null
+    },
+    {
+      "code": "4545",
+      "name": "銘鈺",
+      "price": 32.6,
+      "volume": 57541.0,
+      "pe": 37.91,
+      "pbr": 1.29,
+      "yield": 0.4
+    },
+    {
+      "code": "4551",
+      "name": "智伸科",
+      "price": 153.5,
+      "volume": 269290.0,
+      "pe": 16.11,
+      "pbr": 1.91,
+      "yield": 2.74
+    },
+    {
+      "code": "4552",
+      "name": "力達-KY",
+      "price": 15.35,
+      "volume": 159046.0,
+      "pe": 13.46,
+      "pbr": 0.28,
+      "yield": 3.91
+    },
+    {
+      "code": "4555",
+      "name": "氣立",
+      "price": 41.65,
+      "volume": 57565.0,
+      "pe": 41.24,
+      "pbr": 0.99,
+      "yield": 1.2
+    },
+    {
+      "code": "4557",
+      "name": "永新-KY",
+      "price": 50.2,
+      "volume": 90091.0,
+      "pe": null,
+      "pbr": 0.95,
+      "yield": 3.98
+    },
+    {
+      "code": "4560",
+      "name": "強信-KY",
+      "price": 28.95,
+      "volume": 148107.0,
+      "pe": 9.78,
+      "pbr": 0.97,
+      "yield": 6.91
+    },
+    {
+      "code": "4562",
+      "name": "穎漢",
+      "price": 29.15,
+      "volume": 142877.0,
+      "pe": null,
+      "pbr": 2.81,
+      "yield": null
+    },
+    {
+      "code": "4564",
+      "name": "元翎",
+      "price": 15.8,
+      "volume": 496241.0,
+      "pe": null,
+      "pbr": 0.93,
+      "yield": null
+    },
+    {
+      "code": "4566",
+      "name": "時碩工業",
+      "price": 62.8,
+      "volume": 447348.0,
+      "pe": 24.92,
+      "pbr": 1.37,
+      "yield": 1.08
+    },
+    {
+      "code": "4569",
+      "name": "六方科-KY",
+      "price": 154.0,
+      "volume": 41611.0,
+      "pe": 17.17,
+      "pbr": 1.69,
+      "yield": 2.11
+    },
+    {
+      "code": "4571",
+      "name": "鈞興-KY",
+      "price": 147.5,
+      "volume": 98967.0,
+      "pe": 16.48,
+      "pbr": 2.35,
+      "yield": 3.57
+    },
+    {
+      "code": "4572",
+      "name": "駐龍",
+      "price": 141.5,
+      "volume": 14426.0,
+      "pe": 38.45,
+      "pbr": 2.98,
+      "yield": 3.53
+    },
+    {
+      "code": "4576",
+      "name": "大銀微系統",
+      "price": 230.5,
+      "volume": 1857842.0,
+      "pe": 70.27,
+      "pbr": 6.43,
+      "yield": 0.35
+    },
+    {
+      "code": "4581",
+      "name": "光隆精密-KY",
+      "price": 47.15,
+      "volume": 7040.0,
+      "pe": 11.58,
+      "pbr": 1.29,
+      "yield": 6.36
+    },
+    {
+      "code": "4582",
+      "name": "聚恆-創",
+      "price": 22.15,
+      "volume": 51198.0,
+      "pe": 9.67,
+      "pbr": 1.12,
+      "yield": 3.57
+    },
+    {
+      "code": "4583",
+      "name": "台灣精銳",
+      "price": 420.0,
+      "volume": 69581.0,
+      "pe": 31.18,
+      "pbr": 3.39,
+      "yield": 2.38
+    },
+    {
+      "code": "4585",
+      "name": "達明",
+      "price": 296.0,
+      "volume": 190130.0,
+      "pe": 106.47,
+      "pbr": 4.43,
+      "yield": 0.34
+    },
+    {
+      "code": "4588",
+      "name": "玖鼎電力",
+      "price": 53.4,
+      "volume": 61042.0,
+      "pe": 14.79,
+      "pbr": 2.67,
+      "yield": 5.62
+    },
+    {
+      "code": "4590",
+      "name": "富田-創",
+      "price": 86.8,
+      "volume": 225421.0,
+      "pe": 16.35,
+      "pbr": 1.33,
+      "yield": 2.65
+    },
+    {
+      "code": "4720",
+      "name": "德淵",
+      "price": 17.9,
+      "volume": 348727.0,
+      "pe": 31.96,
+      "pbr": 1.26,
+      "yield": 2.23
+    },
+    {
+      "code": "4722",
+      "name": "國精化",
+      "price": 185.0,
+      "volume": 1243585.0,
+      "pe": 67.77,
+      "pbr": 5.5,
+      "yield": 0.64
+    },
+    {
+      "code": "4736",
+      "name": "泰博",
+      "price": 129.0,
+      "volume": 126080.0,
+      "pe": 4.73,
+      "pbr": 1.1,
+      "yield": 3.93
+    },
+    {
+      "code": "4737",
+      "name": "華廣",
+      "price": 56.5,
+      "volume": 62037.0,
+      "pe": null,
+      "pbr": 2.08,
+      "yield": null
+    },
+    {
+      "code": "4739",
+      "name": "康普",
+      "price": 76.0,
+      "volume": 555466.0,
+      "pe": 14.73,
+      "pbr": 1.46,
+      "yield": 1.32
+    },
+    {
+      "code": "4746",
+      "name": "台耀",
+      "price": 46.05,
+      "volume": 361971.0,
+      "pe": 11.63,
+      "pbr": 0.75,
+      "yield": 6.51
+    },
+    {
+      "code": "4755",
+      "name": "三福化",
+      "price": 111.0,
+      "volume": 87341.0,
+      "pe": 24.18,
+      "pbr": 1.64,
+      "yield": 3.33
+    },
+    {
+      "code": "4763",
+      "name": "材料*-KY",
+      "price": 48.1,
+      "volume": 8910769.0,
+      "pe": 11.53,
+      "pbr": 2.43,
+      "yield": 6.34
+    },
+    {
+      "code": "4764",
+      "name": "雙鍵",
+      "price": 202.5,
+      "volume": 372450.0,
+      "pe": 65.32,
+      "pbr": 6.79,
+      "yield": 0.49
+    },
+    {
+      "code": "4766",
+      "name": "南寶",
+      "price": 333.0,
+      "volume": 100253.0,
+      "pe": 14.21,
+      "pbr": 2.83,
+      "yield": 5.41
+    },
+    {
+      "code": "4770",
+      "name": "上品",
+      "price": 220.0,
+      "volume": 292874.0,
+      "pe": 20.99,
+      "pbr": 2.1,
+      "yield": 2.73
+    },
+    {
+      "code": "4771",
+      "name": "望隼",
+      "price": 210.5,
+      "volume": 193385.0,
+      "pe": 13.88,
+      "pbr": 2.98,
+      "yield": 3.31
+    },
+    {
+      "code": "4807",
+      "name": "日成-KY",
+      "price": 30.8,
+      "volume": 372346.0,
+      "pe": 12.32,
+      "pbr": 1.54,
+      "yield": null
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "price": 106.5,
+      "volume": 4578462.0,
+      "pe": 25.91,
+      "pbr": 4.46,
+      "yield": 3.58
+    },
+    {
+      "code": "4906",
+      "name": "正文",
+      "price": 35.1,
+      "volume": 2574071.0,
+      "pe": 292.5,
+      "pbr": 1.41,
+      "yield": 1.34
+    },
+    {
+      "code": "4912",
+      "name": "聯德控股-KY",
+      "price": 87.7,
+      "volume": 194218.0,
+      "pe": 28.94,
+      "pbr": 1.4,
+      "yield": 1.06
+    },
+    {
+      "code": "4915",
+      "name": "致伸",
+      "price": 65.6,
+      "volume": 8267711.0,
+      "pe": 13.25,
+      "pbr": 1.52,
+      "yield": 6.97
+    },
+    {
+      "code": "4916",
+      "name": "事欣科",
+      "price": 92.3,
+      "volume": 684396.0,
+      "pe": 14.13,
+      "pbr": 3.17,
+      "yield": 0.54
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "price": 111.0,
+      "volume": 2297812.0,
+      "pe": null,
+      "pbr": 3.0,
+      "yield": null
+    },
+    {
+      "code": "4927",
+      "name": "泰鼎-KY",
+      "price": 40.05,
+      "volume": 1538858.0,
+      "pe": null,
+      "pbr": 2.52,
+      "yield": null
+    },
+    {
+      "code": "4930",
+      "name": "燦星網",
+      "price": 15.9,
+      "volume": 3334.0,
+      "pe": null,
+      "pbr": 0.4,
+      "yield": 3.77
+    },
+    {
+      "code": "4934",
+      "name": "太極",
+      "price": 13.2,
+      "volume": 297752.0,
+      "pe": null,
+      "pbr": 1.74,
+      "yield": null
+    },
+    {
+      "code": "4935",
+      "name": "茂林-KY",
+      "price": 30.95,
+      "volume": 118973.0,
+      "pe": 23.27,
+      "pbr": 0.5,
+      "yield": 3.23
+    },
+    {
+      "code": "4938",
+      "name": "和碩",
+      "price": 88.3,
+      "volume": 7402017.0,
+      "pe": 14.89,
+      "pbr": 1.14,
+      "yield": 4.54
+    },
+    {
+      "code": "4942",
+      "name": "嘉彰",
+      "price": 31.4,
+      "volume": 107824.0,
+      "pe": 10.83,
+      "pbr": 0.48,
+      "yield": 6.37
+    },
+    {
+      "code": "4943",
+      "name": "康控-KY",
+      "price": 7.53,
+      "volume": 8485.0,
+      "pe": null,
+      "pbr": 22.82,
+      "yield": null
+    },
+    {
+      "code": "4949",
+      "name": "有成精密",
+      "price": 71.5,
+      "volume": 371204.0,
+      "pe": 18.77,
+      "pbr": 2.75,
+      "yield": 1.96
+    },
+    {
+      "code": "4952",
+      "name": "凌通",
+      "price": 46.15,
+      "volume": 180271.0,
+      "pe": 25.93,
+      "pbr": 2.27,
+      "yield": 2.17
+    },
+    {
+      "code": "4956",
+      "name": "光鋐",
+      "price": 32.05,
+      "volume": 1010476.0,
+      "pe": 68.19,
+      "pbr": 1.9,
+      "yield": null
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "price": 477.5,
+      "volume": 19168557.0,
+      "pe": 56.51,
+      "pbr": 3.43,
+      "yield": 0.72
+    },
+    {
+      "code": "4960",
+      "name": "誠美材",
+      "price": 19.5,
+      "volume": 1915556.0,
+      "pe": null,
+      "pbr": 1.56,
+      "yield": null
+    },
+    {
+      "code": "4961",
+      "name": "天鈺",
+      "price": 178.5,
+      "volume": 1273246.0,
+      "pe": 20.06,
+      "pbr": 1.24,
+      "yield": 4.32
+    },
+    {
+      "code": "4967",
+      "name": "十銓",
+      "price": 266.0,
+      "volume": 2851415.0,
+      "pe": 3.95,
+      "pbr": 2.03,
+      "yield": 3.24
+    },
+    {
+      "code": "4968",
+      "name": "立積",
+      "price": 88.0,
+      "volume": 154292.0,
+      "pe": 23.78,
+      "pbr": 3.01,
+      "yield": 1.82
+    },
+    {
+      "code": "4976",
+      "name": "佳凌",
+      "price": 34.9,
+      "volume": 783006.0,
+      "pe": null,
+      "pbr": 2.42,
+      "yield": null
+    },
+    {
+      "code": "4977",
+      "name": "眾達-KY",
+      "price": 160.5,
+      "volume": 2090246.0,
+      "pe": 48.2,
+      "pbr": 3.09,
+      "yield": 1.36
+    },
+    {
+      "code": "4989",
+      "name": "榮科",
+      "price": 58.3,
+      "volume": 2251477.0,
+      "pe": null,
+      "pbr": 5.37,
+      "yield": null
+    },
+    {
+      "code": "4994",
+      "name": "傳奇",
+      "price": 81.3,
+      "volume": 7212.0,
+      "pe": 57.25,
+      "pbr": 6.21,
+      "yield": 3.69
+    },
+    {
+      "code": "4999",
+      "name": "鑫禾",
+      "price": 17.95,
+      "volume": 10262.0,
+      "pe": null,
+      "pbr": 0.42,
+      "yield": 1.39
+    },
+    {
+      "code": "5007",
+      "name": "三星",
+      "price": 55.6,
+      "volume": 22104.0,
+      "pe": 15.71,
+      "pbr": 2.39,
+      "yield": 5.4
+    },
+    {
+      "code": "5203",
+      "name": "訊連",
+      "price": 56.8,
+      "volume": 162501.0,
+      "pe": 12.68,
+      "pbr": 1.0,
+      "yield": 6.5
+    },
+    {
+      "code": "5215",
+      "name": "科嘉-KY",
+      "price": 37.25,
+      "volume": 32355.0,
+      "pe": 9.48,
+      "pbr": 0.66,
+      "yield": 5.37
+    },
+    {
+      "code": "5222",
+      "name": "全訊",
+      "price": 101.0,
+      "volume": 135048.0,
+      "pe": 52.88,
+      "pbr": 3.15,
+      "yield": 2.48
+    },
+    {
+      "code": "5225",
+      "name": "東科-KY",
+      "price": 53.2,
+      "volume": 152923.0,
+      "pe": 8.01,
+      "pbr": 1.32,
+      "yield": 13.55
+    },
+    {
+      "code": "5234",
+      "name": "達興材料",
+      "price": 282.5,
+      "volume": 146939.0,
+      "pe": 33.71,
+      "pbr": 8.75,
+      "yield": 2.3
+    },
+    {
+      "code": "5236",
+      "name": "凌陽創新",
+      "price": 130.0,
+      "volume": 38973.0,
+      "pe": 12.66,
+      "pbr": 3.15,
+      "yield": 6.92
+    },
+    {
+      "code": "5243",
+      "name": "乙盛-KY",
+      "price": 85.3,
+      "volume": 607190.0,
+      "pe": 16.28,
+      "pbr": 1.66,
+      "yield": 2.58
+    },
+    {
+      "code": "5244",
+      "name": "弘凱",
+      "price": 33.95,
+      "volume": 58248.0,
+      "pe": null,
+      "pbr": 1.32,
+      "yield": 1.18
+    },
+    {
+      "code": "5258",
+      "name": "虹堡",
+      "price": 41.95,
+      "volume": 137123.0,
+      "pe": 9.49,
+      "pbr": 1.03,
+      "yield": 2.38
+    },
+    {
+      "code": "5269",
+      "name": "祥碩",
+      "price": 1370.0,
+      "volume": 283562.0,
+      "pe": 14.61,
+      "pbr": 2.83,
+      "yield": 3.31
+    },
+    {
+      "code": "5283",
+      "name": "禾聯碩",
+      "price": 52.9,
+      "volume": 23254.0,
+      "pe": 8.14,
+      "pbr": 0.92,
+      "yield": 3.78
+    },
+    {
+      "code": "5284",
+      "name": "jpp-KY",
+      "price": 290.0,
+      "volume": 207016.0,
+      "pe": 18.37,
+      "pbr": 4.1,
+      "yield": 1.72
+    },
+    {
+      "code": "5285",
+      "name": "界霖",
+      "price": 83.4,
+      "volume": 1199764.0,
+      "pe": 26.99,
+      "pbr": 2.76,
+      "yield": 1.8
+    },
+    {
+      "code": "5288",
+      "name": "豐祥-KY",
+      "price": 183.0,
+      "volume": 56501.0,
+      "pe": 12.2,
+      "pbr": 2.01,
+      "yield": 3.55
+    },
+    {
+      "code": "5292",
+      "name": "華懋",
+      "price": 209.0,
+      "volume": 133494.0,
+      "pe": 20.21,
+      "pbr": 4.6,
+      "yield": 3.11
+    },
+    {
+      "code": "5306",
+      "name": "桂盟",
+      "price": 89.5,
+      "volume": 45128.0,
+      "pe": 12.68,
+      "pbr": 1.19,
+      "yield": 4.19
+    },
+    {
+      "code": "5388",
+      "name": "中磊",
+      "price": 72.0,
+      "volume": 1657783.0,
+      "pe": 16.11,
+      "pbr": 1.33,
+      "yield": 3.47
+    },
+    {
+      "code": "5434",
+      "name": "崇越",
+      "price": 537.0,
+      "volume": 424026.0,
+      "pe": 20.1,
+      "pbr": 4.74,
+      "yield": 2.5
+    },
+    {
+      "code": "5469",
+      "name": "瀚宇博",
+      "price": 71.5,
+      "volume": 704295.0,
+      "pe": 13.24,
+      "pbr": 0.56,
+      "yield": 3.52
+    },
+    {
+      "code": "5471",
+      "name": "松翰",
+      "price": 49.9,
+      "volume": 692885.0,
+      "pe": 30.06,
+      "pbr": 2.32,
+      "yield": 1.6
+    },
+    {
+      "code": "5484",
+      "name": "慧友",
+      "price": 39.0,
+      "volume": 127616.0,
+      "pe": 28.89,
+      "pbr": 4.72,
+      "yield": null
+    },
+    {
+      "code": "5515",
+      "name": "建國",
+      "price": 48.4,
+      "volume": 326001.0,
+      "pe": 4.91,
+      "pbr": 1.67,
+      "yield": 6.82
+    },
+    {
+      "code": "5519",
+      "name": "隆大",
+      "price": 25.2,
+      "volume": 261627.0,
+      "pe": 5.06,
+      "pbr": 0.97,
+      "yield": 15.08
+    },
+    {
+      "code": "5521",
+      "name": "工信",
+      "price": 10.35,
+      "volume": 839240.0,
+      "pe": 10.89,
+      "pbr": 0.87,
+      "yield": 1.45
+    },
+    {
+      "code": "5522",
+      "name": "遠雄",
+      "price": 60.7,
+      "volume": 822371.0,
+      "pe": 6.05,
+      "pbr": 1.0,
+      "yield": 9.06
+    },
+    {
+      "code": "5525",
+      "name": "順天",
+      "price": 21.7,
+      "volume": 85049.0,
+      "pe": 5.59,
+      "pbr": 1.12,
+      "yield": 5.53
+    },
+    {
+      "code": "5531",
+      "name": "鄉林",
+      "price": 7.03,
+      "volume": 407551.0,
+      "pe": 63.91,
+      "pbr": 0.7,
+      "yield": null
+    },
+    {
+      "code": "5533",
+      "name": "皇鼎",
+      "price": 13.85,
+      "volume": 119460.0,
+      "pe": 23.47,
+      "pbr": 0.42,
+      "yield": 4.33
+    },
+    {
+      "code": "5534",
+      "name": "長虹",
+      "price": 73.1,
+      "volume": 712436.0,
+      "pe": 12.92,
+      "pbr": 1.08,
+      "yield": 6.92
+    },
+    {
+      "code": "5538",
+      "name": "東明-KY",
+      "price": 35.1,
+      "volume": 39300.0,
+      "pe": 8.07,
+      "pbr": 0.88,
+      "yield": 4.27
+    },
+    {
+      "code": "5546",
+      "name": "永固-KY",
+      "price": 14.5,
+      "volume": 27182.0,
+      "pe": null,
+      "pbr": 0.65,
+      "yield": 6.9
+    },
+    {
+      "code": "5607",
+      "name": "遠雄港",
+      "price": 52.5,
+      "volume": 489041.0,
+      "pe": 14.38,
+      "pbr": 1.74,
+      "yield": 3.43
+    },
+    {
+      "code": "5608",
+      "name": "四維航",
+      "price": 16.3,
+      "volume": 2346331.0,
+      "pe": 163.0,
+      "pbr": 0.65,
+      "yield": null
+    },
+    {
+      "code": "5706",
+      "name": "鳳凰",
+      "price": 43.75,
+      "volume": 87921.0,
+      "pe": 11.25,
+      "pbr": 2.14,
+      "yield": 10.38
+    },
+    {
+      "code": "5871",
+      "name": "中租-KY",
+      "price": 111.5,
+      "volume": 4767486.0,
+      "pe": 10.3,
+      "pbr": 1.12,
+      "yield": 5.38
+    },
+    {
+      "code": "5876",
+      "name": "上海商銀",
+      "price": 49.8,
+      "volume": 5628831.0,
+      "pe": 14.07,
+      "pbr": 1.13,
+      "yield": 3.61
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "price": 27.0,
+      "volume": 23217099.0,
+      "pe": 17.65,
+      "pbr": 1.46,
+      "yield": 3.89
+    },
+    {
+      "code": "5907",
+      "name": "大洋-KY",
+      "price": 4.82,
+      "volume": 244122.0,
+      "pe": null,
+      "pbr": 0.26,
+      "yield": null
+    },
+    {
+      "code": "6005",
+      "name": "群益證",
+      "price": 31.1,
+      "volume": 9479912.0,
+      "pe": 5.78,
+      "pbr": 1.3,
+      "yield": 5.5
+    },
+    {
+      "code": "6024",
+      "name": "群益期",
+      "price": 60.5,
+      "volume": 239326.0,
+      "pe": 8.33,
+      "pbr": 1.4,
+      "yield": 5.74
+    },
+    {
+      "code": "6108",
+      "name": "競國",
+      "price": 22.4,
+      "volume": 2680974.0,
+      "pe": 112.0,
+      "pbr": 1.07,
+      "yield": 4.46
+    },
+    {
+      "code": "6112",
+      "name": "邁達特",
+      "price": 48.15,
+      "volume": 21595485.0,
+      "pe": 14.86,
+      "pbr": 2.09,
+      "yield": 3.43
+    },
+    {
+      "code": "6115",
+      "name": "鎰勝",
+      "price": 43.8,
+      "volume": 78284.0,
+      "pe": 12.81,
+      "pbr": 1.6,
+      "yield": 6.39
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "price": 13.65,
+      "volume": 12653885.0,
+      "pe": null,
+      "pbr": 1.05,
+      "yield": null
+    },
+    {
+      "code": "6117",
+      "name": "迎廣",
+      "price": 61.0,
+      "volume": 142267.0,
+      "pe": 12.92,
+      "pbr": 2.55,
+      "yield": 3.28
+    },
+    {
+      "code": "6120",
+      "name": "達運",
+      "price": 11.75,
+      "volume": 1215164.0,
+      "pe": 8.64,
+      "pbr": 0.71,
+      "yield": 2.13
+    },
+    {
+      "code": "6128",
+      "name": "上福",
+      "price": 18.9,
+      "volume": 68006.0,
+      "pe": null,
+      "pbr": 0.86,
+      "yield": 2.65
+    },
+    {
+      "code": "6133",
+      "name": "金橋",
+      "price": 22.95,
+      "volume": 1878837.0,
+      "pe": 20.68,
+      "pbr": 1.76,
+      "yield": 4.36
+    },
+    {
+      "code": "6136",
+      "name": "富爾特",
+      "price": 24.6,
+      "volume": 347077.0,
+      "pe": 33.24,
+      "pbr": 0.63,
+      "yield": 4.72
+    },
+    {
+      "code": "6139",
+      "name": "亞翔",
+      "price": 713.0,
+      "volume": 2055879.0,
+      "pe": 14.36,
+      "pbr": 8.12,
+      "yield": 3.23
+    },
+    {
+      "code": "6141",
+      "name": "柏承",
+      "price": 48.35,
+      "volume": 1516835.0,
+      "pe": null,
+      "pbr": 9.14,
+      "yield": null
+    },
+    {
+      "code": "6142",
+      "name": "友勁",
+      "price": 8.7,
+      "volume": 244312.0,
+      "pe": null,
+      "pbr": 1.02,
+      "yield": null
+    },
+    {
+      "code": "6152",
+      "name": "百一",
+      "price": 15.05,
+      "volume": 1176163.0,
+      "pe": null,
+      "pbr": 1.9,
+      "yield": null
+    },
+    {
+      "code": "6153",
+      "name": "嘉聯益",
+      "price": 16.9,
+      "volume": 1389536.0,
+      "pe": null,
+      "pbr": 1.26,
+      "yield": null
+    },
+    {
+      "code": "6155",
+      "name": "鈞寶",
+      "price": 55.6,
+      "volume": 555983.0,
+      "pe": 30.89,
+      "pbr": 3.0,
+      "yield": 1.44
+    },
+    {
+      "code": "6164",
+      "name": "華興",
+      "price": 11.05,
+      "volume": 215445.0,
+      "pe": 42.5,
+      "pbr": 0.93,
+      "yield": null
+    },
+    {
+      "code": "6165",
+      "name": "浪凡",
+      "price": 47.0,
+      "volume": 142182.0,
+      "pe": 11.96,
+      "pbr": 2.66,
+      "yield": 10.64
+    },
+    {
+      "code": "6166",
+      "name": "凌華",
+      "price": 109.0,
+      "volume": 812352.0,
+      "pe": 20.8,
+      "pbr": 3.85,
+      "yield": 1.1
+    },
+    {
+      "code": "6168",
+      "name": "宏齊",
+      "price": 29.25,
+      "volume": 3346135.0,
+      "pe": 91.41,
+      "pbr": 1.68,
+      "yield": null
+    },
+    {
+      "code": "6176",
+      "name": "瑞儀",
+      "price": 92.0,
+      "volume": 1969799.0,
+      "pe": 11.37,
+      "pbr": 1.17,
+      "yield": 3.8
+    },
+    {
+      "code": "6177",
+      "name": "達麗",
+      "price": 46.85,
+      "volume": 1288714.0,
+      "pe": 5.17,
+      "pbr": 1.84,
+      "yield": 6.4
+    },
+    {
+      "code": "6183",
+      "name": "關貿",
+      "price": 91.0,
+      "volume": 20811.0,
+      "pe": 20.22,
+      "pbr": 5.08,
+      "yield": 3.9
+    },
+    {
+      "code": "6184",
+      "name": "大豐電",
+      "price": 39.55,
+      "volume": 200792.0,
+      "pe": 17.05,
+      "pbr": 1.27,
+      "yield": 7.59
+    },
+    {
+      "code": "6189",
+      "name": "豐藝",
+      "price": 46.6,
+      "volume": 175811.0,
+      "pe": 11.51,
+      "pbr": 2.03,
+      "yield": 5.79
+    },
+    {
+      "code": "6191",
+      "name": "精成科",
+      "price": 81.0,
+      "volume": 919848.0,
+      "pe": 14.11,
+      "pbr": 1.1,
+      "yield": 3.21
+    },
+    {
+      "code": "6192",
+      "name": "巨路",
+      "price": 109.5,
+      "volume": 56394.0,
+      "pe": 10.59,
+      "pbr": 1.4,
+      "yield": 5.3
+    },
+    {
+      "code": "6196",
+      "name": "帆宣",
+      "price": 518.0,
+      "volume": 1109429.0,
+      "pe": 23.46,
+      "pbr": 6.39,
+      "yield": 1.25
+    },
+    {
+      "code": "6197",
+      "name": "佳必琪",
+      "price": 292.0,
+      "volume": 762733.0,
+      "pe": 24.68,
+      "pbr": 6.35,
+      "yield": 2.37
+    },
+    {
+      "code": "6201",
+      "name": "亞弘電",
+      "price": 44.9,
+      "volume": 13225.0,
+      "pe": 13.94,
+      "pbr": 1.49,
+      "yield": 6.9
+    },
+    {
+      "code": "6202",
+      "name": "盛群",
+      "price": 53.7,
+      "volume": 698267.0,
+      "pe": 44.75,
+      "pbr": 3.06,
+      "yield": 1.27
+    },
+    {
+      "code": "6205",
+      "name": "詮欣",
+      "price": 60.2,
+      "volume": 136002.0,
+      "pe": 26.4,
+      "pbr": 1.85,
+      "yield": 2.49
+    },
+    {
+      "code": "6206",
+      "name": "飛捷",
+      "price": 137.0,
+      "volume": 679676.0,
+      "pe": 15.14,
+      "pbr": 3.73,
+      "yield": 4.01
+    },
+    {
+      "code": "6209",
+      "name": "今國光",
+      "price": 75.6,
+      "volume": 5765279.0,
+      "pe": 32.73,
+      "pbr": 3.7,
+      "yield": 0.66
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "price": 519.0,
+      "volume": 11540383.0,
+      "pe": 80.47,
+      "pbr": 8.35,
+      "yield": 0.58
+    },
+    {
+      "code": "6214",
+      "name": "精誠",
+      "price": 190.0,
+      "volume": 3389449.0,
+      "pe": 17.74,
+      "pbr": 2.81,
+      "yield": 3.16
+    },
+    {
+      "code": "6215",
+      "name": "和椿",
+      "price": 95.7,
+      "volume": 346228.0,
+      "pe": 28.48,
+      "pbr": 4.73,
+      "yield": 1.04
+    },
+    {
+      "code": "6216",
+      "name": "居易",
+      "price": 19.3,
+      "volume": 120867.0,
+      "pe": 52.16,
+      "pbr": 1.14,
+      "yield": 5.34
+    },
+    {
+      "code": "6224",
+      "name": "聚鼎",
+      "price": 86.0,
+      "volume": 1348110.0,
+      "pe": 71.67,
+      "pbr": 3.24,
+      "yield": 1.45
+    },
+    {
+      "code": "6225",
+      "name": "天瀚",
+      "price": 63.5,
+      "volume": 114514.0,
+      "pe": null,
+      "pbr": 20.75,
+      "yield": null
+    },
+    {
+      "code": "6226",
+      "name": "光鼎",
+      "price": 36.3,
+      "volume": 81114487.0,
+      "pe": null,
+      "pbr": 3.35,
+      "yield": null
+    },
+    {
+      "code": "6230",
+      "name": "尼得科超眾",
+      "price": 109.0,
+      "volume": 396676.0,
+      "pe": null,
+      "pbr": 1.62,
+      "yield": null
+    },
+    {
+      "code": "6235",
+      "name": "華孚",
+      "price": 37.55,
+      "volume": 238946.0,
+      "pe": 23.32,
+      "pbr": 1.49,
+      "yield": 3.2
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "price": 268.0,
+      "volume": 7964169.0,
+      "pe": 26.53,
+      "pbr": 3.47,
+      "yield": 1.68
+    },
+    {
+      "code": "6243",
+      "name": "迅杰",
+      "price": 36.4,
+      "volume": 156724.0,
+      "pe": null,
+      "pbr": 2.24,
+      "yield": null
+    },
+    {
+      "code": "6257",
+      "name": "矽格",
+      "price": 207.5,
+      "volume": 2791002.0,
+      "pe": 24.27,
+      "pbr": 3.93,
+      "yield": 2.05
+    },
+    {
+      "code": "6269",
+      "name": "台郡",
+      "price": 63.3,
+      "volume": 2615223.0,
+      "pe": null,
+      "pbr": 0.99,
+      "yield": null
+    },
+    {
+      "code": "6271",
+      "name": "同欣電",
+      "price": 221.0,
+      "volume": 6201502.0,
+      "pe": 24.86,
+      "pbr": 1.7,
+      "yield": 1.36
+    },
+    {
+      "code": "6272",
+      "name": "驊陞",
+      "price": 26.4,
+      "volume": 232216.0,
+      "pe": 14.83,
+      "pbr": 1.17,
+      "yield": 7.65
+    },
+    {
+      "code": "6277",
+      "name": "宏正",
+      "price": 76.3,
+      "volume": 117501.0,
+      "pe": 18.43,
+      "pbr": 1.9,
+      "yield": 4.59
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "price": 180.5,
+      "volume": 1557487.0,
+      "pe": 18.29,
+      "pbr": 2.25,
+      "yield": 3.08
+    },
+    {
+      "code": "6281",
+      "name": "全國電",
+      "price": 51.2,
+      "volume": 25524.0,
+      "pe": 13.73,
+      "pbr": 1.82,
+      "yield": 6.45
+    },
+    {
+      "code": "6282",
+      "name": "康舒",
+      "price": 41.55,
+      "volume": 3732535.0,
+      "pe": 34.06,
+      "pbr": 1.56,
+      "yield": 1.93
+    },
+    {
+      "code": "6283",
+      "name": "淳安",
+      "price": 18.05,
+      "volume": 155366.0,
+      "pe": null,
+      "pbr": 1.61,
+      "yield": null
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "price": 222.0,
+      "volume": 2429329.0,
+      "pe": 24.32,
+      "pbr": 3.0,
+      "yield": 1.94
+    },
+    {
+      "code": "6405",
+      "name": "悅城",
+      "price": 37.1,
+      "volume": 143069.0,
+      "pe": null,
+      "pbr": 0.74,
+      "yield": null
+    },
+    {
+      "code": "6409",
+      "name": "旭隼",
+      "price": 870.0,
+      "volume": 274170.0,
+      "pe": 33.71,
+      "pbr": 9.65,
+      "yield": 4.23
+    },
+    {
+      "code": "6412",
+      "name": "群電",
+      "price": 73.8,
+      "volume": 351266.0,
+      "pe": 12.16,
+      "pbr": 1.91,
+      "yield": 5.01
+    },
+    {
+      "code": "6414",
+      "name": "樺漢",
+      "price": 369.5,
+      "volume": 882570.0,
+      "pe": 15.34,
+      "pbr": 1.95,
+      "yield": 3.73
+    },
+    {
+      "code": "6415",
+      "name": "矽力*-KY",
+      "price": 406.0,
+      "volume": 2869603.0,
+      "pe": 41.22,
+      "pbr": 3.91,
+      "yield": 0.63
+    },
+    {
+      "code": "6416",
+      "name": "瑞祺電通",
+      "price": 118.0,
+      "volume": 2341906.0,
+      "pe": 22.01,
+      "pbr": 2.4,
+      "yield": 2.37
+    },
+    {
+      "code": "6426",
+      "name": "統新",
+      "price": 300.0,
+      "volume": 2409765.0,
+      "pe": 75.76,
+      "pbr": 11.57,
+      "yield": 0.17
+    },
+    {
+      "code": "6431",
+      "name": "光麗-KY",
+      "price": 17.3,
+      "volume": 8034.0,
+      "pe": null,
+      "pbr": 3.33,
+      "yield": null
+    },
+    {
+      "code": "6438",
+      "name": "迅得",
+      "price": 142.5,
+      "volume": 160313.0,
+      "pe": 24.7,
+      "pbr": 1.85,
+      "yield": 3.51
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "price": 1510.0,
+      "volume": 2407912.0,
+      "pe": 44.67,
+      "pbr": 9.07,
+      "yield": 0.75
+    },
+    {
+      "code": "6443",
+      "name": "元晶",
+      "price": 22.7,
+      "volume": 3113764.0,
+      "pe": null,
+      "pbr": 3.49,
+      "yield": null
+    },
+    {
+      "code": "6446",
+      "name": "藥華藥",
+      "price": 1205.0,
+      "volume": 2315449.0,
+      "pe": 59.01,
+      "pbr": 12.23,
+      "yield": 0.21
+    },
+    {
+      "code": "6449",
+      "name": "鈺邦",
+      "price": 209.5,
+      "volume": 1204011.0,
+      "pe": 23.33,
+      "pbr": 2.75,
+      "yield": 2.0
+    },
+    {
+      "code": "6451",
+      "name": "訊芯-KY",
+      "price": 394.0,
+      "volume": 2301670.0,
+      "pe": 361.47,
+      "pbr": 5.22,
+      "yield": 0.06
+    },
+    {
+      "code": "6456",
+      "name": "GIS-KY",
+      "price": 61.6,
+      "volume": 1606173.0,
+      "pe": null,
+      "pbr": 0.7,
+      "yield": null
+    },
+    {
+      "code": "6464",
+      "name": "台數科",
+      "price": 78.0,
+      "volume": 24088.0,
+      "pe": 17.33,
+      "pbr": 1.2,
+      "yield": 2.22
+    },
+    {
+      "code": "6472",
+      "name": "保瑞",
+      "price": 411.0,
+      "volume": 460996.0,
+      "pe": 33.88,
+      "pbr": 3.47,
+      "yield": 2.43
+    },
+    {
+      "code": "6477",
+      "name": "安集",
+      "price": 33.5,
+      "volume": 292810.0,
+      "pe": 1116.67,
+      "pbr": 1.31,
+      "yield": 1.04
+    },
+    {
+      "code": "6491",
+      "name": "晶碩",
+      "price": 390.0,
+      "volume": 590199.0,
+      "pe": 16.26,
+      "pbr": 2.59,
+      "yield": 2.57
+    },
+    {
+      "code": "6504",
+      "name": "南六",
+      "price": 36.55,
+      "volume": 30043.0,
+      "pe": 23.43,
+      "pbr": 0.76,
+      "yield": 2.74
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "price": 82.9,
+      "volume": 17586676.0,
+      "pe": 14.39,
+      "pbr": 1.62,
+      "yield": 1.45
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "price": 6310.0,
+      "volume": 362102.0,
+      "pe": 103.31,
+      "pbr": 26.68,
+      "yield": 0.78
+    },
+    {
+      "code": "6525",
+      "name": "捷敏-KY",
+      "price": 125.5,
+      "volume": 531566.0,
+      "pe": 17.45,
+      "pbr": 3.44,
+      "yield": 3.98
+    },
+    {
+      "code": "6526",
+      "name": "達發",
+      "price": 623.0,
+      "volume": 202854.0,
+      "pe": 34.55,
+      "pbr": 5.53,
+      "yield": 2.17
+    },
+    {
+      "code": "6531",
+      "name": "愛普*",
+      "price": 890.0,
+      "volume": 4824312.0,
+      "pe": 51.33,
+      "pbr": 11.55,
+      "yield": 0.79
+    },
+    {
+      "code": "6533",
+      "name": "晶心科",
+      "price": 224.5,
+      "volume": 612997.0,
+      "pe": null,
+      "pbr": 2.65,
+      "yield": null
+    },
+    {
+      "code": "6534",
+      "name": "正瀚-創",
+      "price": 89.8,
+      "volume": 25539.0,
+      "pe": 14.97,
+      "pbr": 3.44,
+      "yield": 5.35
+    },
+    {
+      "code": "6541",
+      "name": "泰福-KY",
+      "price": 30.3,
+      "volume": 293163.0,
+      "pe": null,
+      "pbr": 1.62,
+      "yield": null
+    },
+    {
+      "code": "6550",
+      "name": "北極星藥業-KY",
+      "price": 9.9,
+      "volume": 1026794.0,
+      "pe": null,
+      "pbr": 1.95,
+      "yield": null
+    },
+    {
+      "code": "6552",
+      "name": "易華電",
+      "price": 23.35,
+      "volume": 27835.0,
+      "pe": null,
+      "pbr": 0.73,
+      "yield": null
+    },
+    {
+      "code": "6558",
+      "name": "興能高",
+      "price": 23.05,
+      "volume": 173822.0,
+      "pe": null,
+      "pbr": 1.63,
+      "yield": null
+    },
+    {
+      "code": "6573",
+      "name": "虹揚-KY",
+      "price": 15.55,
+      "volume": 89311.0,
+      "pe": 10.72,
+      "pbr": 2.15,
+      "yield": null
+    },
+    {
+      "code": "6579",
+      "name": "研揚",
+      "price": 147.5,
+      "volume": 233090.0,
+      "pe": 20.15,
+      "pbr": 2.46,
+      "yield": 2.54
+    },
+    {
+      "code": "6581",
+      "name": "鋼聯",
+      "price": 109.0,
+      "volume": 36271.0,
+      "pe": 14.79,
+      "pbr": 2.77,
+      "yield": 4.86
+    },
+    {
+      "code": "6582",
+      "name": "申豐",
+      "price": 31.2,
+      "volume": 21437.0,
+      "pe": 82.11,
+      "pbr": 0.48,
+      "yield": null
+    },
+    {
+      "code": "6585",
+      "name": "鼎基",
+      "price": 102.5,
+      "volume": 66736.0,
+      "pe": 13.21,
+      "pbr": 1.88,
+      "yield": 4.39
+    },
+    {
+      "code": "6589",
+      "name": "台康生技",
+      "price": 48.65,
+      "volume": 620762.0,
+      "pe": null,
+      "pbr": 1.87,
+      "yield": null
+    },
+    {
+      "code": "6591",
+      "name": "動力-KY",
+      "price": 41.5,
+      "volume": 24295.0,
+      "pe": 12.97,
+      "pbr": 0.79,
+      "yield": 9.64
+    },
+    {
+      "code": "6592",
+      "name": "和潤企業",
+      "price": 59.7,
+      "volume": 155943.0,
+      "pe": 11.99,
+      "pbr": 1.14,
+      "yield": 5.53
+    },
+    {
+      "code": "6598",
+      "name": "ABC-KY",
+      "price": 27.15,
+      "volume": 107991.0,
+      "pe": null,
+      "pbr": 3.98,
+      "yield": null
+    },
+    {
+      "code": "6605",
+      "name": "帝寶",
+      "price": 137.5,
+      "volume": 278582.0,
+      "pe": 8.49,
+      "pbr": 1.13,
+      "yield": 4.73
+    },
+    {
+      "code": "6606",
+      "name": "建德工業",
+      "price": 25.05,
+      "volume": 82672.0,
+      "pe": 17.28,
+      "pbr": 1.68,
+      "yield": 4.11
+    },
+    {
+      "code": "6614",
+      "name": "資拓宏宇",
+      "price": 35.45,
+      "volume": 21860.0,
+      "pe": 17.64,
+      "pbr": 1.88,
+      "yield": 4.65
+    },
+    {
+      "code": "6625",
+      "name": "必應",
+      "price": 73.3,
+      "volume": 83413.0,
+      "pe": 7.1,
+      "pbr": 2.25,
+      "yield": 6.82
+    },
+    {
+      "code": "6641",
+      "name": "基士德-KY",
+      "price": 16.8,
+      "volume": 10535.0,
+      "pe": 20.74,
+      "pbr": 0.4,
+      "yield": 2.38
+    },
+    {
+      "code": "6645",
+      "name": "金萬林-創",
+      "price": 12.65,
+      "volume": 38894.0,
+      "pe": null,
+      "pbr": 1.83,
+      "yield": null
+    },
+    {
+      "code": "6655",
+      "name": "科定",
+      "price": 123.0,
+      "volume": 14793.0,
+      "pe": 25.36,
+      "pbr": 2.95,
+      "yield": 4.88
+    },
+    {
+      "code": "6657",
+      "name": "華安",
+      "price": 33.6,
+      "volume": 173306.0,
+      "pe": null,
+      "pbr": 4.14,
+      "yield": null
+    },
+    {
+      "code": "6658",
+      "name": "聯策",
+      "price": 163.0,
+      "volume": 96868.0,
+      "pe": 39.56,
+      "pbr": 4.16,
+      "yield": 0.74
+    },
+    {
+      "code": "6666",
+      "name": "羅麗芬-KY",
+      "price": 44.0,
+      "volume": 32061.0,
+      "pe": 12.9,
+      "pbr": 1.15,
+      "yield": 4.55
+    },
+    {
+      "code": "6668",
+      "name": "中揚光",
+      "price": 42.7,
+      "volume": 5594952.0,
+      "pe": null,
+      "pbr": 2.05,
+      "yield": null
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "price": 2315.0,
+      "volume": 2767688.0,
+      "pe": 7.42,
+      "pbr": 3.15,
+      "yield": 7.09
+    },
+    {
+      "code": "6670",
+      "name": "復盛應用",
+      "price": 270.5,
+      "volume": 164177.0,
+      "pe": 11.05,
+      "pbr": 2.43,
+      "yield": 5.91
+    },
+    {
+      "code": "6671",
+      "name": "三能-KY",
+      "price": 22.75,
+      "volume": 3496.0,
+      "pe": 10.48,
+      "pbr": 0.78,
+      "yield": 5.27
+    },
+    {
+      "code": "6672",
+      "name": "騰輝電子-KY",
+      "price": 291.0,
+      "volume": 4204679.0,
+      "pe": 43.96,
+      "pbr": 4.94,
+      "yield": 1.15
+    },
+    {
+      "code": "6674",
+      "name": "鋐寶科技",
+      "price": 15.6,
+      "volume": 4000.0,
+      "pe": null,
+      "pbr": 1.37,
+      "yield": null
+    },
+    {
+      "code": "6689",
+      "name": "伊雲谷",
+      "price": 69.3,
+      "volume": 7763172.0,
+      "pe": 31.64,
+      "pbr": 1.62,
+      "yield": 2.89
+    },
+    {
+      "code": "6691",
+      "name": "洋基工程",
+      "price": 608.0,
+      "volume": 246634.0,
+      "pe": 18.19,
+      "pbr": 9.89,
+      "yield": 3.62
+    },
+    {
+      "code": "6695",
+      "name": "芯鼎",
+      "price": 45.6,
+      "volume": 225604.0,
+      "pe": null,
+      "pbr": 2.63,
+      "yield": null
+    },
+    {
+      "code": "6698",
+      "name": "旭暉應材",
+      "price": 31.45,
+      "volume": 131318.0,
+      "pe": null,
+      "pbr": 2.11,
+      "yield": 1.59
+    },
+    {
+      "code": "6706",
+      "name": "惠特",
+      "price": 143.5,
+      "volume": 19143749.0,
+      "pe": null,
+      "pbr": 3.04,
+      "yield": null
+    },
+    {
+      "code": "6715",
+      "name": "嘉基",
+      "price": 357.5,
+      "volume": 2625978.0,
+      "pe": 235.2,
+      "pbr": 6.6,
+      "yield": 0.54
+    },
+    {
+      "code": "6719",
+      "name": "力智",
+      "price": 179.0,
+      "volume": 285019.0,
+      "pe": 20.16,
+      "pbr": 1.34,
+      "yield": 2.57
+    },
+    {
+      "code": "6722",
+      "name": "輝創",
+      "price": 32.0,
+      "volume": 13025.0,
+      "pe": 15.69,
+      "pbr": 1.11,
+      "yield": 6.25
+    },
+    {
+      "code": "6742",
+      "name": "澤米",
+      "price": 44.2,
+      "volume": 245117.0,
+      "pe": null,
+      "pbr": 2.6,
+      "yield": null
+    },
+    {
+      "code": "6743",
+      "name": "安普新",
+      "price": 29.5,
+      "volume": 392619.0,
+      "pe": 26.58,
+      "pbr": 1.91,
+      "yield": 10.17
+    },
+    {
+      "code": "6753",
+      "name": "龍德造船",
+      "price": 130.0,
+      "volume": 451999.0,
+      "pe": 12.4,
+      "pbr": 2.87,
+      "yield": 0.96
+    },
+    {
+      "code": "6754",
+      "name": "匯僑設計",
+      "price": 41.3,
+      "volume": 11000.0,
+      "pe": 12.48,
+      "pbr": 1.25,
+      "yield": 8.47
+    },
+    {
+      "code": "6756",
+      "name": "威鋒電子",
+      "price": 93.8,
+      "volume": 71459.0,
+      "pe": 52.7,
+      "pbr": 2.16,
+      "yield": 0.96
+    },
+    {
+      "code": "6757",
+      "name": "台灣虎航",
+      "price": 52.8,
+      "volume": 920004.0,
+      "pe": 9.17,
+      "pbr": 3.08,
+      "yield": 4.58
+    },
+    {
+      "code": "6768",
+      "name": "志強-KY",
+      "price": 62.4,
+      "volume": 241559.0,
+      "pe": 12.51,
+      "pbr": 0.85,
+      "yield": 8.27
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "price": 66.9,
+      "volume": 162022743.0,
+      "pe": 22.3,
+      "pbr": 2.45,
+      "yield": null
+    },
+    {
+      "code": "6771",
+      "name": "平和環保-創",
+      "price": 41.7,
+      "volume": 29291.0,
+      "pe": 14.48,
+      "pbr": 1.57,
+      "yield": 7.67
+    },
+    {
+      "code": "6776",
+      "name": "展碁國際",
+      "price": 51.7,
+      "volume": 43351.0,
+      "pe": 11.8,
+      "pbr": 1.71,
+      "yield": 5.8
+    },
+    {
+      "code": "6781",
+      "name": "AES-KY",
+      "price": 982.0,
+      "volume": 313842.0,
+      "pe": 23.23,
+      "pbr": 4.74,
+      "yield": 1.95
+    },
+    {
+      "code": "6782",
+      "name": "視陽",
+      "price": 231.0,
+      "volume": 195636.0,
+      "pe": 14.0,
+      "pbr": 3.28,
+      "yield": 3.64
+    },
+    {
+      "code": "6789",
+      "name": "采鈺",
+      "price": 425.0,
+      "volume": 756040.0,
+      "pe": 81.11,
+      "pbr": 7.33,
+      "yield": 0.71
+    },
+    {
+      "code": "6790",
+      "name": "永豐實",
+      "price": 37.7,
+      "volume": 46930.0,
+      "pe": 12.24,
+      "pbr": 1.8,
+      "yield": 7.03
+    },
+    {
+      "code": "6792",
+      "name": "詠業",
+      "price": 58.7,
+      "volume": 31000.0,
+      "pe": 20.89,
+      "pbr": 1.73,
+      "yield": 4.26
+    },
+    {
+      "code": "6794",
+      "name": "向榮生技",
+      "price": 76.5,
+      "volume": 16000.0,
+      "pe": null,
+      "pbr": 5.95,
+      "yield": null
+    },
+    {
+      "code": "6796",
+      "name": "晉弘",
+      "price": 50.9,
+      "volume": 43882.0,
+      "pe": 141.39,
+      "pbr": 2.4,
+      "yield": 0.49
+    },
+    {
+      "code": "6799",
+      "name": "來頡",
+      "price": 77.5,
+      "volume": 82153.0,
+      "pe": 15.02,
+      "pbr": 2.04,
+      "yield": 3.23
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "price": 2025.0,
+      "volume": 1303815.0,
+      "pe": 43.32,
+      "pbr": 16.62,
+      "yield": 0.62
+    },
+    {
+      "code": "6807",
+      "name": "峰源-KY",
+      "price": 32.6,
+      "volume": 2000.0,
+      "pe": 11.09,
+      "pbr": 0.7,
+      "yield": 7.67
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "price": 532.0,
+      "volume": 1006110.0,
+      "pe": 2128.0,
+      "pbr": 8.53,
+      "yield": 0.19
+    },
+    {
+      "code": "6831",
+      "name": "邁科",
+      "price": 513.0,
+      "volume": 532270.0,
+      "pe": 92.6,
+      "pbr": 12.61,
+      "yield": 0.58
+    },
+    {
+      "code": "6834",
+      "name": "天二科技",
+      "price": 97.1,
+      "volume": 5641078.0,
+      "pe": 42.22,
+      "pbr": 5.57,
+      "yield": 0.41
+    },
+    {
+      "code": "6835",
+      "name": "圓裕",
+      "price": 30.35,
+      "volume": 15000.0,
+      "pe": 101.17,
+      "pbr": 1.13,
+      "yield": 3.33
+    },
+    {
+      "code": "6838",
+      "name": "台新藥",
+      "price": 23.35,
+      "volume": 72365.0,
+      "pe": null,
+      "pbr": 2.57,
+      "yield": null
+    },
+    {
+      "code": "6854",
+      "name": "錼創科技-KY創",
+      "price": 87.4,
+      "volume": 212464.0,
+      "pe": null,
+      "pbr": 3.0,
+      "yield": null
+    },
+    {
+      "code": "6861",
+      "name": "睿生光電",
+      "price": 228.0,
+      "volume": 3944720.0,
+      "pe": 35.19,
+      "pbr": 6.09,
+      "yield": 0.88
+    },
+    {
+      "code": "6862",
+      "name": "三集瑞-KY",
+      "price": 130.0,
+      "volume": 138260.0,
+      "pe": 19.17,
+      "pbr": 2.24,
+      "yield": 3.85
+    },
+    {
+      "code": "6863",
+      "name": "永道-KY",
+      "price": 92.9,
+      "volume": 109926.0,
+      "pe": 32.6,
+      "pbr": 1.12,
+      "yield": 1.61
+    },
+    {
+      "code": "6869",
+      "name": "雲豹能源",
+      "price": 63.5,
+      "volume": 325886.0,
+      "pe": null,
+      "pbr": 1.86,
+      "yield": 3.15
+    },
+    {
+      "code": "6873",
+      "name": "泓德能源",
+      "price": 67.1,
+      "volume": 156299.0,
+      "pe": 69.9,
+      "pbr": 0.95,
+      "yield": 3.79
+    },
+    {
+      "code": "6885",
+      "name": "全福生技",
+      "price": 26.6,
+      "volume": 578526.0,
+      "pe": null,
+      "pbr": 2.3,
+      "yield": null
+    },
+    {
+      "code": "6887",
+      "name": "寶綠特-KY",
+      "price": 37.15,
+      "volume": 19010.0,
+      "pe": 8.46,
+      "pbr": 0.92,
+      "yield": 6.51
+    },
+    {
+      "code": "6890",
+      "name": "來億-KY",
+      "price": 148.5,
+      "volume": 157125.0,
+      "pe": 14.28,
+      "pbr": 1.59,
+      "yield": 6.04
+    },
+    {
+      "code": "6901",
+      "name": "鑽石投資",
+      "price": 15.1,
+      "volume": 530157.0,
+      "pe": 4.4,
+      "pbr": 1.05,
+      "yield": null
+    },
+    {
+      "code": "6902",
+      "name": "GOGOLOOK",
+      "price": 124.5,
+      "volume": 65270.0,
+      "pe": 25.88,
+      "pbr": 5.43,
+      "yield": null
+    },
+    {
+      "code": "6906",
+      "name": "現觀科",
+      "price": 83.0,
+      "volume": 24704.0,
+      "pe": 34.58,
+      "pbr": 3.85,
+      "yield": 2.17
+    },
+    {
+      "code": "6908",
+      "name": "宏碁遊戲-創",
+      "price": 30.1,
+      "volume": 9040.0,
+      "pe": 27.12,
+      "pbr": 0.86,
+      "yield": 4.12
+    },
+    {
+      "code": "6909",
+      "name": "創控",
+      "price": 40.35,
+      "volume": 379125.0,
+      "pe": 30.34,
+      "pbr": 2.66,
+      "yield": 2.48
+    },
+    {
+      "code": "6914",
+      "name": "阜爾運通",
+      "price": 119.5,
+      "volume": 35104.0,
+      "pe": 12.0,
+      "pbr": 2.19,
+      "yield": 6.69
+    },
+    {
+      "code": "6916",
+      "name": "華凌",
+      "price": 17.95,
+      "volume": 31000.0,
+      "pe": null,
+      "pbr": 1.16,
+      "yield": null
+    },
+    {
+      "code": "6918",
+      "name": "愛派司",
+      "price": 73.5,
+      "volume": 3200.0,
+      "pe": 13.49,
+      "pbr": 2.09,
+      "yield": 6.8
+    },
+    {
+      "code": "6919",
+      "name": "康霈*",
+      "price": 79.9,
+      "volume": 4142059.0,
+      "pe": null,
+      "pbr": 13.5,
+      "yield": null
+    },
+    {
+      "code": "6921",
+      "name": "嘉雨思-創",
+      "price": 59.9,
+      "volume": 15000.0,
+      "pe": null,
+      "pbr": 7.18,
+      "yield": null
+    },
+    {
+      "code": "6923",
+      "name": "中台",
+      "price": 76.0,
+      "volume": 61698.0,
+      "pe": 18.58,
+      "pbr": 2.75,
+      "yield": 3.99
+    },
+    {
+      "code": "6924",
+      "name": "榮惠-KY創",
+      "price": 128.0,
+      "volume": 76567.0,
+      "pe": 15.38,
+      "pbr": 4.74,
+      "yield": 3.91
+    },
+    {
+      "code": "6928",
+      "name": "攸泰科技",
+      "price": 45.5,
+      "volume": 51460.0,
+      "pe": null,
+      "pbr": 1.94,
+      "yield": null
+    },
+    {
+      "code": "6931",
+      "name": "青松健康",
+      "price": 39.5,
+      "volume": 24728.0,
+      "pe": 10.48,
+      "pbr": 2.01,
+      "yield": 1.22
+    },
+    {
+      "code": "6933",
+      "name": "AMAX-KY",
+      "price": 286.0,
+      "volume": 1753249.0,
+      "pe": 35.48,
+      "pbr": 4.82,
+      "yield": 0.87
+    },
+    {
+      "code": "6934",
+      "name": "心誠鎂",
+      "price": 72.3,
+      "volume": 29650.0,
+      "pe": null,
+      "pbr": 4.93,
+      "yield": null
+    },
+    {
+      "code": "6936",
+      "name": "永鴻生技",
+      "price": 31.8,
+      "volume": 27109.0,
+      "pe": 14.32,
+      "pbr": 1.75,
+      "yield": 4.75
+    },
+    {
+      "code": "6937",
+      "name": "天虹",
+      "price": 277.5,
+      "volume": 274117.0,
+      "pe": 61.26,
+      "pbr": 5.28,
+      "yield": 0.5
+    },
+    {
+      "code": "6944",
+      "name": "兆聯實業",
+      "price": 691.0,
+      "volume": 138983.0,
+      "pe": 17.17,
+      "pbr": 6.26,
+      "yield": 2.89
+    },
+    {
+      "code": "6947",
+      "name": "台鎔科技",
+      "price": 66.6,
+      "volume": 175483.0,
+      "pe": 33.47,
+      "pbr": 2.77,
+      "yield": 0.8
+    },
+    {
+      "code": "6949",
+      "name": "沛爾生醫*-創",
+      "price": 51.4,
+      "volume": 7426041.0,
+      "pe": null,
+      "pbr": 26.22,
+      "yield": null
+    },
+    {
+      "code": "6951",
+      "name": "青新-創",
+      "price": 69.9,
+      "volume": 13758.0,
+      "pe": 11.29,
+      "pbr": 2.89,
+      "yield": 7.58
+    },
+    {
+      "code": "6952",
+      "name": "大武山",
+      "price": 38.75,
+      "volume": 9000.0,
+      "pe": 30.51,
+      "pbr": 1.78,
+      "yield": null
+    },
+    {
+      "code": "6955",
+      "name": "邦睿生技-創",
+      "price": 97.7,
+      "volume": 5000.0,
+      "pe": 22.46,
+      "pbr": 3.69,
+      "yield": 3.07
+    },
+    {
+      "code": "6957",
+      "name": "裕慶-KY",
+      "price": 245.0,
+      "volume": 170601.0,
+      "pe": 21.07,
+      "pbr": 5.67,
+      "yield": 3.71
+    },
+    {
+      "code": "6958",
+      "name": "日盛台駿",
+      "price": 17.15,
+      "volume": 70002.0,
+      "pe": null,
+      "pbr": 0.72,
+      "yield": null
+    },
+    {
+      "code": "6962",
+      "name": "奕力-KY",
+      "price": 30.55,
+      "volume": 720664.0,
+      "pe": 20.92,
+      "pbr": 0.76,
+      "yield": 3.27
+    },
+    {
+      "code": "6965",
+      "name": "中傑-KY",
+      "price": 69.0,
+      "volume": 26290.0,
+      "pe": 116.95,
+      "pbr": 0.95,
+      "yield": 7.25
+    },
+    {
+      "code": "6969",
+      "name": "成信實業*-創",
+      "price": 32.2,
+      "volume": 157126.0,
+      "pe": 357.78,
+      "pbr": 2.91,
+      "yield": null
+    },
+    {
+      "code": "6988",
+      "name": "威力暘-創",
+      "price": 11.8,
+      "volume": 11001.0,
+      "pe": null,
+      "pbr": 0.77,
+      "yield": null
+    },
+    {
+      "code": "6994",
+      "name": "富威電力",
+      "price": 26.1,
+      "volume": 1892332.0,
+      "pe": 4.78,
+      "pbr": 0.81,
+      "yield": 11.49
+    },
+    {
+      "code": "7610",
+      "name": "聯友金屬-創",
+      "price": 1655.0,
+      "volume": 878535.0,
+      "pe": 47.5,
+      "pbr": 25.8,
+      "yield": 0.15
+    },
+    {
+      "code": "7631",
+      "name": "聚賢研發-創",
+      "price": 134.0,
+      "volume": 13246.0,
+      "pe": 12.69,
+      "pbr": 2.93,
+      "yield": 2.79
+    },
+    {
+      "code": "7689",
+      "name": "大鵬科CLMX",
+      "price": 153.5,
+      "volume": 15716.0,
+      "pe": 12.91,
+      "pbr": 4.84,
+      "yield": 3.58
+    },
+    {
+      "code": "7705",
+      "name": "三商餐飲",
+      "price": 29.9,
+      "volume": 27365.0,
+      "pe": 12.3,
+      "pbr": 1.32,
+      "yield": 5.35
+    },
+    {
+      "code": "7711",
+      "name": "永擎",
+      "price": 468.0,
+      "volume": 3570247.0,
+      "pe": 20.6,
+      "pbr": 6.18,
+      "yield": 1.92
+    },
+    {
+      "code": "7721",
+      "name": "微程式",
+      "price": 57.5,
+      "volume": 73122.0,
+      "pe": 63.19,
+      "pbr": 2.47,
+      "yield": 1.74
+    },
+    {
+      "code": "7722",
+      "name": "LINEPAY",
+      "price": 264.0,
+      "volume": 29380.0,
+      "pe": 31.43,
+      "pbr": 1.63,
+      "yield": 0.76
+    },
+    {
+      "code": "7730",
+      "name": "暉盛-創",
+      "price": 169.0,
+      "volume": 95271.0,
+      "pe": 94.94,
+      "pbr": 6.37,
+      "yield": 0.89
+    },
+    {
+      "code": "7732",
+      "name": "金興精密",
+      "price": 33.8,
+      "volume": 3000.0,
+      "pe": 17.79,
+      "pbr": 1.22,
+      "yield": 4.44
+    },
+    {
+      "code": "7736",
+      "name": "虎山",
+      "price": 69.0,
+      "volume": 6889.0,
+      "pe": 12.45,
+      "pbr": 1.49,
+      "yield": 5.51
+    },
+    {
+      "code": "7740",
+      "name": "熙特爾-創",
+      "price": 123.5,
+      "volume": 177665.0,
+      "pe": 15.32,
+      "pbr": 4.4,
+      "yield": 2.7
+    },
+    {
+      "code": "7749",
+      "name": "意騰-KY",
+      "price": 352.5,
+      "volume": 193727.0,
+      "pe": 24.38,
+      "pbr": 4.43,
+      "yield": 2.55
+    },
+    {
+      "code": "7750",
+      "name": "新代",
+      "price": 1890.0,
+      "volume": 139284.0,
+      "pe": 32.49,
+      "pbr": 10.08,
+      "yield": 0.85
+    },
+    {
+      "code": "7760",
+      "name": "享溫馨",
+      "price": 32.95,
+      "volume": 18060.0,
+      "pe": 49.18,
+      "pbr": 1.04,
+      "yield": 6.07
+    },
+    {
+      "code": "7765",
+      "name": "中華資安",
+      "price": 235.0,
+      "volume": 2000032.0,
+      "pe": 20.49,
+      "pbr": 4.99,
+      "yield": 4.11
+    },
+    {
+      "code": "7768",
+      "name": "頌勝科技",
+      "price": 252.5,
+      "volume": 33937.0,
+      "pe": 54.18,
+      "pbr": 3.95,
+      "yield": 1.39
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "price": 6135.0,
+      "volume": 420235.0,
+      "pe": 63.34,
+      "pbr": 19.43,
+      "yield": 1.06
+    },
+    {
+      "code": "7780",
+      "name": "大研生醫*",
+      "price": 16.05,
+      "volume": 602925.0,
+      "pe": 30.28,
+      "pbr": 2.65,
+      "yield": 8.97
+    },
+    {
+      "code": "7786",
+      "name": "東方風能",
+      "price": 119.5,
+      "volume": 117863.0,
+      "pe": 11.21,
+      "pbr": 2.16,
+      "yield": 4.69
+    },
+    {
+      "code": "7788",
+      "name": "松川精密",
+      "price": 280.5,
+      "volume": 1428881.0,
+      "pe": 33.75,
+      "pbr": 3.58,
+      "yield": 0.71
+    },
+    {
+      "code": "7791",
+      "name": "皇家可口",
+      "price": 55.4,
+      "volume": 19730.0,
+      "pe": 13.29,
+      "pbr": 1.39,
+      "yield": 6.88
+    },
+    {
+      "code": "7795",
+      "name": "長廣",
+      "price": 466.0,
+      "volume": 932332.0,
+      "pe": 206.19,
+      "pbr": 12.93,
+      "yield": 0.46
+    },
+    {
+      "code": "7799",
+      "name": "禾榮科",
+      "price": 415.5,
+      "volume": 277482.0,
+      "pe": null,
+      "pbr": 5.89,
+      "yield": null
+    },
+    {
+      "code": "7803",
+      "name": "雲象科技-創",
+      "price": 18.55,
+      "volume": 35210.0,
+      "pe": null,
+      "pbr": 3.02,
+      "yield": null
+    },
+    {
+      "code": "7818",
+      "name": "溢泰實業",
+      "price": 60.0,
+      "volume": 96519.0,
+      "pe": 12.53,
+      "pbr": 1.06,
+      "yield": 3.4
+    },
+    {
+      "code": "7821",
+      "name": "神數",
+      "price": 38.6,
+      "volume": 75390.0,
+      "pe": 12.61,
+      "pbr": 1.75,
+      "yield": 5.18
+    },
+    {
+      "code": "7822",
+      "name": "倍利科",
+      "price": 800.0,
+      "volume": 129355.0,
+      "pe": 45.15,
+      "pbr": 6.05,
+      "yield": 0.8
+    },
+    {
+      "code": "7823",
+      "name": "奧義賽博-KY創",
+      "price": 80.3,
+      "volume": 72158.0,
+      "pe": null,
+      "pbr": 5.69,
+      "yield": null
+    },
+    {
+      "code": "7827",
+      "name": "漢康-KY創",
+      "price": 149.5,
+      "volume": 100172.0,
+      "pe": null,
+      "pbr": 15.79,
+      "yield": null
+    },
+    {
+      "code": "7835",
+      "name": "永悅健康-創",
+      "price": 21.25,
+      "volume": 12053.0,
+      "pe": null,
+      "pbr": 5.31,
+      "yield": null
+    },
+    {
+      "code": "7855",
+      "name": "和運租車",
+      "price": 42.0,
+      "volume": 367485.0,
+      "pe": 8.88,
+      "pbr": 1.28,
+      "yield": 7.67
+    },
+    {
+      "code": "8011",
+      "name": "台通",
+      "price": 15.4,
+      "volume": 197565.0,
+      "pe": 20.81,
+      "pbr": 0.81,
+      "yield": 4.55
+    },
+    {
+      "code": "8016",
+      "name": "矽創",
+      "price": 274.0,
+      "volume": 388121.0,
+      "pe": 13.69,
+      "pbr": 2.44,
+      "yield": 4.2
+    },
+    {
+      "code": "8021",
+      "name": "尖點",
+      "price": 431.5,
+      "volume": 563545.0,
+      "pe": 87.0,
+      "pbr": 10.07,
+      "yield": 0.46
+    },
+    {
+      "code": "8028",
+      "name": "昇陽半導體",
+      "price": 226.5,
+      "volume": 3338771.0,
+      "pe": 40.59,
+      "pbr": 6.78,
+      "yield": 1.19
+    },
+    {
+      "code": "8033",
+      "name": "雷虎",
+      "price": 166.5,
+      "volume": 2429775.0,
+      "pe": 346.88,
+      "pbr": 8.42,
+      "yield": null
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "price": 270.0,
+      "volume": 17266429.0,
+      "pe": 85.71,
+      "pbr": 6.36,
+      "yield": 0.74
+    },
+    {
+      "code": "8045",
+      "name": "達運光電",
+      "price": 52.6,
+      "volume": 144843.0,
+      "pe": 61.16,
+      "pbr": 2.57,
+      "yield": 1.9
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "price": 1085.0,
+      "volume": 7742890.0,
+      "pe": 127.5,
+      "pbr": 14.23,
+      "yield": 0.18
+    },
+    {
+      "code": "8070",
+      "name": "長華*",
+      "price": 49.45,
+      "volume": 878758.0,
+      "pe": 29.26,
+      "pbr": 1.31,
+      "yield": 5.48
+    },
+    {
+      "code": "8072",
+      "name": "陞泰",
+      "price": 26.95,
+      "volume": 1107818.0,
+      "pe": 16.23,
+      "pbr": 0.95,
+      "yield": 3.71
+    },
+    {
+      "code": "8081",
+      "name": "致新",
+      "price": 246.0,
+      "volume": 149828.0,
+      "pe": 13.38,
+      "pbr": 2.6,
+      "yield": 6.5
+    },
+    {
+      "code": "8101",
+      "name": "華冠",
+      "price": 11.8,
+      "volume": 5909.0,
+      "pe": null,
+      "pbr": 2.79,
+      "yield": null
+    },
+    {
+      "code": "8103",
+      "name": "瀚荃",
+      "price": 114.0,
+      "volume": 1820514.0,
+      "pe": 19.93,
+      "pbr": 2.2,
+      "yield": 2.46
+    },
+    {
+      "code": "8104",
+      "name": "錸寶",
+      "price": 28.9,
+      "volume": 290666.0,
+      "pe": null,
+      "pbr": 1.0,
+      "yield": null
+    },
+    {
+      "code": "8105",
+      "name": "凌巨",
+      "price": 14.15,
+      "volume": 1668621.0,
+      "pe": 16.45,
+      "pbr": 0.77,
+      "yield": null
+    },
+    {
+      "code": "8110",
+      "name": "華東",
+      "price": 40.5,
+      "volume": 1901645.0,
+      "pe": 7.43,
+      "pbr": 1.08,
+      "yield": 3.68
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "price": 82.6,
+      "volume": 3987720.0,
+      "pe": 6.25,
+      "pbr": 2.03,
+      "yield": 4.6
+    },
+    {
+      "code": "8114",
+      "name": "振樺電",
+      "price": 176.0,
+      "volume": 263909.0,
+      "pe": 12.54,
+      "pbr": 1.91,
+      "yield": 6.52
+    },
+    {
+      "code": "8131",
+      "name": "福懋科",
+      "price": 57.5,
+      "volume": 1423126.0,
+      "pe": 16.67,
+      "pbr": 1.65,
+      "yield": 1.74
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "price": 84.4,
+      "volume": 11605119.0,
+      "pe": 26.29,
+      "pbr": 2.38,
+      "yield": 1.46
+    },
+    {
+      "code": "8162",
+      "name": "微矽電子-創",
+      "price": 58.8,
+      "volume": 96728.0,
+      "pe": 43.88,
+      "pbr": 2.81,
+      "yield": 2.55
+    },
+    {
+      "code": "8163",
+      "name": "達方",
+      "price": 29.05,
+      "volume": 617702.0,
+      "pe": 48.42,
+      "pbr": 0.74,
+      "yield": 1.72
+    },
+    {
+      "code": "8201",
+      "name": "無敵",
+      "price": 11.6,
+      "volume": 41242.0,
+      "pe": null,
+      "pbr": 1.62,
+      "yield": null
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "price": 874.0,
+      "volume": 852882.0,
+      "pe": 22.91,
+      "pbr": 8.78,
+      "yield": 1.6
+    },
+    {
+      "code": "8213",
+      "name": "志超",
+      "price": 32.3,
+      "volume": 268725.0,
+      "pe": 16.4,
+      "pbr": 0.52,
+      "yield": 3.53
+    },
+    {
+      "code": "8215",
+      "name": "明基材",
+      "price": 24.5,
+      "volume": 316404.0,
+      "pe": null,
+      "pbr": 1.64,
+      "yield": 1.22
+    },
+    {
+      "code": "8222",
+      "name": "寶一",
+      "price": 34.25,
+      "volume": 252099.0,
+      "pe": 25.37,
+      "pbr": 2.52,
+      "yield": 1.02
+    },
+    {
+      "code": "8249",
+      "name": "菱光",
+      "price": 37.1,
+      "volume": 141470.0,
+      "pe": 18.19,
+      "pbr": 0.72,
+      "yield": 5.61
+    },
+    {
+      "code": "8261",
+      "name": "富鼎",
+      "price": 165.0,
+      "volume": 1836022.0,
+      "pe": 24.74,
+      "pbr": 3.44,
+      "yield": 3.03
+    },
+    {
+      "code": "8271",
+      "name": "宇瞻",
+      "price": 199.5,
+      "volume": 1043149.0,
+      "pe": 4.96,
+      "pbr": 2.72,
+      "yield": 2.23
+    },
+    {
+      "code": "8341",
+      "name": "日友",
+      "price": 74.2,
+      "volume": 132619.0,
+      "pe": 14.16,
+      "pbr": 1.81,
+      "yield": 5.39
+    },
+    {
+      "code": "8367",
+      "name": "建新國際",
+      "price": 40.5,
+      "volume": 7065.0,
+      "pe": 12.86,
+      "pbr": 1.14,
+      "yield": 7.04
+    },
+    {
+      "code": "8374",
+      "name": "羅昇",
+      "price": 76.0,
+      "volume": 124293.0,
+      "pe": null,
+      "pbr": 4.11,
+      "yield": 0.26
+    },
+    {
+      "code": "8404",
+      "name": "百和興業-KY",
+      "price": 13.65,
+      "volume": 427126.0,
+      "pe": 16.25,
+      "pbr": 0.79,
+      "yield": 3.66
+    },
+    {
+      "code": "8411",
+      "name": "福貞-KY",
+      "price": 12.75,
+      "volume": 129927.0,
+      "pe": 37.5,
+      "pbr": 0.45,
+      "yield": 0.78
+    },
+    {
+      "code": "8422",
+      "name": "可寧衛*",
+      "price": 25.95,
+      "volume": 4672298.0,
+      "pe": 27.03,
+      "pbr": 3.43,
+      "yield": 4.62
+    },
+    {
+      "code": "8429",
+      "name": "金麗-KY",
+      "price": 5.88,
+      "volume": 170626.0,
+      "pe": 65.33,
+      "pbr": 0.16,
+      "yield": null
+    },
+    {
+      "code": "8438",
+      "name": "昶昕",
+      "price": 67.2,
+      "volume": 72393.0,
+      "pe": 18.56,
+      "pbr": 2.35,
+      "yield": 1.93
+    },
+    {
+      "code": "8442",
+      "name": "威宏-KY",
+      "price": 45.65,
+      "volume": 48403.0,
+      "pe": 14.68,
+      "pbr": 0.86,
+      "yield": 6.57
+    },
+    {
+      "code": "8443",
+      "name": "阿瘦",
+      "price": 11.2,
+      "volume": 21244.0,
+      "pe": null,
+      "pbr": 1.19,
+      "yield": null
+    },
+    {
+      "code": "8454",
+      "name": "富邦媒",
+      "price": 242.0,
+      "volume": 335448.0,
+      "pe": 23.29,
+      "pbr": 7.72,
+      "yield": 4.13
+    },
+    {
+      "code": "8462",
+      "name": "柏文",
+      "price": 160.5,
+      "volume": 43371.0,
+      "pe": 15.37,
+      "pbr": 5.36,
+      "yield": 4.54
+    },
+    {
+      "code": "8463",
+      "name": "潤泰材",
+      "price": 21.15,
+      "volume": 17025.0,
+      "pe": 10.68,
+      "pbr": 1.28,
+      "yield": 3.78
+    },
+    {
+      "code": "8464",
+      "name": "億豐",
+      "price": 382.0,
+      "volume": 318653.0,
+      "pe": 16.69,
+      "pbr": 3.88,
+      "yield": 4.19
+    },
+    {
+      "code": "8466",
+      "name": "美吉吉-KY",
+      "price": 13.6,
+      "volume": 6307.0,
+      "pe": null,
+      "pbr": 0.37,
+      "yield": 2.21
+    },
+    {
+      "code": "8467",
+      "name": "波力-KY",
+      "price": 84.3,
+      "volume": 8260.0,
+      "pe": 13.07,
+      "pbr": 1.57,
+      "yield": 8.37
+    },
+    {
+      "code": "8473",
+      "name": "山林水",
+      "price": 37.85,
+      "volume": 461515.0,
+      "pe": 10.97,
+      "pbr": 0.99,
+      "yield": 4.86
+    },
+    {
+      "code": "8476",
+      "name": "台境*",
+      "price": 19.5,
+      "volume": 232621.0,
+      "pe": 69.64,
+      "pbr": 1.69,
+      "yield": 1.03
+    },
+    {
+      "code": "8478",
+      "name": "東哥遊艇",
+      "price": 141.5,
+      "volume": 41040.0,
+      "pe": 9.84,
+      "pbr": 1.45,
+      "yield": 4.59
+    },
+    {
+      "code": "8481",
+      "name": "政伸",
+      "price": 40.8,
+      "volume": 2003.0,
+      "pe": 12.04,
+      "pbr": 1.6,
+      "yield": 6.74
+    },
+    {
+      "code": "8482",
+      "name": "商億-KY",
+      "price": 47.3,
+      "volume": 1150.0,
+      "pe": 15.98,
+      "pbr": 1.59,
+      "yield": 4.14
+    },
+    {
+      "code": "8487",
+      "name": "愛爾達-創",
+      "price": 70.0,
+      "volume": 7216.0,
+      "pe": 13.18,
+      "pbr": 2.95,
+      "yield": 6.87
+    },
+    {
+      "code": "8488",
+      "name": "吉源-KY",
+      "price": 9.86,
+      "volume": 21573.0,
+      "pe": null,
+      "pbr": 0.3,
+      "yield": null
+    },
+    {
+      "code": "8499",
+      "name": "鼎炫-KY",
+      "price": 251.0,
+      "volume": 22406.0,
+      "pe": 23.61,
+      "pbr": 1.24,
+      "yield": 3.19
+    },
+    {
+      "code": "8926",
+      "name": "台汽電",
+      "price": 57.4,
+      "volume": 1459609.0,
+      "pe": 15.77,
+      "pbr": 2.4,
+      "yield": 3.69
+    },
+    {
+      "code": "8940",
+      "name": "新天地",
+      "price": 14.7,
+      "volume": 27563.0,
+      "pe": 27.74,
+      "pbr": 1.2,
+      "yield": null
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "price": 1220.0,
+      "volume": 973745.0,
+      "pe": 82.15,
+      "pbr": 22.15,
+      "yield": 0.37
+    },
+    {
+      "code": "9103",
+      "name": "美德醫療-DR",
+      "price": 4.96,
+      "volume": 460315.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "9105",
+      "name": "泰金寶-DR",
+      "price": 8.42,
+      "volume": 11512792.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "9136",
+      "name": "巨騰-DR",
+      "price": 9.59,
+      "volume": 269288.0,
+      "pe": null,
+      "pbr": null,
+      "yield": null
+    },
+    {
+      "code": "9802",
+      "name": "鈺齊-KY",
+      "price": 63.8,
+      "volume": 450323.0,
+      "pe": 12.58,
+      "pbr": 0.94,
+      "yield": 7.99
+    },
+    {
+      "code": "9902",
+      "name": "台火",
+      "price": 13.15,
+      "volume": 59332.0,
+      "pe": 22.67,
+      "pbr": 0.99,
+      "yield": null
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "price": 24.25,
+      "volume": 6567302.0,
+      "pe": 5.14,
+      "pbr": 0.38,
+      "yield": 5.36
+    },
+    {
+      "code": "9905",
+      "name": "大華",
+      "price": 21.2,
+      "volume": 203413.0,
+      "pe": 12.93,
+      "pbr": 0.75,
+      "yield": 5.19
+    },
+    {
+      "code": "9906",
+      "name": "欣巴巴",
+      "price": 36.95,
+      "volume": 93242.0,
+      "pe": 10.77,
+      "pbr": 2.2,
+      "yield": 0.22
+    },
+    {
+      "code": "9907",
+      "name": "統一實",
+      "price": 14.9,
+      "volume": 1312596.0,
+      "pe": 15.68,
+      "pbr": 1.13,
+      "yield": 7.92
+    },
+    {
+      "code": "9908",
+      "name": "大台北",
+      "price": 29.0,
+      "volume": 90067.0,
+      "pe": 13.81,
+      "pbr": 0.98,
+      "yield": 4.14
+    },
+    {
+      "code": "9910",
+      "name": "豐泰",
+      "price": 68.4,
+      "volume": 821779.0,
+      "pe": 13.9,
+      "pbr": 2.86,
+      "yield": 5.99
+    },
+    {
+      "code": "9911",
+      "name": "櫻花",
+      "price": 81.3,
+      "volume": 291881.0,
+      "pe": 12.6,
+      "pbr": 2.74,
+      "yield": 6.15
+    },
+    {
+      "code": "9912",
+      "name": "偉聯",
+      "price": 13.0,
+      "volume": 23074.0,
+      "pe": null,
+      "pbr": 1.98,
+      "yield": null
+    },
+    {
+      "code": "9914",
+      "name": "美利達",
+      "price": 68.1,
+      "volume": 2615301.0,
+      "pe": 19.74,
+      "pbr": 1.04,
+      "yield": 4.11
+    },
+    {
+      "code": "9917",
+      "name": "中保科",
+      "price": 106.0,
+      "volume": 336597.0,
+      "pe": 15.45,
+      "pbr": 3.75,
+      "yield": 5.85
+    },
+    {
+      "code": "9918",
+      "name": "欣天然",
+      "price": 42.8,
+      "volume": 38153.0,
+      "pe": 16.03,
+      "pbr": 2.26,
+      "yield": 3.5
+    },
+    {
+      "code": "9919",
+      "name": "康那香",
+      "price": 13.9,
+      "volume": 94790.0,
+      "pe": null,
+      "pbr": 1.46,
+      "yield": null
+    },
+    {
+      "code": "9921",
+      "name": "巨大",
+      "price": 91.1,
+      "volume": 1449432.0,
+      "pe": 58.77,
+      "pbr": 1.04,
+      "yield": 2.0
+    },
+    {
+      "code": "9924",
+      "name": "福興",
+      "price": 37.7,
+      "volume": 145334.0,
+      "pe": 10.33,
+      "pbr": 0.83,
+      "yield": 6.63
+    },
+    {
+      "code": "9925",
+      "name": "新保",
+      "price": 39.45,
+      "volume": 274170.0,
+      "pe": 13.06,
+      "pbr": 1.05,
+      "yield": 5.07
+    },
+    {
+      "code": "9926",
+      "name": "新海",
+      "price": 49.0,
+      "volume": 7174.0,
+      "pe": 17.19,
+      "pbr": 1.98,
+      "yield": 4.29
+    },
+    {
+      "code": "9927",
+      "name": "泰銘",
+      "price": 69.7,
+      "volume": 79512.0,
+      "pe": 11.71,
+      "pbr": 1.58,
+      "yield": 7.17
+    },
+    {
+      "code": "9928",
+      "name": "中視",
+      "price": 17.7,
+      "volume": 32000.0,
+      "pe": null,
+      "pbr": 0.6,
+      "yield": null
+    },
+    {
+      "code": "9929",
+      "name": "秋雨",
+      "price": 10.95,
+      "volume": 10001.0,
+      "pe": 22.35,
+      "pbr": 1.3,
+      "yield": null
+    },
+    {
+      "code": "9930",
+      "name": "中聯資源",
+      "price": 61.0,
+      "volume": 139278.0,
+      "pe": 13.8,
+      "pbr": 2.45,
+      "yield": 6.56
+    },
+    {
+      "code": "9931",
+      "name": "欣高",
+      "price": 33.9,
+      "volume": 3006.0,
+      "pe": 11.81,
+      "pbr": 1.05,
+      "yield": 5.31
+    },
+    {
+      "code": "9933",
+      "name": "中鼎",
+      "price": 41.9,
+      "volume": 3421059.0,
+      "pe": 7.73,
+      "pbr": 1.65,
+      "yield": 2.27
+    },
+    {
+      "code": "9934",
+      "name": "成霖",
+      "price": 9.75,
+      "volume": 706017.0,
+      "pe": 39.0,
+      "pbr": 0.62,
+      "yield": 1.03
+    },
+    {
+      "code": "9935",
+      "name": "慶豐富",
+      "price": 17.9,
+      "volume": 261765.0,
+      "pe": 7.25,
+      "pbr": 1.17,
+      "yield": 6.7
+    },
+    {
+      "code": "9937",
+      "name": "全國",
+      "price": 54.8,
+      "volume": 138988.0,
+      "pe": 21.32,
+      "pbr": 3.06,
+      "yield": 4.01
+    },
+    {
+      "code": "9938",
+      "name": "百和",
+      "price": 37.85,
+      "volume": 875487.0,
+      "pe": 11.65,
+      "pbr": 0.86,
+      "yield": 7.93
+    },
+    {
+      "code": "9939",
+      "name": "宏全",
+      "price": 125.5,
+      "volume": 820511.0,
+      "pe": 11.41,
+      "pbr": 1.88,
+      "yield": 4.94
+    },
+    {
+      "code": "9940",
+      "name": "信義",
+      "price": 19.85,
+      "volume": 231983.0,
+      "pe": 20.26,
+      "pbr": 1.1,
+      "yield": 3.02
+    },
+    {
+      "code": "9941",
+      "name": "裕融",
+      "price": 81.0,
+      "volume": 428413.0,
+      "pe": 11.55,
+      "pbr": 1.35,
+      "yield": 5.65
+    },
+    {
+      "code": "9942",
+      "name": "茂順",
+      "price": 113.5,
+      "volume": 22482.0,
+      "pe": 12.43,
+      "pbr": 2.26,
+      "yield": 6.17
+    },
+    {
+      "code": "9943",
+      "name": "好樂迪",
+      "price": 50.5,
+      "volume": 31152.0,
+      "pe": 12.32,
+      "pbr": 1.71,
+      "yield": 6.93
+    },
+    {
+      "code": "9944",
+      "name": "新麗",
+      "price": 17.15,
+      "volume": 28024.0,
+      "pe": 27.66,
+      "pbr": 0.52,
+      "yield": 1.75
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "price": 27.95,
+      "volume": 3583516.0,
+      "pe": 4.89,
+      "pbr": 0.49,
+      "yield": 3.94
+    },
+    {
+      "code": "9946",
+      "name": "三發地產",
+      "price": 16.7,
+      "volume": 224867.0,
+      "pe": 3.58,
+      "pbr": 0.75,
+      "yield": 8.26
+    },
+    {
+      "code": "9955",
+      "name": "佳龍",
+      "price": 23.1,
+      "volume": 107382.0,
+      "pe": 12.09,
+      "pbr": 1.79,
+      "yield": null
+    },
+    {
+      "code": "9958",
+      "name": "世紀鋼",
+      "price": 90.5,
+      "volume": 1329255.0,
+      "pe": 12.86,
+      "pbr": 1.9,
+      "yield": 4.97
+    }
+  ]
+}
