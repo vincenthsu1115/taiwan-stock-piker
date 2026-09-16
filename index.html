@@ -3,235 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>我的台股自動選股器</title>
 
 <style>
 *{
-  box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 body{
-  margin:0;
-  background:#f4f6f8;
-  color:#172033;
-  font-family:-apple-system,BlinkMacSystemFont,
-  "Segoe UI","Microsoft JhengHei",sans-serif;
+    margin:0;
+    background:#f4f6f8;
+    color:#172033;
+    font-family:-apple-system,BlinkMacSystemFont,
+    "Segoe UI","Microsoft JhengHei",sans-serif;
 }
 
 .container{
-  max-width:1000px;
-  margin:auto;
-  padding:20px;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
 h1{
-  margin:5px 0;
-  font-size:30px;
+    margin:5px 0;
+    font-size:30px;
 }
 
 .subtitle{
-  color:#6b7280;
-  margin:6px 0 20px;
-  line-height:1.6;
+    color:#6b7280;
+    margin:6px 0 20px;
+    line-height:1.6;
 }
 
 .panel{
-  background:white;
-  border-radius:16px;
-  padding:18px;
-  margin-bottom:18px;
-  box-shadow:0 3px 14px rgba(0,0,0,.06);
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 16px rgba(0,0,0,.06);
 }
 
 .controls{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
 label{
-  display:block;
-  font-size:14px;
-  color:#64748b;
-  margin-bottom:6px;
+    display:block;
+    color:#6b7280;
+    margin-bottom:6px;
 }
 
 input,select{
-  width:100%;
-  padding:12px;
-  border:1px solid #d6dbe3;
-  border-radius:10px;
-  font-size:16px;
-  background:white;
+    width:100%;
+    padding:13px;
+    border:1px solid #d7dce2;
+    border-radius:10px;
+    font-size:16px;
+    background:white;
 }
 
 button{
-  width:100%;
-  margin-top:14px;
-  padding:15px;
-  border:none;
-  border-radius:12px;
-  background:#172033;
-  color:white;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
+    width:100%;
+    border:0;
+    border-radius:12px;
+    padding:15px;
+    margin-top:14px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(90deg,#172554,#312e81);
 }
 
 button:hover{
-  opacity:.9;
+    opacity:.93;
 }
 
 .status{
-  margin-top:14px;
-  padding:12px;
-  border-radius:10px;
-  background:#f1f5f9;
-  line-height:1.6;
+    margin-top:14px;
+    padding:14px;
+    border-radius:10px;
+    background:#f1f5f9;
+    line-height:1.6;
 }
 
 .logic{
-  line-height:1.8;
-  font-size:14px;
-  color:#475569;
+    line-height:1.8;
+    color:#4b5563;
 }
 
 .logic strong{
-  color:#172033;
+    color:#172033;
 }
 
-.results-title{
-  margin:25px 0 12px;
+.section-title{
+    font-size:24px;
+    margin:25px 0 15px;
 }
 
-.stock-card{
-  background:white;
-  border-radius:16px;
-  padding:18px;
-  margin-bottom:14px;
-  box-shadow:0 3px 14px rgba(0,0,0,.06);
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:16px;
+    box-shadow:0 4px 16px rgba(0,0,0,.06);
 }
 
-.stock-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:10px;
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:15px;
 }
 
-.stock-name{
-  font-size:22px;
-  font-weight:800;
+.rank{
+    font-size:22px;
+    font-weight:800;
 }
 
-.stock-code{
-  color:#64748b;
-  font-size:14px;
-  margin-top:3px;
+.code{
+    color:#6b7280;
+    margin-top:3px;
 }
 
 .score{
-  font-size:24px;
-  font-weight:800;
+    text-align:right;
+    font-size:30px;
+    font-weight:800;
 }
 
-.score-label{
-  font-size:12px;
-  color:#64748b;
-  text-align:right;
+.score small{
+    display:block;
+    font-size:12px;
+    font-weight:400;
+    color:#6b7280;
 }
 
-.grade{
-  display:inline-block;
-  margin-top:8px;
-  padding:5px 9px;
-  border-radius:999px;
-  background:#eef2f7;
-  font-size:13px;
-  font-weight:700;
+.tag{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.tag-high{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.tag-watch{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+.tag-normal{
+    background:#e5e7eb;
+    color:#374151;
 }
 
 .metrics{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin-top:16px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:16px;
 }
 
 .metric{
-  background:#f8fafc;
-  border-radius:10px;
-  padding:10px;
+    background:#f8fafc;
+    border-radius:10px;
+    padding:12px;
 }
 
-.metric-title{
-  color:#64748b;
-  font-size:12px;
+.metric-name{
+    font-size:13px;
+    color:#6b7280;
+    margin-bottom:5px;
 }
 
 .metric-value{
-  margin-top:4px;
-  font-size:16px;
-  font-weight:700;
+    font-weight:700;
+    font-size:17px;
 }
 
-.positive{
-  color:#047857;
+.green{
+    color:#047857;
 }
 
-.negative{
-  color:#b91c1c;
+.orange{
+    color:#b45309;
+}
+
+.red{
+    color:#b91c1c;
 }
 
 .reason{
-  margin-top:14px;
-  line-height:1.7;
-  font-size:14px;
+    margin-top:16px;
+    line-height:1.7;
 }
 
 .reason-title{
-  font-weight:700;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.reason ul{
+    margin:5px 0;
+    padding-left:20px;
 }
 
 .warning{
-  margin-top:10px;
-  padding:10px;
-  border-radius:8px;
-  background:#fff7ed;
-  color:#9a3412;
-  font-size:13px;
-  line-height:1.6;
+    margin-top:12px;
+    padding:10px 12px;
+    border-radius:9px;
+    background:#fff7ed;
+    color:#9a3412;
+    line-height:1.6;
 }
 
-.updated{
-  margin-top:20px;
-  text-align:center;
-  color:#94a3b8;
-  font-size:12px;
+.budget{
+    margin-top:15px;
+    line-height:1.6;
 }
 
-.empty{
-  background:white;
-  padding:20px;
-  border-radius:14px;
-  text-align:center;
-  color:#64748b;
+.small{
+    color:#6b7280;
+    font-size:13px;
+}
+
+.footer{
+    color:#6b7280;
+    text-align:center;
+    font-size:13px;
+    padding:20px 0 35px;
+    line-height:1.6;
 }
 
 @media(max-width:700px){
 
-  .controls{
-    grid-template-columns:1fr;
-  }
+    .controls{
+        grid-template-columns:1fr;
+    }
 
-  .metrics{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .metrics{
+        grid-template-columns:1fr 1fr;
+    }
 
-  h1{
-    font-size:25px;
-  }
+    h1{
+        font-size:25px;
+    }
 
 }
 </style>
@@ -244,7 +268,9 @@ button:hover{
 <h1>📈 我的台股自動選股器</h1>
 
 <div class="subtitle">
-成長型選股｜營收動能＋合理估值＋流動性｜避免只看低本益比
+成長優先 × 合理估值 × 流動性 × 避免極端低基期失真
+<br>
+自動掃描市場資料，建立每日研究候選清單
 </div>
 
 <div class="panel">
@@ -253,16 +279,23 @@ button:hover{
 
 <div>
 <label>投入預算</label>
-<input id="budget" type="number" value="50000" min="1000">
+<input
+    id="budget"
+    type="number"
+    value="50000"
+    min="1000"
+    step="1000">
 </div>
 
 <div>
 <label>顯示候選股數量</label>
+
 <select id="limit">
 <option value="10">前 10 名</option>
 <option value="20" selected>前 20 名</option>
 <option value="30">前 30 名</option>
 </select>
+
 </div>
 
 </div>
@@ -271,882 +304,1012 @@ button:hover{
 🔍 開始今日自動選股
 </button>
 
-<div id="status" class="status">
-等待開始掃描。
+<div
+    id="status"
+    class="status">
+尚未執行今日掃描。
 </div>
 
 </div>
 
 
-<div class="panel">
+<div class="panel logic">
 
-<strong>目前選股邏輯</strong>
+<strong>目前選股邏輯</strong><br>
 
-<div class="logic">
+📈 <strong>營收成長：</strong>
+優先尋找營收維持成長的公司，但極端低基期年增率不會無限加分。<br>
 
-<strong>營收成長：</strong>
-優先尋找最新營收仍維持成長的公司。
-<br>
+💰 <strong>合理估值：</strong>
+本益比與股價淨值比作為估值輔助，不再讓「低本益比」直接主導排名。<br>
 
-<strong>估值：</strong>
-本益比與股價淨值比過高會降低分數，避免只因熱門而追價。
-<br>
+💧 <strong>流動性：</strong>
+成交量太低的股票會被排除。<br>
 
-<strong>流動性：</strong>
-成交量過低的股票會被排除。
-<br>
+💵 <strong>殖利率：</strong>
+只作輔助條件，不以高殖利率作為主要選股依據。<br>
 
-<strong>股息：</strong>
-殖利率作為輔助條件，不會因高殖利率就直接排到最前面。
-<br>
-
-<strong>風險：</strong>
-營收衰退、高估值或資料不足會另外提醒。
-
-</div>
+⚠️ <strong>風險：</strong>
+極端營收年增率、過高本益比及資料不足會顯示提醒。
 
 </div>
 
 
-<h2 class="results-title">今日掃描結果</h2>
+<h2 class="section-title">今日掃描結果</h2>
 
 <div id="results"></div>
 
-<div id="updated" class="updated"></div>
+
+<div class="footer">
+本工具為研究與資料篩選用途，不代表未來報酬或買賣建議。<br>
+實際投資仍應檢視公司財報、產業趨勢、重大訊息與市場風險。
+</div>
 
 </div>
 
 
 <script>
 
-let marketData=[];
+function num(value){
 
-
-function num(v){
-
-  if(v===null || v===undefined || v===""){
-    return null;
-  }
-
-  const n=Number(v);
-
-  return Number.isFinite(n) ? n : null;
-}
-
-
-function fmt(v,digits=1){
-
-  const n=num(v);
-
-  if(n===null){
-    return "—";
-  }
-
-  return n.toLocaleString(
-    "zh-TW",
-    {
-      maximumFractionDigits:digits
+    if(
+        value === null ||
+        value === undefined ||
+        value === ""
+    ){
+        return null;
     }
-  );
+
+    const n = Number(value);
+
+    return Number.isFinite(n) ? n : null;
 }
 
 
-function percent(v){
+function formatNumber(value,digits=1){
 
-  const n=num(v);
+    const n = num(value);
 
-  if(n===null){
-    return "—";
-  }
+    if(n === null){
+        return "—";
+    }
 
-  return n.toFixed(1)+"%";
+    return n.toLocaleString(
+        "zh-TW",
+        {
+            maximumFractionDigits:digits
+        }
+    );
 }
 
 
-async function loadStockData(){
+function revenueScore(growth){
 
-  const response=
-    await fetch("./stocks.json?t="+Date.now());
+    const g = num(growth);
 
-  if(!response.ok){
-    throw new Error("stocks.json 無法讀取");
-  }
+    if(g === null){
+        return 0;
+    }
 
-  return await response.json();
+    /*
+    營收成長最高 40 分
+
+    重要：
+    不讓 500%、3000%、30000%
+    這類低基期數字無限加分。
+    */
+
+    if(g >= 20 && g <= 80){
+        return 40;
+    }
+
+    if(g > 80 && g <= 150){
+        return 36;
+    }
+
+    if(g > 150 && g <= 300){
+        return 28;
+    }
+
+    if(g > 300){
+        return 18;
+    }
+
+    if(g >= 10){
+        return 32;
+    }
+
+    if(g >= 5){
+        return 24;
+    }
+
+    if(g >= 0){
+        return 15;
+    }
+
+    if(g >= -10){
+        return 7;
+    }
+
+    return 0;
 }
 
 
-function revenueScore(yoy){
+function peScore(pe){
 
-  if(yoy===null){
-    return 4;
-  }
+    const p = num(pe);
 
-  if(yoy>=50){
-    return 35;
-  }
+    if(p === null || p <= 0){
+        return 5;
+    }
 
-  if(yoy>=30){
-    return 32;
-  }
+    /*
+    估值最高 22 分
+    合理即可，不刻意追求最低本益比。
+    */
 
-  if(yoy>=20){
-    return 28;
-  }
+    if(p >= 10 && p <= 22){
+        return 22;
+    }
 
-  if(yoy>=10){
-    return 23;
-  }
+    if(p > 22 && p <= 30){
+        return 18;
+    }
 
-  if(yoy>=5){
-    return 18;
-  }
+    if(p > 30 && p <= 40){
+        return 12;
+    }
 
-  if(yoy>=0){
+    if(p > 40 && p <= 60){
+        return 6;
+    }
+
+    if(p > 60){
+        return 0;
+    }
+
+    if(p >= 6){
+        return 18;
+    }
+
     return 12;
-  }
-
-  if(yoy>=-10){
-    return 5;
-  }
-
-  return 0;
 }
 
 
-function valuationScore(pe,pbr){
+function pbrScore(pbr){
 
-  let score=0;
+    const p = num(pbr);
 
-  if(pe!==null){
-
-    if(pe<=12){
-      score+=20;
-    }
-    else if(pe<=18){
-      score+=18;
-    }
-    else if(pe<=25){
-      score+=15;
-    }
-    else if(pe<=35){
-      score+=10;
-    }
-    else if(pe<=50){
-      score+=5;
+    if(p === null || p <= 0){
+        return 4;
     }
 
-  }
-  else{
-    score+=3;
-  }
+    /*
+    PBR 最高 12 分
+    只作估值輔助。
+    */
 
-
-  if(pbr!==null){
-
-    if(pbr<=1.5){
-      score+=10;
-    }
-    else if(pbr<=2.5){
-      score+=8;
-    }
-    else if(pbr<=4){
-      score+=5;
-    }
-    else if(pbr<=6){
-      score+=2;
+    if(p >= 1 && p <= 3){
+        return 12;
     }
 
-  }
-  else{
-    score+=1;
-  }
+    if(p < 1){
+        return 10;
+    }
 
+    if(p <= 5){
+        return 7;
+    }
 
-  return score;
+    if(p <= 8){
+        return 3;
+    }
+
+    return 0;
 }
 
 
-function dividendScore(yieldRate){
+function yieldScore(dividendYield){
 
-  if(yieldRate===null){
+    const y = num(dividendYield);
+
+    /*
+    殖利率最高只有 8 分，
+    避免選股器變成高股息排行榜。
+    */
+
+    if(y === null || y < 0){
+        return 0;
+    }
+
+    if(y >= 2 && y <= 6){
+        return 8;
+    }
+
+    if(y > 6 && y <= 10){
+        return 6;
+    }
+
+    if(y > 10){
+        return 3;
+    }
+
+    if(y >= 1){
+        return 5;
+    }
+
     return 2;
-  }
-
-  if(yieldRate>=5){
-    return 10;
-  }
-
-  if(yieldRate>=3){
-    return 8;
-  }
-
-  if(yieldRate>=1.5){
-    return 5;
-  }
-
-  if(yieldRate>0){
-    return 3;
-  }
-
-  return 1;
 }
 
 
-function liquidityScore(volume){
+function volumeScore(volume){
 
-  if(volume>=5000000){
-    return 15;
-  }
+    const v = num(volume) || 0;
 
-  if(volume>=1000000){
-    return 13;
-  }
+    /*
+    流動性最高 18 分
+    volume 為成交股數。
+    */
 
-  if(volume>=500000){
-    return 10;
-  }
+    if(v >= 10000000){
+        return 18;
+    }
 
-  if(volume>=300000){
-    return 7;
-  }
+    if(v >= 5000000){
+        return 16;
+    }
 
-  if(volume>=100000){
-    return 4;
-  }
+    if(v >= 1000000){
+        return 13;
+    }
 
-  return 0;
+    if(v >= 500000){
+        return 9;
+    }
+
+    if(v >= 300000){
+        return 6;
+    }
+
+    return 0;
 }
 
 
-function scoreStock(stock){
+function riskAdjustment(stock){
 
-  const price=num(stock.price);
-  const volume=num(stock.volume) || 0;
-  const pe=num(stock.pe);
-  const pbr=num(stock.pbr);
-  const yieldRate=num(stock.yield);
+    let adjustment = 0;
 
-  const revenueYoy=
-    num(
-      stock.revenue_yoy ??
-      stock.revenueYoy ??
-      stock.yoy
+    const growth = num(stock.revenue_yoy);
+    const pe = num(stock.pe);
+
+    /*
+    極端營收成長通常可能有低基期問題。
+    不直接判定不好，但降低其分數。
+    */
+
+    if(growth !== null){
+
+        if(growth > 1000){
+            adjustment -= 12;
+        }
+        else if(growth > 500){
+            adjustment -= 8;
+        }
+        else if(growth > 300){
+            adjustment -= 4;
+        }
+
+        if(growth < -20){
+            adjustment -= 8;
+        }
+
+    }
+
+    if(pe !== null && pe > 60){
+        adjustment -= 6;
+    }
+
+    return adjustment;
+}
+
+
+function calculateScore(stock){
+
+    const r = revenueScore(stock.revenue_yoy);
+    const pe = peScore(stock.pe);
+    const pb = pbrScore(stock.pbr);
+    const dy = yieldScore(stock.yield);
+    const vol = volumeScore(stock.volume);
+    const risk = riskAdjustment(stock);
+
+    let score =
+        r +
+        pe +
+        pb +
+        dy +
+        vol +
+        risk;
+
+    score = Math.max(
+        0,
+        Math.min(100,score)
     );
 
-
-  let score=0;
-
-  score+=revenueScore(revenueYoy);
-  score+=valuationScore(pe,pbr);
-  score+=dividendScore(yieldRate);
-  score+=liquidityScore(volume);
-
-
-  /*
-    額外成長獎勵
-  */
-
-  if(
-    revenueYoy!==null &&
-    revenueYoy>=20 &&
-    pe!==null &&
-    pe<=30
-  ){
-    score+=5;
-  }
-
-
-  /*
-    過熱／高估值扣分
-  */
-
-  if(pe!==null && pe>60){
-    score-=10;
-  }
-
-  if(pbr!==null && pbr>8){
-    score-=5;
-  }
-
-
-  /*
-    營收明顯衰退扣分
-  */
-
-  if(
-    revenueYoy!==null &&
-    revenueYoy<=-20
-  ){
-    score-=10;
-  }
-
-
-  score=Math.max(0,Math.min(100,score));
-
-
-  return {
-    ...stock,
-    price,
-    volume,
-    pe,
-    pbr,
-    yieldRate,
-    revenueYoy,
-    score
-  };
-}
-
-
-function getGrade(stock){
-
-  if(
-    stock.revenueYoy!==null &&
-    stock.revenueYoy<0
-  ){
-
-    if(stock.score>=65){
-      return "分數尚可，但營收需觀察";
-    }
-
-    return "暫列觀察";
-  }
-
-
-  if(stock.score>=80){
-    return "高分研究候選";
-  }
-
-  if(stock.score>=65){
-    return "研究候選";
-  }
-
-  if(stock.score>=50){
-    return "持續觀察";
-  }
-
-  return "暫不優先";
+    return Math.round(score);
 }
 
 
 function getReasons(stock){
 
-  const reasons=[];
+    const reasons = [];
+    const warnings = [];
 
+    const growth = num(stock.revenue_yoy);
+    const pe = num(stock.pe);
+    const pbr = num(stock.pbr);
+    const dy = num(stock.yield);
+    const volume = num(stock.volume) || 0;
 
-  if(stock.revenueYoy!==null){
+    if(growth !== null){
 
-    if(stock.revenueYoy>=30){
-      reasons.push(
-        "營收年增動能強勁（"+
-        percent(stock.revenueYoy)+
-        "）"
-      );
-    }
-    else if(stock.revenueYoy>=10){
-      reasons.push(
-        "營收維持雙位數成長（"+
-        percent(stock.revenueYoy)+
-        "）"
-      );
-    }
-    else if(stock.revenueYoy>=0){
-      reasons.push(
-        "營收仍維持正成長（"+
-        percent(stock.revenueYoy)+
-        "）"
-      );
+        if(growth >= 20 && growth <= 80){
+
+            reasons.push(
+                "營收年增動能明顯（" +
+                formatNumber(growth,1) +
+                "%）"
+            );
+
+        }
+        else if(growth > 80 && growth <= 150){
+
+            reasons.push(
+                "營收年增強勁（" +
+                formatNumber(growth,1) +
+                "%）"
+            );
+
+        }
+        else if(growth >= 10){
+
+            reasons.push(
+                "營收維持成長（" +
+                formatNumber(growth,1) +
+                "%）"
+            );
+
+        }
+
+        if(growth > 300){
+
+            warnings.push(
+                "營收年增達 " +
+                formatNumber(growth,1) +
+                "%，可能受到低基期、認列時點或一次性因素影響，需另外確認。"
+            );
+
+        }
+
+        if(growth < 0){
+
+            warnings.push(
+                "目前營收年增為負值。"
+            );
+
+        }
+
     }
     else{
-      reasons.push(
-        "營收年增為負（"+
-        percent(stock.revenueYoy)+
-        "）"
-      );
+
+        warnings.push(
+            "缺少營收年增資料。"
+        );
+
     }
 
-  }
-  else{
-    reasons.push(
-      "目前沒有可使用的營收年增資料"
-    );
-  }
 
+    if(pe !== null){
 
-  if(stock.pe!==null){
+        if(pe >= 6 && pe <= 25){
 
-    if(stock.pe<=18){
-      reasons.push(
-        "本益比相對低"
-      );
-    }
-    else if(stock.pe<=30){
-      reasons.push(
-        "本益比仍在篩選範圍"
-      );
-    }
-    else if(stock.pe>50){
-      reasons.push(
-        "本益比較高"
-      );
+            reasons.push(
+                "本益比位於相對合理區間"
+            );
+
+        }
+
+        if(pe > 40){
+
+            warnings.push(
+                "本益比較高，需留意市場是否已反映較高成長預期。"
+            );
+
+        }
+
     }
 
-  }
+
+    if(pbr !== null && pbr <= 3){
+
+        reasons.push(
+            "股價淨值比未明顯偏高"
+        );
+
+    }
 
 
-  if(stock.volume>=1000000){
-    reasons.push(
-      "成交流動性佳"
-    );
-  }
+    if(volume >= 1000000){
+
+        reasons.push(
+            "成交流動性佳"
+        );
+
+    }
 
 
-  if(
-    stock.yieldRate!==null &&
-    stock.yieldRate>=3
-  ){
-    reasons.push(
-      "具一定殖利率"
-    );
-  }
+    if(dy !== null && dy >= 2){
+
+        reasons.push(
+            "具一定殖利率"
+        );
+
+    }
 
 
-  return reasons;
+    if(reasons.length === 0){
+
+        reasons.push(
+            "綜合條件符合目前篩選標準"
+        );
+
+    }
+
+    return {
+        reasons,
+        warnings
+    };
 }
 
 
-function getWarnings(stock){
+function getTag(score){
 
-  const warnings=[];
+    if(score >= 85){
 
+        return {
+            text:"高分研究候選",
+            cls:"tag-high"
+        };
 
-  if(stock.revenueYoy===null){
-    warnings.push(
-      "缺少營收成長資料"
-    );
-  }
-  else if(stock.revenueYoy<0){
-    warnings.push(
-      "最新營收年增率為負"
-    );
-  }
+    }
 
+    if(score >= 70){
 
-  if(stock.pe!==null && stock.pe>50){
-    warnings.push(
-      "本益比較高，注意估值風險"
-    );
-  }
+        return {
+            text:"值得追蹤",
+            cls:"tag-watch"
+        };
 
+    }
 
-  if(stock.pbr!==null && stock.pbr>6){
-    warnings.push(
-      "股價淨值比較高"
-    );
-  }
-
-
-  return warnings;
+    return {
+        text:"一般候選",
+        cls:"tag-normal"
+    };
 }
 
 
-function renderStock(stock,index,budget){
+function budgetText(price,budget){
 
-  const shares=
-    stock.price>0
-    ? Math.floor(budget/stock.price)
-    : 0;
+    const p = num(price);
 
-  const lots=
-    Math.floor(shares/1000);
-
-  const oddLots=
-    shares%1000;
-
-  const reasons=getReasons(stock);
-  const warnings=getWarnings(stock);
-
-  const revenueClass=
-    stock.revenueYoy!==null &&
-    stock.revenueYoy<0
-    ? "negative"
-    : "positive";
-
-
-  return `
-  <div class="stock-card">
-
-    <div class="stock-header">
-
-      <div>
-
-        <div class="stock-name">
-          ${index+1}. ${stock.name || "未命名"}
-        </div>
-
-        <div class="stock-code">
-          ${stock.code}
-        </div>
-
-        <div class="grade">
-          ${getGrade(stock)}
-        </div>
-
-      </div>
-
-
-      <div>
-
-        <div class="score">
-          ${stock.score}
-        </div>
-
-        <div class="score-label">
-          研究評分 / 100
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="metrics">
-
-      <div class="metric">
-        <div class="metric-title">股價</div>
-        <div class="metric-value">
-          $${fmt(stock.price,2)}
-        </div>
-      </div>
-
-
-      <div class="metric">
-        <div class="metric-title">
-          營收年增
-        </div>
-
-        <div class="metric-value ${revenueClass}">
-          ${percent(stock.revenueYoy)}
-        </div>
-      </div>
-
-
-      <div class="metric">
-        <div class="metric-title">
-          本益比
-        </div>
-
-        <div class="metric-value">
-          ${fmt(stock.pe,2)}
-        </div>
-      </div>
-
-
-      <div class="metric">
-        <div class="metric-title">
-          股價淨值比
-        </div>
-
-        <div class="metric-value">
-          ${fmt(stock.pbr,2)}
-        </div>
-      </div>
-
-
-      <div class="metric">
-        <div class="metric-title">
-          殖利率
-        </div>
-
-        <div class="metric-value">
-          ${
-            stock.yieldRate===null
-            ? "—"
-            : percent(stock.yieldRate)
-          }
-        </div>
-      </div>
-
-
-      <div class="metric">
-        <div class="metric-title">
-          成交量
-        </div>
-
-        <div class="metric-value">
-          ${fmt(stock.volume/1000,0)} 張
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="reason">
-
-      <div class="reason-title">
-        入選原因
-      </div>
-
-      ${reasons.map(
-        r=>"• "+r
-      ).join("<br>")}
-
-    </div>
-
-
-    <div class="reason">
-
-      <div class="reason-title">
-        預算試算
-      </div>
-
-      NT$${budget.toLocaleString()}
-      約可買
-      <strong>
-      ${shares.toLocaleString()} 股
-      </strong>
-
-      ${
-        lots>0
-        ? `（${lots} 張 ${
-            oddLots>0
-            ? `＋ ${oddLots} 股`
-            : ""
-          }）`
-        : "（零股）"
-      }
-
-      <br>
-
-      <small>
-      僅為股數試算，未計交易手續費。
-      </small>
-
-    </div>
-
-
-    ${
-      warnings.length
-      ?
-      `
-      <div class="warning">
-        ⚠️ ${warnings.join("；")}
-      </div>
-      `
-      :
-      ""
+    if(
+        p === null ||
+        p <= 0 ||
+        budget <= 0
+    ){
+        return "無法試算";
     }
 
-  </div>
-  `;
+    const shares =
+        Math.floor(budget / p);
+
+    const lots =
+        Math.floor(shares / 1000);
+
+    const odd =
+        shares % 1000;
+
+    let detail = "";
+
+    if(lots > 0 && odd > 0){
+
+        detail =
+            "（" +
+            lots +
+            " 張 + " +
+            odd +
+            " 股）";
+
+    }
+    else if(lots > 0){
+
+        detail =
+            "（" +
+            lots +
+            " 張）";
+
+    }
+    else{
+
+        detail =
+            "（零股）";
+
+    }
+
+    return (
+        "NT$" +
+        budget.toLocaleString("zh-TW") +
+        " 約可買 " +
+        shares.toLocaleString("zh-TW") +
+        " 股 " +
+        detail
+    );
+}
+
+
+function cardHTML(stock,index,budget){
+
+    const score =
+        calculateScore(stock);
+
+    const info =
+        getReasons(stock);
+
+    const tag =
+        getTag(score);
+
+    const growth =
+        num(stock.revenue_yoy);
+
+    const growthClass =
+        growth === null
+            ? ""
+            : growth >= 0
+                ? "green"
+                : "red";
+
+    const reasonsHTML =
+        info.reasons
+        .map(
+            x => "<li>" + x + "</li>"
+        )
+        .join("");
+
+    const warningsHTML =
+        info.warnings.length
+        ?
+        `
+        <div class="warning">
+        ⚠️ ${info.warnings.join("<br>")}
+        </div>
+        `
+        :
+        "";
+
+    return `
+    <div class="card">
+
+        <div class="card-top">
+
+            <div>
+
+                <div class="rank">
+                ${index + 1}. ${stock.name || ""}
+                </div>
+
+                <div class="code">
+                ${stock.code || ""}
+                </div>
+
+                <span class="tag ${tag.cls}">
+                ${tag.text}
+                </span>
+
+            </div>
+
+            <div class="score">
+
+                ${score}
+
+                <small>
+                研究評分 / 100
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="metrics">
+
+            <div class="metric">
+
+                <div class="metric-name">
+                股價
+                </div>
+
+                <div class="metric-value">
+                $${formatNumber(stock.price,2)}
+                </div>
+
+            </div>
+
+
+            <div class="metric">
+
+                <div class="metric-name">
+                營收年增
+                </div>
+
+                <div class="metric-value ${growthClass}">
+                ${
+                    growth === null
+                    ?
+                    "—"
+                    :
+                    formatNumber(growth,1) + "%"
+                }
+                </div>
+
+            </div>
+
+
+            <div class="metric">
+
+                <div class="metric-name">
+                本益比
+                </div>
+
+                <div class="metric-value">
+                ${formatNumber(stock.pe,2)}
+                </div>
+
+            </div>
+
+
+            <div class="metric">
+
+                <div class="metric-name">
+                股價淨值比
+                </div>
+
+                <div class="metric-value">
+                ${formatNumber(stock.pbr,2)}
+                </div>
+
+            </div>
+
+
+            <div class="metric">
+
+                <div class="metric-name">
+                殖利率
+                </div>
+
+                <div class="metric-value">
+                ${
+                    num(stock.yield) === null
+                    ?
+                    "—"
+                    :
+                    formatNumber(stock.yield,1) + "%"
+                }
+                </div>
+
+            </div>
+
+
+            <div class="metric">
+
+                <div class="metric-name">
+                成交量
+                </div>
+
+                <div class="metric-value">
+                ${
+                    formatNumber(
+                        (num(stock.volume) || 0) / 1000,
+                        0
+                    )
+                } 張
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="reason">
+
+            <div class="reason-title">
+            入選原因
+            </div>
+
+            <ul>
+            ${reasonsHTML}
+            </ul>
+
+        </div>
+
+        ${warningsHTML}
+
+
+        <div class="budget">
+
+            <strong>
+            預算試算
+            </strong>
+
+            <br>
+
+            ${budgetText(
+                stock.price,
+                budget
+            )}
+
+            <div class="small">
+            僅為股數試算，未計交易手續費及其他成本。
+            </div>
+
+        </div>
+
+    </div>
+    `;
+}
+
+
+async function loadStockData(){
+
+    const response =
+        await fetch(
+            "./stocks.json?t=" +
+            Date.now()
+        );
+
+    if(!response.ok){
+
+        throw new Error(
+            "stocks.json 無法讀取"
+        );
+
+    }
+
+    return await response.json();
 }
 
 
 async function runScreener(){
 
-  const status=
-    document.getElementById("status");
+    const status =
+        document.getElementById("status");
 
-  const results=
-    document.getElementById("results");
+    const results =
+        document.getElementById("results");
 
-  const updated=
-    document.getElementById("updated");
-
-
-  const budget=
-    Number(
-      document.getElementById("budget").value
-    ) || 50000;
-
-
-  const limit=
-    Number(
-      document.getElementById("limit").value
-    ) || 20;
-
-
-  status.innerHTML=
-    "⏳ 正在讀取最新市場資料並進行自動篩選…";
-
-  results.innerHTML="";
-  updated.innerHTML="";
-
-
-  try{
-
-    const data=
-      await loadStockData();
-
-
-    marketData=
-      Array.isArray(data)
-      ? data
-      : (
-          Array.isArray(data.stocks)
-          ? data.stocks
-          : []
+    const budget =
+        Math.max(
+            0,
+            Number(
+                document.getElementById(
+                    "budget"
+                ).value
+            ) || 0
         );
 
+    const limit =
+        Number(
+            document.getElementById(
+                "limit"
+            ).value
+        ) || 20;
 
-    if(!marketData.length){
-      throw new Error(
-        "stocks.json 沒有股票資料"
-      );
-    }
+
+    status.innerHTML =
+        "⏳ 正在讀取最新資料並進行篩選…";
+
+    results.innerHTML = "";
 
 
-    let candidates=
-      marketData
-      .filter(stock=>{
+    try{
 
-        const price=num(stock.price);
-        const volume=num(stock.volume) || 0;
+        const data =
+            await loadStockData();
 
-        if(price===null || price<=0){
-          return false;
-        }
+        const stocks =
+            Array.isArray(data.stocks)
+            ?
+            data.stocks
+            :
+            [];
+
 
         /*
-          排除成交量太低
+        基本資料品質與流動性篩選
         */
 
-        if(volume<100000){
-          return false;
+        const filtered =
+            stocks.filter(stock => {
+
+                const price =
+                    num(stock.price);
+
+                const volume =
+                    num(stock.volume) || 0;
+
+                const growth =
+                    num(stock.revenue_yoy);
+
+                if(
+                    price === null ||
+                    price <= 0
+                ){
+                    return false;
+                }
+
+                /*
+                至少約 30 萬股成交量
+                */
+
+                if(volume < 300000){
+                    return false;
+                }
+
+                /*
+                沒有營收資料先不進主要排行榜
+                */
+
+                if(growth === null){
+                    return false;
+                }
+
+                /*
+                營收大幅衰退先排除
+                */
+
+                if(growth < -30){
+                    return false;
+                }
+
+                return true;
+
+            });
+
+
+        const ranked =
+            filtered
+            .map(stock => {
+
+                return {
+                    ...stock,
+                    finalScore:
+                        calculateScore(stock)
+                };
+
+            })
+            .sort((a,b) => {
+
+                if(
+                    b.finalScore !==
+                    a.finalScore
+                ){
+
+                    return (
+                        b.finalScore -
+                        a.finalScore
+                    );
+
+                }
+
+                /*
+                同分時優先比較營收成長，
+                但最多以 150% 作比較，
+                避免低基期股票佔優勢。
+                */
+
+                const ag =
+                    Math.min(
+                        num(a.revenue_yoy) || 0,
+                        150
+                    );
+
+                const bg =
+                    Math.min(
+                        num(b.revenue_yoy) || 0,
+                        150
+                    );
+
+                return bg - ag;
+
+            });
+
+
+        const selected =
+            ranked.slice(
+                0,
+                limit
+            );
+
+
+        const updated =
+            data.updated
+            ?
+            new Date(
+                data.updated
+            ).toLocaleString(
+                "zh-TW"
+            )
+            :
+            "未知";
+
+
+        status.innerHTML =
+            "✅ 選股完成。共讀取 " +
+            stocks.length.toLocaleString("zh-TW") +
+            " 檔資料，基本篩選後 " +
+            filtered.length.toLocaleString("zh-TW") +
+            " 檔，顯示前 " +
+            selected.length +
+            " 檔研究候選。<br>" +
+            "<span class='small'>資料更新：" +
+            updated +
+            "</span>";
+
+
+        if(
+            selected.length === 0
+        ){
+
+            results.innerHTML =
+                "<div class='panel'>目前沒有符合條件的候選股。</div>";
+
+            return;
         }
 
-        return true;
 
-      })
-      .map(scoreStock);
+        results.innerHTML =
+            selected
+            .map(
+                (stock,index) =>
+                    cardHTML(
+                        stock,
+                        index,
+                        budget
+                    )
+            )
+            .join("");
 
-
-    /*
-      優先保留有營收資料的公司
-    */
-
-    const withRevenue=
-      candidates.filter(
-        s=>s.revenueYoy!==null
-      );
-
-
-    if(withRevenue.length>=limit){
-      candidates=withRevenue;
-    }
-
-
-    /*
-      排除營收大幅衰退
-    */
-
-    const healthyRevenue=
-      candidates.filter(
-        s=>
-        s.revenueYoy===null ||
-        s.revenueYoy>-30
-      );
-
-
-    if(healthyRevenue.length>=limit){
-      candidates=healthyRevenue;
-    }
-
-
-    /*
-      排序：
-      先總分
-      再營收成長
-      再成交量
-    */
-
-    candidates.sort((a,b)=>{
-
-      if(b.score!==a.score){
-        return b.score-a.score;
-      }
-
-      const ar=
-        a.revenueYoy===null
-        ? -999
-        : a.revenueYoy;
-
-      const br=
-        b.revenueYoy===null
-        ? -999
-        : b.revenueYoy;
-
-      if(br!==ar){
-        return br-ar;
-      }
-
-      return b.volume-a.volume;
-
-    });
-
-
-    const selected=
-      candidates.slice(0,limit);
-
-
-    if(!selected.length){
-
-      results.innerHTML=
-        `<div class="empty">
-        今天沒有符合條件的候選股票。
-        </div>`;
-
-      status.innerHTML=
-        "掃描完成，但目前沒有符合條件的股票。";
-
-      return;
-    }
-
-
-    status.innerHTML=
-      `✅ 選股完成。
-      共讀取 ${marketData.length.toLocaleString()} 檔資料，
-      篩選後顯示前 ${selected.length} 檔研究候選。`;
-
-
-    results.innerHTML=
-      selected
-      .map(
-        (stock,index)=>
-        renderStock(
-          stock,
-          index,
-          budget
-        )
-      )
-      .join("");
-
-
-    if(data.updated){
-
-      updated.innerHTML=
-        "市場資料更新時間："+
-        data.updated;
 
     }
+    catch(error){
 
+        console.error(error);
 
-  }
-  catch(error){
+        status.innerHTML =
+            "❌ 無法讀取 stocks.json。請確認 GitHub 自動更新資料已成功完成。";
 
-    console.error(error);
-
-    status.innerHTML=
-      "❌ 無法讀取 stocks.json。請確認 GitHub 自動更新資料已成功產生。";
-
-    results.innerHTML=
-      `<div class="empty">
-      資料載入失敗，請稍後重新整理再試。
-      </div>`;
-
-  }
+    }
 
 }
+
+
+/*
+頁面開啟後自動執行一次
+*/
+
+window.addEventListener(
+    "load",
+    runScreener
+);
 
 </script>
 
