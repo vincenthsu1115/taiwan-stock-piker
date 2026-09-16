@@ -2,8 +2,9 @@ name: Update Taiwan Stock Data
 
 on:
   workflow_dispatch:
+
   schedule:
-    # 台灣時間週一至週五約 15:30 更新
+    # 台灣時間週一～週五約 15:30
     - cron: "30 7 * * 1-5"
 
 permissions:
@@ -17,212 +18,684 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download TWSE stock data
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
         run: |
-          python - <<'PY'
+          pip install requests
+
+      - name: Create stocks.json
+        run: |
+          python <<'PY'
+          import requests
           import json
-          import urllib.request
+          import re
           from datetime import datetime, timezone, timedelta
 
-          urls = {
-              "prices": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-              "valuation": "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL",
-              "revenue": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L"
+          BASE = "https://openapi.twse.com.tw/v1"
+
+          URLS = {
+              "prices": f"{BASE}/exchangeReport/STOCK_DAY_ALL",
+              "valuation": f"{BASE}/exchangeReport/BWIBBU_ALL",
+              "revenue": f"{BASE}/opendata/t187ap05_L",
+              "company": f"{BASE}/opendata/t187ap03_L",
+
+              # 各產業損益表
+              "income_ci": f"{BASE}/opendata/t187ap06_L_ci",
+              "income_fh": f"{BASE}/opendata/t187ap06_L_fh",
+              "income_basi": f"{BASE}/opendata/t187ap06_L_basi",
+              "income_bd": f"{BASE}/opendata/t187ap06_L_bd",
+              "income_ins": f"{BASE}/opendata/t187ap06_L_ins",
+              "income_mim": f"{BASE}/opendata/t187ap06_L_mim",
           }
 
-          def download(url):
-              req = urllib.request.Request(
+          HEADERS = {
+              "User-Agent": "Mozilla/5.0"
+          }
+
+          def get_json(url):
+              print("Fetching:", url)
+
+              r = requests.get(
                   url,
-                  headers={
-                      "User-Agent": "Mozilla/5.0",
-                      "Accept": "application/json"
-                  }
+                  headers=HEADERS,
+                  timeout=60
               )
-              with urllib.request.urlopen(req, timeout=30) as r:
-                  return json.loads(r.read().decode("utf-8-sig"))
 
-          def pick(d, keys):
-              for k in keys:
-                  if k in d and d[k] not in (None, ""):
-                      return d[k]
-              return None
+              r.raise_for_status()
 
-          def number(v):
-              if v is None:
+              data = r.json()
+
+              if not isinstance(data, list):
+                  print("Warning: unexpected response")
+                  return []
+
+              print("Rows:", len(data))
+              return data
+
+
+          def clean_number(value):
+              if value is None:
                   return None
+
+              text = str(value).strip()
+
+              if text in [
+                  "",
+                  "-",
+                  "--",
+                  "---",
+                  "N/A",
+                  "null",
+                  "None"
+              ]:
+                  return None
+
+              text = (
+                  text
+                  .replace(",", "")
+                  .replace("%", "")
+                  .replace("元", "")
+                  .replace("股", "")
+                  .replace("張", "")
+              )
+
               try:
-                  s = str(v).replace(",", "").replace("--", "").strip()
-                  return float(s) if s else None
+                  return float(text)
               except:
                   return None
 
-          # 下載資料
-          prices = download(urls["prices"])
-          valuation = download(urls["valuation"])
-          revenue = download(urls["revenue"])
 
-          # -------------------------
-          # 每月營收資料
-          # -------------------------
+          def first_value(row, keys):
+              for key in keys:
+                  if key in row:
+                      value = row.get(key)
+
+                      if value not in [
+                          None,
+                          "",
+                          "-"
+                      ]:
+                          return value
+
+              return None
+
+
+          def stock_code(row):
+              value = first_value(
+                  row,
+                  [
+                      "Code",
+                      "公司代號",
+                      "股票代號",
+                      "證券代號"
+                  ]
+              )
+
+              if value is None:
+                  return None
+
+              code = str(value).strip()
+
+              # 目前只處理一般四碼上市股票
+              if re.fullmatch(r"\d{4}", code):
+                  return code
+
+              return None
+
+
+          def stock_name(row):
+              value = first_value(
+                  row,
+                  [
+                      "Name",
+                      "公司簡稱",
+                      "公司名稱",
+                      "證券名稱"
+                  ]
+              )
+
+              return (
+                  str(value).strip()
+                  if value is not None
+                  else ""
+              )
+
+
+          prices = get_json(URLS["prices"])
+          valuation = get_json(URLS["valuation"])
+          revenue = get_json(URLS["revenue"])
+          companies = get_json(URLS["company"])
+
+          income_rows = []
+
+          for key in [
+              "income_ci",
+              "income_fh",
+              "income_basi",
+              "income_bd",
+              "income_ins",
+              "income_mim"
+          ]:
+              try:
+                  income_rows.extend(
+                      get_json(URLS[key])
+                  )
+              except Exception as e:
+                  print(
+                      "Income endpoint warning:",
+                      key,
+                      e
+                  )
+
+
+          # ----------------------------
+          # 公司基本資料
+          # ----------------------------
+
+          company_map = {}
+
+          for row in companies:
+              code = stock_code(row)
+
+              if not code:
+                  continue
+
+              industry = first_value(
+                  row,
+                  [
+                      "產業別",
+                      "產業類別",
+                      "產業別名稱"
+                  ]
+              )
+
+              company_map[code] = {
+                  "industry":
+                      str(industry).strip()
+                      if industry is not None
+                      else None
+              }
+
+
+          # ----------------------------
+          # 估值資料
+          # ----------------------------
+
+          valuation_map = {}
+
+          for row in valuation:
+              code = stock_code(row)
+
+              if not code:
+                  continue
+
+              pe = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "PEratio",
+                          "本益比"
+                      ]
+                  )
+              )
+
+              dividend_yield = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "DividendYield",
+                          "殖利率(%)",
+                          "殖利率"
+                      ]
+                  )
+              )
+
+              pbr = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "PBratio",
+                          "股價淨值比"
+                      ]
+                  )
+              )
+
+              valuation_map[code] = {
+                  "pe": pe,
+                  "yield": dividend_yield,
+                  "pbr": pbr
+              }
+
+
+          # ----------------------------
+          # 月營收
+          # ----------------------------
+
           revenue_map = {}
 
           for row in revenue:
-              code = str(
-                  pick(
-                      row,
-                      ["公司代號", "Code", "股票代號", "證券代號"]
-                  ) or ""
-              ).strip()
+              code = stock_code(row)
 
               if not code:
                   continue
+
+              yoy = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "營業收入-去年同月增減(%)",
+                          "去年同月增減百分比",
+                          "營收年增率",
+                          "營業收入去年同月增減(%)"
+                      ]
+                  )
+              )
+
+              mom = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "營業收入-上月比較增減(%)",
+                          "上月比較增減百分比",
+                          "營收月增率"
+                      ]
+                  )
+              )
+
+              cumulative_yoy = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "累計營業收入-前期比較增減(%)",
+                          "前期比較增減百分比",
+                          "累計營收年增率"
+                      ]
+                  )
+              )
+
+              month = first_value(
+                  row,
+                  [
+                      "資料年月",
+                      "出表日期",
+                      "年月"
+                  ]
+              )
 
               revenue_map[code] = {
-                  "industry": str(
-                      pick(
-                          row,
-                          ["產業別", "產業別名稱", "Industry"]
-                      ) or ""
-                  ).strip(),
-
-                  "revenue_yoy": number(
-                      pick(
-                          row,
-                          [
-                              "營業收入-去年同月增減(%)",
-                              "去年同月增減(%)",
-                              "營收年增率"
-                          ]
-                      )
-                  ),
-
-                  "revenue_ytd_yoy": number(
-                      pick(
-                          row,
-                          [
-                              "累計營業收入-前期比較增減(%)",
-                              "前期比較增減(%)",
-                              "累計營收年增率"
-                          ]
-                      )
-                  )
+                  "revenue_yoy": yoy,
+                  "revenue_mom": mom,
+                  "revenue_cumulative_yoy":
+                      cumulative_yoy,
+                  "revenue_period":
+                      str(month)
+                      if month is not None
+                      else None
               }
 
-          # -------------------------
-          # PER / PBR / 殖利率
-          # -------------------------
-          value_map = {}
 
-          for row in valuation:
-              code = str(
-                  pick(
-                      row,
-                      ["Code", "股票代號", "證券代號"]
-                  ) or ""
-              ).strip()
+          # ----------------------------
+          # 財報 / EPS / 獲利
+          # ----------------------------
+
+          income_map = {}
+
+          for row in income_rows:
+              code = stock_code(row)
 
               if not code:
                   continue
 
-              value_map[code] = {
-                  "pe": number(
-                      pick(row, ["PEratio", "本益比"])
-                  ),
-                  "pbr": number(
-                      pick(row, ["PBratio", "股價淨值比"])
-                  ),
-                  "yield": number(
-                      pick(
-                          row,
-                          ["DividendYield", "殖利率(%)", "殖利率"]
-                      )
+              eps = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "基本每股盈餘（元）",
+                          "基本每股盈餘",
+                          "基本每股盈餘(元)",
+                          "每股盈餘",
+                          "EPS"
+                      ]
                   )
+              )
+
+              revenue_financial = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "營業收入",
+                          "收益",
+                          "利息淨收益"
+                      ]
+                  )
+              )
+
+              operating_income = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "營業利益（損失）",
+                          "營業利益",
+                          "營業淨利"
+                      ]
+                  )
+              )
+
+              net_income = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "本期淨利（淨損）",
+                          "本期淨利",
+                          "本期稅後淨利（淨損）",
+                          "本期稅後淨利",
+                          "繼續營業單位本期淨利（淨損）"
+                      ]
+                  )
+              )
+
+              period = first_value(
+                  row,
+                  [
+                      "年度",
+                      "季別",
+                      "年季",
+                      "資料年月"
+                  ]
+              )
+
+              # 同公司可能因不同資料型態重複，
+              # 優先保留有 EPS 的資料。
+              old = income_map.get(code)
+
+              candidate = {
+                  "eps": eps,
+                  "financial_revenue":
+                      revenue_financial,
+                  "operating_income":
+                      operating_income,
+                  "net_income":
+                      net_income,
+                  "financial_period":
+                      str(period)
+                      if period is not None
+                      else None
               }
 
-          # -------------------------
-          # 合併股票資料
-          # -------------------------
+              if old is None:
+                  income_map[code] = candidate
+
+              elif (
+                  old.get("eps") is None
+                  and eps is not None
+              ):
+                  income_map[code] = candidate
+
+
+          # ----------------------------
+          # 每日價格資料
+          # ----------------------------
+
           stocks = []
 
           for row in prices:
-              code = str(
-                  pick(
-                      row,
-                      ["Code", "股票代號", "證券代號"]
-                  ) or ""
-              ).strip()
 
-              name = str(
-                  pick(
-                      row,
-                      ["Name", "股票名稱", "證券名稱"]
-                  ) or ""
-              ).strip()
+              code = stock_code(row)
 
-              if not (len(code) == 4 and code.isdigit()):
+              if not code:
                   continue
 
-              price = number(
-                  pick(row, ["ClosingPrice", "收盤價"])
+              name = stock_name(row)
+
+              price = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "ClosingPrice",
+                          "收盤價"
+                      ]
+                  )
               )
 
-              volume = number(
-                  pick(row, ["TradeVolume", "成交股數"])
+              volume = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "TradeVolume",
+                          "成交股數"
+                      ]
+                  )
               )
 
-              if price is None or price <= 0:
-                  continue
+              trade_value = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "TradeValue",
+                          "成交金額"
+                      ]
+                  )
+              )
 
-              v = value_map.get(
+              opening = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "OpeningPrice",
+                          "開盤價"
+                      ]
+                  )
+              )
+
+              high = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "HighestPrice",
+                          "最高價"
+                      ]
+                  )
+              )
+
+              low = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "LowestPrice",
+                          "最低價"
+                      ]
+                  )
+              )
+
+              change = clean_number(
+                  first_value(
+                      row,
+                      [
+                          "Change",
+                          "漲跌價差"
+                      ]
+                  )
+              )
+
+              val = valuation_map.get(
                   code,
-                  {
-                      "pe": None,
-                      "pbr": None,
-                      "yield": None
-                  }
+                  {}
               )
 
-              r = revenue_map.get(
+              rev = revenue_map.get(
                   code,
-                  {
-                      "industry": "",
-                      "revenue_yoy": None,
-                      "revenue_ytd_yoy": None
-                  }
+                  {}
               )
 
-              stocks.append({
+              inc = income_map.get(
+                  code,
+                  {}
+              )
+
+              comp = company_map.get(
+                  code,
+                  {}
+              )
+
+              stock = {
                   "code": code,
                   "name": name,
-                  "price": price,
-                  "volume": volume or 0,
-                  "pe": v["pe"],
-                  "pbr": v["pbr"],
-                  "yield": v["yield"],
-                  "industry": r["industry"],
-                  "revenue_yoy": r["revenue_yoy"],
-                  "revenue_ytd_yoy": r["revenue_ytd_yoy"]
-              })
 
-          # -------------------------
-          # 輸出 stocks.json
-          # -------------------------
-          taipei = timezone(timedelta(hours=8))
+                  "price": price,
+                  "open": opening,
+                  "high": high,
+                  "low": low,
+                  "change": change,
+
+                  "volume": volume,
+                  "trade_value": trade_value,
+
+                  "pe":
+                      val.get("pe"),
+
+                  "pbr":
+                      val.get("pbr"),
+
+                  "yield":
+                      val.get("yield"),
+
+                  "revenue_yoy":
+                      rev.get(
+                          "revenue_yoy"
+                      ),
+
+                  "revenue_mom":
+                      rev.get(
+                          "revenue_mom"
+                      ),
+
+                  "revenue_cumulative_yoy":
+                      rev.get(
+                          "revenue_cumulative_yoy"
+                      ),
+
+                  "revenue_period":
+                      rev.get(
+                          "revenue_period"
+                      ),
+
+                  "eps":
+                      inc.get("eps"),
+
+                  "financial_revenue":
+                      inc.get(
+                          "financial_revenue"
+                      ),
+
+                  "operating_income":
+                      inc.get(
+                          "operating_income"
+                      ),
+
+                  "net_income":
+                      inc.get(
+                          "net_income"
+                      ),
+
+                  "financial_period":
+                      inc.get(
+                          "financial_period"
+                      ),
+
+                  "industry":
+                      comp.get(
+                          "industry"
+                      )
+              }
+
+              stocks.append(stock)
+
+
+          # ----------------------------
+          # 統計資料完整度
+          # ----------------------------
+
+          revenue_count = sum(
+              1
+              for x in stocks
+              if x.get("revenue_yoy")
+              is not None
+          )
+
+          cumulative_count = sum(
+              1
+              for x in stocks
+              if x.get(
+                  "revenue_cumulative_yoy"
+              )
+              is not None
+          )
+
+          eps_count = sum(
+              1
+              for x in stocks
+              if x.get("eps")
+              is not None
+          )
+
+          industry_count = sum(
+              1
+              for x in stocks
+              if x.get("industry")
+          )
+
+
+          taipei_tz = timezone(
+              timedelta(hours=8)
+          )
+
+          now = datetime.now(
+              taipei_tz
+          )
+
 
           output = {
-              "updated": datetime.now(taipei).isoformat(
-                  timespec="seconds"
-              ),
-              "source": "Taiwan Stock Exchange OpenAPI",
-              "count": len(stocks),
-              "stocks": stocks
+              "updated":
+                  now.isoformat(),
+
+              "market":
+                  "TWSE",
+
+              "version":
+                  "3.0",
+
+              "stock_count":
+                  len(stocks),
+
+              "data_quality": {
+                  "revenue_yoy":
+                      revenue_count,
+
+                  "revenue_cumulative_yoy":
+                      cumulative_count,
+
+                  "eps":
+                      eps_count,
+
+                  "industry":
+                      industry_count
+              },
+
+              "stocks":
+                  stocks
           }
+
 
           with open(
               "stocks.json",
               "w",
               encoding="utf-8"
           ) as f:
+
               json.dump(
                   output,
                   f,
@@ -230,20 +703,45 @@ jobs:
                   indent=2
               )
 
-          print("Created stocks.json")
-          print("Stock count:", len(stocks))
 
-          revenue_count = sum(
-              1
-              for s in stocks
-              if s["revenue_yoy"] is not None
+          print()
+          print("======================")
+          print("Created stocks.json")
+          print("======================")
+
+          print(
+              "Stock count:",
+              len(stocks)
           )
 
           print(
-              "Stocks with revenue growth data:",
+              "Stocks with revenue YoY:",
               revenue_count
           )
+
+          print(
+              "Stocks with cumulative revenue YoY:",
+              cumulative_count
+          )
+
+          print(
+              "Stocks with EPS:",
+              eps_count
+          )
+
+          print(
+              "Stocks with industry:",
+              industry_count
+          )
+
+          print("======================")
+
           PY
+
+      - name: Show generated file
+        run: |
+          ls -lh stocks.json
+          head -n 30 stocks.json
 
       - name: Commit updated data
         run: |
@@ -253,8 +751,10 @@ jobs:
           git add stocks.json
 
           if git diff --cached --quiet; then
-            echo "No data changes."
-          else
-            git commit -m "Add revenue growth data"
-            git push
+            echo "No data changes"
+            exit 0
           fi
+
+          git commit -m "Update advanced stock data"
+
+          git push
