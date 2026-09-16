@@ -2,373 +2,778 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>我的台股選股器 V2</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>我的台股自動選股器</title>
 
 <style>
+*{box-sizing:border-box}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:#f4f6f8;
   margin:0;
-  padding:20px;
+  background:#f4f6f8;
   color:#172033;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",sans-serif
 }
-
-.container{
-  max-width:700px;
-  margin:auto;
-}
-
-h1{
-  margin-bottom:5px;
-}
-
-.subtitle{
-  color:#6b7280;
-  margin-bottom:25px;
-}
-
+.container{max-width:920px;margin:auto;padding:20px}
+h1{margin:5px 0;font-size:30px}
+.sub{color:#6b7280;margin:5px 0 20px;line-height:1.6}
 .card{
-  background:white;
-  padding:22px;
-  border-radius:18px;
-  margin-bottom:18px;
-  box-shadow:0 4px 15px rgba(0,0,0,.05);
+  background:#fff;border-radius:18px;padding:20px;margin-bottom:16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.05)
 }
-
-label{
-  display:block;
-  font-weight:600;
-  margin-top:15px;
-  margin-bottom:6px;
-}
-
+.topgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-weight:700;display:block;margin-bottom:7px}
 input,select{
-  width:100%;
-  box-sizing:border-box;
-  padding:13px;
-  border:1px solid #d1d5db;
-  border-radius:10px;
-  font-size:16px;
-  background:white;
+  width:100%;padding:13px;border:1px solid #d7dce3;border-radius:11px;
+  background:#fff;font-size:16px
 }
-
 button{
-  width:100%;
-  padding:15px;
-  margin-top:22px;
-  border:0;
-  border-radius:12px;
-  background:#111827;
-  color:white;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
+  width:100%;border:0;border-radius:12px;padding:15px;margin-top:15px;
+  background:#111827;color:#fff;font-size:17px;font-weight:800;cursor:pointer
 }
-
-.score{
-  text-align:center;
-  font-size:42px;
-  font-weight:800;
-  margin:10px 0;
+button:disabled{opacity:.55;cursor:not-allowed}
+.status{
+  display:none;margin-top:15px;padding:13px;border-radius:12px;
+  background:#f8fafc;line-height:1.6
 }
-
-.result{
-  text-align:center;
-  font-size:18px;
-  font-weight:700;
-  line-height:1.6;
+.summary{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px
 }
-
-.detail{
-  margin-top:20px;
-  line-height:1.8;
+.stat{background:#f8fafc;padding:14px;border-radius:12px;text-align:center}
+.stat b{display:block;font-size:22px;margin-bottom:4px}
+.filters{font-size:13px;color:#6b7280;line-height:1.7}
+.stock{
+  border:1px solid #e5e7eb;border-radius:15px;padding:16px;margin-top:12px
 }
-
-.money{
-  background:#f8fafc;
-  padding:15px;
-  border-radius:12px;
-  margin-top:15px;
-  line-height:1.8;
+.stockHead{
+  display:flex;justify-content:space-between;gap:12px;align-items:flex-start
 }
-
+.name{font-size:20px;font-weight:800}
+.code{color:#6b7280;font-size:14px;margin-top:3px}
+.price{text-align:right;font-size:20px;font-weight:800}
+.metrics{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px
+}
+.metric{background:#f8fafc;border-radius:10px;padding:10px;text-align:center}
+.metric small{display:block;color:#6b7280;margin-bottom:4px}
+.reason{margin-top:12px;line-height:1.7;font-size:14px}
 .tag{
-  display:inline-block;
-  background:#eef2ff;
-  padding:5px 10px;
-  border-radius:20px;
-  margin:3px;
-  font-size:14px;
+  display:inline-block;padding:5px 9px;border-radius:20px;
+  background:#eef2ff;margin:3px 4px 3px 0;font-size:13px
 }
-
-.notice{
-  font-size:13px;
-  color:#6b7280;
-  line-height:1.6;
+.warn{background:#fff7ed}
+.good{background:#ecfdf5}
+.buycalc{
+  margin-top:12px;padding:11px;border-radius:10px;background:#f8fafc;
+  font-size:14px;line-height:1.6
+}
+.note{font-size:13px;color:#6b7280;line-height:1.7}
+.error{background:#fef2f2!important;color:#991b1b}
+@media(max-width:650px){
+  .topgrid,.summary{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr 1fr}
+  h1{font-size:25px}
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
-<h1>📈 我的台股選股器</h1>
-<div class="subtitle">
-V2｜把「想買」變成有規則的投資判斷
+<h1>📈 我的台股自動選股器</h1>
+<div class="sub">
+正式版｜全市場掃描・重視基本面與合理估值・避免盲目追高
 </div>
 
 <div class="card">
+  <div class="topgrid">
+    <div>
+      <label>預計投入金額</label>
+      <input id="budget" type="number" value="50000">
+    </div>
 
-<label>股票代號</label>
-<input id="code" placeholder="例如：2330">
+    <div>
+      <label>顯示候選股數量</label>
+      <select id="limit">
+        <option value="10">前 10 檔</option>
+        <option value="20" selected>前 20 檔</option>
+        <option value="30">前 30 檔</option>
+      </select>
+    </div>
+  </div>
 
-<label>股票名稱</label>
-<input id="stock" placeholder="例如：台積電">
+  <button id="scanBtn" onclick="scanMarket()">🔍 開始今日自動選股</button>
 
-<label>目前股價（元）</label>
-<input id="price" type="number" step="0.01" placeholder="例如：1200">
-
-<label>預計投入金額（元）</label>
-<input id="money" type="number" value="50000">
-
-<label>產業趨勢</label>
-<select id="trend">
-<option value="25">🚀 強勢成長</option>
-<option value="18">📈 穩定成長</option>
-<option value="10">➖ 普通</option>
-<option value="3">📉 衰退</option>
-</select>
-
-<label>公司基本面</label>
-<select id="fundamental">
-<option value="25">非常好</option>
-<option value="18">良好</option>
-<option value="10">普通</option>
-<option value="3">偏弱</option>
-</select>
-
-<label>目前估值</label>
-<select id="valuation">
-<option value="25">便宜</option>
-<option value="18">合理</option>
-<option value="10">稍貴</option>
-<option value="3">明顯偏貴</option>
-</select>
-
-<label>近期股價位置</label>
-<select id="position">
-<option value="25">整理後／相對低檔</option>
-<option value="18">中間位置</option>
-<option value="10">近期偏高</option>
-<option value="3">急漲／高檔</option>
-</select>
-
-<button onclick="evaluateStock()">
-開始評估
-</button>
-
+  <div id="status" class="status"></div>
 </div>
 
-<div class="card" id="resultCard" style="display:none">
+<div id="summaryCard" class="card" style="display:none">
+  <strong>今日掃描結果</strong>
 
-<div>綜合分數</div>
+  <div class="summary">
+    <div class="stat">
+      <b id="marketCount">0</b>
+      掃描股票
+    </div>
 
-<div class="score" id="score"></div>
+    <div class="stat">
+      <b id="passCount">0</b>
+      通過初篩
+    </div>
 
-<div class="result" id="result"></div>
+    <div class="stat">
+      <b id="showCount">0</b>
+      顯示候選
+    </div>
+  </div>
 
-<div class="money" id="shares"></div>
-
-<div class="detail" id="detail"></div>
-
+  <div class="filters">
+    <br>
+    初篩原則：排除無有效成交價格、成交量過低、估值資料異常；
+    優先保留具合理本益比、股價淨值比及殖利率條件的股票。
+    排名是研究排序，不代表買進建議。
+  </div>
 </div>
 
-<div class="card notice">
+<div id="results"></div>
 
-<strong>V2 使用原則</strong><br><br>
+<div class="card note">
+<strong>使用說明</strong><br><br>
+本工具會讀取臺灣證券交易所公開市場資料，自動掃描上市股票。
+目前正式版以市場價格、成交量、本益比、股價淨值比及殖利率等
+可直接取得的客觀資料進行初篩與排序。<br><br>
 
-這是一個個人化的投資研究與紀律工具，
-不是預測股票一定上漲的系統。
+你原本設定的「獲利成長、營收動能、產業趨勢」屬於下一層基本面資料。
+在沒有可靠資料時，本程式不會自行假設或捏造分數，因此目前候選結果
+應視為「值得進一步研究的股票」，不是預測未來漲跌。<br><br>
 
-V2 將「產業、基本面、估值、股價位置」
-拆開評估，避免只因為喜歡某家公司就直接買進。
-
-下一階段可加入：
-台股即時資料、自動帶入股價、ETF比較、
-自選股清單與手機版快速評估功能。
-
+股數試算未計券商手續費，實際下單金額以券商為準。
 </div>
 
 </div>
 
 <script>
 
-function evaluateStock(){
+const PRICE_API =
+"https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL";
 
-const code =
-document.getElementById("code").value.trim();
+const VALUE_API =
+"https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL";
 
-const stock =
-document.getElementById("stock").value.trim();
 
-const price =
-parseFloat(document.getElementById("price").value);
+function num(v){
 
-const money =
-parseFloat(document.getElementById("money").value);
+  if(v === null || v === undefined) return null;
 
-const trend =
-parseInt(document.getElementById("trend").value);
+  const s = String(v)
+    .replace(/,/g,"")
+    .replace(/--/g,"")
+    .trim();
 
-const fundamental =
-parseInt(document.getElementById("fundamental").value);
+  if(!s) return null;
 
-const valuation =
-parseInt(document.getElementById("valuation").value);
+  const n = Number(s);
 
-const position =
-parseInt(document.getElementById("position").value);
-
-if(!stock){
-alert("請輸入股票名稱");
-return;
+  return Number.isFinite(n) ? n : null;
 }
 
-if(!price || price <= 0){
-alert("請輸入目前股價");
-return;
+
+function get(obj,names){
+
+  for(const name of names){
+
+    if(obj[name] !== undefined &&
+       obj[name] !== null &&
+       obj[name] !== ""){
+
+      return obj[name];
+    }
+
+  }
+
+  return null;
 }
 
-if(!money || money <= 0){
-alert("請輸入預計投入金額");
-return;
+
+function stockCode(obj){
+
+  return String(
+    get(obj,[
+      "Code",
+      "股票代號",
+      "證券代號"
+    ]) || ""
+  ).trim();
 }
 
-const score =
-trend +
-fundamental +
-valuation +
-position;
 
-document.getElementById("score").innerText =
-score + " / 100";
+function stockName(obj){
 
-let result;
+  return String(
+    get(obj,[
+      "Name",
+      "股票名稱",
+      "證券名稱"
+    ]) || ""
+  ).trim();
+}
 
-if(score >= 85){
 
-result =
-"條件相對完整，可列入優先研究名單";
+function scoreStock(s){
 
-}else if(score >= 70){
+  let score = 0;
+  const reasons = [];
+  const warnings = [];
 
-result =
-"條件不錯，可持續追蹤";
+  /*
+    估值 40
+  */
 
-}else if(score >= 55){
+  if(s.pe !== null){
 
-result =
-"條件普通，建議等待更好的價格或訊號";
+    if(s.pe > 0 && s.pe <= 12){
+      score += 40;
+      reasons.push("本益比較低");
+    }
+    else if(s.pe <= 18){
+      score += 34;
+      reasons.push("本益比合理");
+    }
+    else if(s.pe <= 25){
+      score += 25;
+      reasons.push("本益比尚可");
+    }
+    else if(s.pe <= 35){
+      score += 14;
+    }
+    else{
+      score += 4;
+      warnings.push("本益比較高");
+    }
 
-}else{
+  }
 
-result =
-"目前條件較弱，先觀察";
+
+  /*
+    PBR 25
+  */
+
+  if(s.pbr !== null){
+
+    if(s.pbr > 0 && s.pbr <= 1.2){
+      score += 25;
+      reasons.push("股價淨值比偏低");
+    }
+    else if(s.pbr <= 2){
+      score += 20;
+      reasons.push("股價淨值比合理");
+    }
+    else if(s.pbr <= 3){
+      score += 13;
+    }
+    else if(s.pbr <= 5){
+      score += 6;
+    }
+    else{
+      warnings.push("股價淨值比偏高");
+    }
+
+  }
+
+
+  /*
+    殖利率 20
+  */
+
+  if(s.yield !== null){
+
+    if(s.yield >= 5){
+      score += 20;
+      reasons.push("殖利率較高");
+    }
+    else if(s.yield >= 3){
+      score += 15;
+      reasons.push("具一定殖利率");
+    }
+    else if(s.yield >= 1.5){
+      score += 9;
+    }
+    else{
+      score += 3;
+    }
+
+  }
+
+
+  /*
+    流動性 15
+  */
+
+  if(s.volume >= 5000000){
+    score += 15;
+    reasons.push("成交活絡");
+  }
+  else if(s.volume >= 1000000){
+    score += 12;
+  }
+  else if(s.volume >= 300000){
+    score += 7;
+  }
+  else{
+    score += 2;
+  }
+
+
+  return {
+    score,
+    reasons,
+    warnings
+  };
+}
+
+
+async function scanMarket(){
+
+  const btn =
+    document.getElementById("scanBtn");
+
+  const status =
+    document.getElementById("status");
+
+  const results =
+    document.getElementById("results");
+
+  const summary =
+    document.getElementById("summaryCard");
+
+  btn.disabled = true;
+
+  results.innerHTML = "";
+
+  summary.style.display = "none";
+
+  status.style.display = "block";
+
+  status.className = "status";
+
+  status.innerHTML =
+    "正在讀取證交所公開資料並掃描上市股票…";
+
+
+  try{
+
+    const responses =
+      await Promise.all([
+        fetch(PRICE_API),
+        fetch(VALUE_API)
+      ]);
+
+    if(!responses[0].ok ||
+       !responses[1].ok){
+
+      throw new Error("證交所資料目前無法讀取");
+    }
+
+
+    const priceData =
+      await responses[0].json();
+
+    const valueData =
+      await responses[1].json();
+
+
+    const valueMap = new Map();
+
+
+    valueData.forEach(x => {
+
+      const code =
+        stockCode(x);
+
+      if(!code) return;
+
+
+      valueMap.set(code,{
+
+        pe:num(
+          get(x,[
+            "PEratio",
+            "本益比"
+          ])
+        ),
+
+        pbr:num(
+          get(x,[
+            "PBratio",
+            "股價淨值比"
+          ])
+        ),
+
+        yield:num(
+          get(x,[
+            "DividendYield",
+            "殖利率(%)",
+            "殖利率"
+          ])
+        )
+
+      });
+
+    });
+
+
+    const stocks = [];
+
+
+    priceData.forEach(x => {
+
+      const code =
+        stockCode(x);
+
+      const name =
+        stockName(x);
+
+
+      /*
+        普通上市股票代號通常為四碼
+      */
+
+      if(!/^[0-9]{4}$/.test(code))
+        return;
+
+
+      const price =
+        num(
+          get(x,[
+            "ClosingPrice",
+            "收盤價"
+          ])
+        );
+
+
+      const volume =
+        num(
+          get(x,[
+            "TradeVolume",
+            "成交股數"
+          ])
+        ) || 0;
+
+
+      if(!price || price <= 0)
+        return;
+
+
+      /*
+        避免流動性過低
+      */
+
+      if(volume < 100000)
+        return;
+
+
+      const valuation =
+        valueMap.get(code) || {
+          pe:null,
+          pbr:null,
+          yield:null
+        };
+
+
+      /*
+        至少要有基本估值資料
+      */
+
+      if(
+        valuation.pe === null &&
+        valuation.pbr === null
+      ){
+        return;
+      }
+
+
+      const stock = {
+        code,
+        name,
+        price,
+        volume,
+        pe:valuation.pe,
+        pbr:valuation.pbr,
+        yield:valuation.yield
+      };
+
+
+      const evaluated =
+        scoreStock(stock);
+
+
+      stock.score =
+        evaluated.score;
+
+      stock.reasons =
+        evaluated.reasons;
+
+      stock.warnings =
+        evaluated.warnings;
+
+
+      /*
+        過度昂貴的估值先排除
+      */
+
+      if(
+        stock.pe !== null &&
+        stock.pe > 60
+      ){
+        return;
+      }
+
+
+      stocks.push(stock);
+
+    });
+
+
+    stocks.sort((a,b)=>
+      b.score - a.score
+    );
+
+
+    const limit =
+      Number(
+        document.getElementById("limit").value
+      );
+
+
+    const selected =
+      stocks.slice(0,limit);
+
+
+    document.getElementById("marketCount")
+      .textContent =
+      priceData.length.toLocaleString();
+
+
+    document.getElementById("passCount")
+      .textContent =
+      stocks.length.toLocaleString();
+
+
+    document.getElementById("showCount")
+      .textContent =
+      selected.length.toLocaleString();
+
+
+    summary.style.display = "block";
+
+
+    status.innerHTML =
+      "✅ 掃描完成。以下為依目前公開資料產生的研究候選清單。";
+
+
+    renderStocks(selected);
+
+
+  }
+  catch(err){
+
+    console.error(err);
+
+    status.className =
+      "status error";
+
+    status.innerHTML =
+      "目前無法取得證交所資料。可能是資料服務暫時無回應或瀏覽器限制。請稍後重新按「開始今日自動選股」。";
+
+  }
+  finally{
+
+    btn.disabled = false;
+
+  }
 
 }
 
-let title = "";
 
-if(code){
-title = code + " " + stock;
-}else{
-title = stock;
+function renderStocks(stocks){
+
+  const results =
+    document.getElementById("results");
+
+  const budget =
+    Number(
+      document.getElementById("budget").value
+    ) || 50000;
+
+
+  if(!stocks.length){
+
+    results.innerHTML =
+      '<div class="card">目前沒有符合條件的股票。</div>';
+
+    return;
+
+  }
+
+
+  stocks.forEach((s,index)=>{
+
+    const theoreticalShares =
+      Math.floor(
+        budget / s.price
+      );
+
+
+    const lots =
+      Math.floor(
+        theoreticalShares / 1000
+      );
+
+
+    const odd =
+      theoreticalShares % 1000;
+
+
+    const card =
+      document.createElement("div");
+
+
+    card.className =
+      "card stock";
+
+
+    const reasons =
+      s.reasons.length
+      ? s.reasons
+      : ["估值資料完整"];
+
+
+    const warningText =
+      s.warnings.length
+      ? s.warnings.join("、")
+      : "目前未出現明顯估值警示";
+
+
+    card.innerHTML = `
+
+      <div class="stockHead">
+
+        <div>
+          <div class="name">
+            ${index + 1}. ${escapeHtml(s.name)}
+          </div>
+
+          <div class="code">
+            ${escapeHtml(s.code)}
+          </div>
+        </div>
+
+        <div class="price">
+          $${formatNumber(s.price)}
+        </div>
+
+      </div>
+
+
+      <div class="metrics">
+
+        <div class="metric">
+          <small>研究分數</small>
+          <strong>${s.score}</strong>
+        </div>
+
+        <div class="metric">
+          <small>本益比</small>
+          <strong>${displayValue(s.pe)}</strong>
+        </div>
+
+        <div class="metric">
+          <small>P/B</small>
+          <strong>${displayValue(s.pbr)}</strong>
+        </div>
+
+        <div class="metric">
+          <small>殖利率</small>
+          <strong>
+            ${s.yield !== null
+              ? formatNumber(s.yield) + "%"
+              : "—"}
+          </strong>
+        </div>
+
+      </div>
+
+
+      <div class="reason">
+
+        <strong>入選原因：</strong><br>
+
+        ${reasons.map(r =>
+          `<span class="tag good">${escapeHtml(r)}</span>`
+        ).join("")}
+
+        <br><br>
+
+        <strong>風險提醒：</strong>
+        ${escapeHtml(warningText)}
+
+      </div>
+
+
+      <div class="buycalc">
+
+        💰 預算 NT$${budget.toLocaleString()}：
+        理論上最多約
+        <strong>${theoreticalShares.toLocaleString()} 股</strong>
+
+        （${lots} 張 + ${odd} 股零股）
+
+        <br>
+
+        ※ 未計券商手續費。
+
+      </div>
+
+    `;
+
+
+    results.appendChild(card);
+
+  });
+
 }
 
-document.getElementById("result").innerText =
-title + "｜" + result;
+
+function displayValue(v){
+
+  if(v === null)
+    return "—";
+
+  return formatNumber(v);
+
+}
 
 
-// 股數計算
+function formatNumber(v){
 
-const shares =
-Math.floor(money / price);
+  return Number(v)
+    .toLocaleString(
+      "zh-TW",
+      {
+        maximumFractionDigits:2
+      }
+    );
 
-const lots =
-Math.floor(shares / 1000);
-
-const odd =
-shares % 1000;
-
-const usedMoney =
-shares * price;
-
-const remaining =
-money - usedMoney;
-
-document.getElementById("shares").innerHTML =
-
-"<strong>💰 資金試算</strong><br>" +
-
-"投入預算：約 NT$" +
-money.toLocaleString() +
-
-"<br>目前股價：NT$" +
-price.toLocaleString() +
-
-"<br><br>最多約可買：" +
-
-"<strong>" +
-shares.toLocaleString() +
-" 股</strong>" +
-
-"<br>" +
-
-lots +
-" 張 + " +
-
-odd +
-" 股零股" +
-
-"<br><br>預估使用：" +
-Math.round(usedMoney).toLocaleString() +
-" 元" +
-
-"<br>剩餘資金：約 " +
-Math.round(remaining).toLocaleString() +
-" 元";
+}
 
 
-// 分項評估
+function escapeHtml(value){
 
-document.getElementById("detail").innerHTML =
-
-"<strong>📊 四大評估項目</strong><br><br>" +
-
-"<span class='tag'>產業趨勢 " +
-trend +
-"/25</span>" +
-
-"<span class='tag'>基本面 " +
-fundamental +
-"/25</span>" +
-
-"<span class='tag'>估值 " +
-valuation +
-"/25</span>" +
-
-"<span class='tag'>股價位置 " +
-position +
-"/25</span>";
-
-document.getElementById("resultCard").style.display =
-"block";
-
-document.getElementById("resultCard").scrollIntoView({
-behavior:"smooth"
-});
+  return String(value)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
 
 }
 
