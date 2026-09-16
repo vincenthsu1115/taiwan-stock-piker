@@ -26,7 +26,8 @@ jobs:
 
           urls = {
               "prices": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
-              "valuation": "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL"
+              "valuation": "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL",
+              "revenue": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L"
           }
 
           def download(url):
@@ -39,9 +40,6 @@ jobs:
               )
               with urllib.request.urlopen(req, timeout=30) as r:
                   return json.loads(r.read().decode("utf-8-sig"))
-
-          prices = download(urls["prices"])
-          valuation = download(urls["valuation"])
 
           def pick(d, keys):
               for k in keys:
@@ -58,11 +56,69 @@ jobs:
               except:
                   return None
 
+          # 下載資料
+          prices = download(urls["prices"])
+          valuation = download(urls["valuation"])
+          revenue = download(urls["revenue"])
+
+          # -------------------------
+          # 每月營收資料
+          # -------------------------
+          revenue_map = {}
+
+          for row in revenue:
+              code = str(
+                  pick(
+                      row,
+                      ["公司代號", "Code", "股票代號", "證券代號"]
+                  ) or ""
+              ).strip()
+
+              if not code:
+                  continue
+
+              revenue_map[code] = {
+                  "industry": str(
+                      pick(
+                          row,
+                          ["產業別", "產業別名稱", "Industry"]
+                      ) or ""
+                  ).strip(),
+
+                  "revenue_yoy": number(
+                      pick(
+                          row,
+                          [
+                              "營業收入-去年同月增減(%)",
+                              "去年同月增減(%)",
+                              "營收年增率"
+                          ]
+                      )
+                  ),
+
+                  "revenue_ytd_yoy": number(
+                      pick(
+                          row,
+                          [
+                              "累計營業收入-前期比較增減(%)",
+                              "前期比較增減(%)",
+                              "累計營收年增率"
+                          ]
+                      )
+                  )
+              }
+
+          # -------------------------
+          # PER / PBR / 殖利率
+          # -------------------------
           value_map = {}
 
           for row in valuation:
               code = str(
-                  pick(row, ["Code", "股票代號", "證券代號"]) or ""
+                  pick(
+                      row,
+                      ["Code", "股票代號", "證券代號"]
+                  ) or ""
               ).strip()
 
               if not code:
@@ -76,19 +132,31 @@ jobs:
                       pick(row, ["PBratio", "股價淨值比"])
                   ),
                   "yield": number(
-                      pick(row, ["DividendYield", "殖利率(%)", "殖利率"])
+                      pick(
+                          row,
+                          ["DividendYield", "殖利率(%)", "殖利率"]
+                      )
                   )
               }
 
+          # -------------------------
+          # 合併股票資料
+          # -------------------------
           stocks = []
 
           for row in prices:
               code = str(
-                  pick(row, ["Code", "股票代號", "證券代號"]) or ""
+                  pick(
+                      row,
+                      ["Code", "股票代號", "證券代號"]
+                  ) or ""
               ).strip()
 
               name = str(
-                  pick(row, ["Name", "股票名稱", "證券名稱"]) or ""
+                  pick(
+                      row,
+                      ["Name", "股票名稱", "證券名稱"]
+                  ) or ""
               ).strip()
 
               if not (len(code) == 4 and code.isdigit()):
@@ -107,7 +175,20 @@ jobs:
 
               v = value_map.get(
                   code,
-                  {"pe": None, "pbr": None, "yield": None}
+                  {
+                      "pe": None,
+                      "pbr": None,
+                      "yield": None
+                  }
+              )
+
+              r = revenue_map.get(
+                  code,
+                  {
+                      "industry": "",
+                      "revenue_yoy": None,
+                      "revenue_ytd_yoy": None
+                  }
               )
 
               stocks.append({
@@ -117,19 +198,31 @@ jobs:
                   "volume": volume or 0,
                   "pe": v["pe"],
                   "pbr": v["pbr"],
-                  "yield": v["yield"]
+                  "yield": v["yield"],
+                  "industry": r["industry"],
+                  "revenue_yoy": r["revenue_yoy"],
+                  "revenue_ytd_yoy": r["revenue_ytd_yoy"]
               })
 
+          # -------------------------
+          # 輸出 stocks.json
+          # -------------------------
           taipei = timezone(timedelta(hours=8))
 
           output = {
-              "updated": datetime.now(taipei).isoformat(timespec="seconds"),
+              "updated": datetime.now(taipei).isoformat(
+                  timespec="seconds"
+              ),
               "source": "Taiwan Stock Exchange OpenAPI",
               "count": len(stocks),
               "stocks": stocks
           }
 
-          with open("stocks.json", "w", encoding="utf-8") as f:
+          with open(
+              "stocks.json",
+              "w",
+              encoding="utf-8"
+          ) as f:
               json.dump(
                   output,
                   f,
@@ -139,6 +232,17 @@ jobs:
 
           print("Created stocks.json")
           print("Stock count:", len(stocks))
+
+          revenue_count = sum(
+              1
+              for s in stocks
+              if s["revenue_yoy"] is not None
+          )
+
+          print(
+              "Stocks with revenue growth data:",
+              revenue_count
+          )
           PY
 
       - name: Commit updated data
@@ -151,6 +255,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "Auto update Taiwan stock data"
+            git commit -m "Add revenue growth data"
             git push
           fi
