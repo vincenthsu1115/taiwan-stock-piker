@@ -2,325 +2,687 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>我的台股自動選股器</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   background:#f4f6f8;
   color:#172033;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",sans-serif
+  font-family:-apple-system,BlinkMacSystemFont,
+  "Segoe UI","Microsoft JhengHei",sans-serif;
 }
-.container{max-width:920px;margin:auto;padding:20px}
-h1{margin:5px 0;font-size:30px}
-.sub{color:#6b7280;margin:5px 0 20px;line-height:1.6}
+
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:20px;
+}
+
+h1{
+  margin:5px 0;
+  font-size:30px;
+}
+
+.subtitle{
+  color:#6b7280;
+  margin:6px 0 20px;
+  line-height:1.6;
+}
+
 .card{
-  background:#fff;border-radius:18px;padding:20px;margin-bottom:16px;
-  box-shadow:0 4px 16px rgba(0,0,0,.05)
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.05);
 }
-.topgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{font-weight:700;display:block;margin-bottom:7px}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+label{
+  display:block;
+  font-weight:700;
+  margin-bottom:7px;
+}
+
 input,select{
-  width:100%;padding:13px;border:1px solid #d7dce3;border-radius:11px;
-  background:#fff;font-size:16px
+  width:100%;
+  padding:13px;
+  border:1px solid #d7dce3;
+  border-radius:11px;
+  font-size:16px;
+  background:white;
 }
+
 button{
-  width:100%;border:0;border-radius:12px;padding:15px;margin-top:15px;
-  background:#111827;color:#fff;font-size:17px;font-weight:800;cursor:pointer
+  width:100%;
+  border:0;
+  border-radius:12px;
+  padding:15px;
+  margin-top:15px;
+  background:#111827;
+  color:white;
+  font-size:17px;
+  font-weight:800;
+  cursor:pointer;
 }
-button:disabled{opacity:.55;cursor:not-allowed}
+
+button:disabled{
+  opacity:.55;
+}
+
 .status{
-  display:none;margin-top:15px;padding:13px;border-radius:12px;
-  background:#f8fafc;line-height:1.6
+  display:none;
+  margin-top:15px;
+  padding:13px;
+  border-radius:12px;
+  background:#f8fafc;
+  line-height:1.6;
 }
+
+.success{
+  background:#ecfdf5;
+  color:#065f46;
+}
+
+.error{
+  background:#fef2f2;
+  color:#991b1b;
+}
+
 .summary{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:15px;
 }
-.stat{background:#f8fafc;padding:14px;border-radius:12px;text-align:center}
-.stat b{display:block;font-size:22px;margin-bottom:4px}
-.filters{font-size:13px;color:#6b7280;line-height:1.7}
+
+.stat{
+  background:#f8fafc;
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.stat b{
+  display:block;
+  font-size:23px;
+  margin-bottom:4px;
+}
+
+.updated{
+  color:#6b7280;
+  font-size:13px;
+  margin-top:12px;
+}
+
 .stock{
-  border:1px solid #e5e7eb;border-radius:15px;padding:16px;margin-top:12px
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:17px;
+  margin-top:12px;
 }
-.stockHead{
-  display:flex;justify-content:space-between;gap:12px;align-items:flex-start
+
+.stockTop{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
 }
-.name{font-size:20px;font-weight:800}
-.code{color:#6b7280;font-size:14px;margin-top:3px}
-.price{text-align:right;font-size:20px;font-weight:800}
+
+.rank{
+  font-size:13px;
+  color:#6b7280;
+}
+
+.name{
+  font-size:21px;
+  font-weight:800;
+  margin-top:3px;
+}
+
+.code{
+  color:#6b7280;
+  margin-top:3px;
+}
+
+.price{
+  text-align:right;
+  font-size:22px;
+  font-weight:800;
+}
+
+.score{
+  display:inline-block;
+  margin-top:5px;
+  padding:5px 10px;
+  border-radius:20px;
+  background:#eef2ff;
+  font-size:14px;
+  font-weight:700;
+}
+
 .metrics{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin-top:14px;
 }
-.metric{background:#f8fafc;border-radius:10px;padding:10px;text-align:center}
-.metric small{display:block;color:#6b7280;margin-bottom:4px}
-.reason{margin-top:12px;line-height:1.7;font-size:14px}
+
+.metric{
+  background:#f8fafc;
+  border-radius:11px;
+  padding:11px;
+  text-align:center;
+}
+
+.metric small{
+  display:block;
+  color:#6b7280;
+  margin-bottom:5px;
+}
+
+.tags{
+  margin-top:13px;
+  line-height:2;
+}
+
 .tag{
-  display:inline-block;padding:5px 9px;border-radius:20px;
-  background:#eef2ff;margin:3px 4px 3px 0;font-size:13px
+  display:inline-block;
+  padding:4px 9px;
+  margin-right:4px;
+  border-radius:20px;
+  background:#ecfdf5;
+  font-size:13px;
 }
-.warn{background:#fff7ed}
-.good{background:#ecfdf5}
-.buycalc{
-  margin-top:12px;padding:11px;border-radius:10px;background:#f8fafc;
-  font-size:14px;line-height:1.6
+
+.warning{
+  background:#fff7ed;
 }
-.note{font-size:13px;color:#6b7280;line-height:1.7}
-.error{background:#fef2f2!important;color:#991b1b}
+
+.money{
+  background:#f8fafc;
+  border-radius:11px;
+  padding:12px;
+  margin-top:12px;
+  line-height:1.7;
+  font-size:14px;
+}
+
+.note{
+  color:#6b7280;
+  font-size:13px;
+  line-height:1.7;
+}
+
 @media(max-width:650px){
-  .topgrid,.summary{grid-template-columns:1fr}
-  .metrics{grid-template-columns:1fr 1fr}
-  h1{font-size:25px}
+
+  .grid,
+  .summary{
+    grid-template-columns:1fr;
+  }
+
+  .metrics{
+    grid-template-columns:1fr 1fr;
+  }
+
+  h1{
+    font-size:25px;
+  }
+
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
 <h1>📈 我的台股自動選股器</h1>
-<div class="sub">
-正式版｜全市場掃描・重視基本面與合理估值・避免盲目追高
+
+<div class="subtitle">
+正式版｜自動掃描市場資料・基本面與估值篩選・避免盲目追高
 </div>
+
 
 <div class="card">
-  <div class="topgrid">
-    <div>
-      <label>預計投入金額</label>
-      <input id="budget" type="number" value="50000">
-    </div>
 
-    <div>
-      <label>顯示候選股數量</label>
-      <select id="limit">
-        <option value="10">前 10 檔</option>
-        <option value="20" selected>前 20 檔</option>
-        <option value="30">前 30 檔</option>
-      </select>
-    </div>
-  </div>
+<div class="grid">
 
-  <button id="scanBtn" onclick="scanMarket()">🔍 開始今日自動選股</button>
+<div>
 
-  <div id="status" class="status"></div>
+<label>
+預計投入金額
+</label>
+
+<input
+id="budget"
+type="number"
+value="50000"
+>
+
 </div>
 
-<div id="summaryCard" class="card" style="display:none">
-  <strong>今日掃描結果</strong>
 
-  <div class="summary">
-    <div class="stat">
-      <b id="marketCount">0</b>
-      掃描股票
-    </div>
+<div>
 
-    <div class="stat">
-      <b id="passCount">0</b>
-      通過初篩
-    </div>
+<label>
+顯示候選股數量
+</label>
 
-    <div class="stat">
-      <b id="showCount">0</b>
-      顯示候選
-    </div>
-  </div>
+<select id="limit">
 
-  <div class="filters">
-    <br>
-    初篩原則：排除無有效成交價格、成交量過低、估值資料異常；
-    優先保留具合理本益比、股價淨值比及殖利率條件的股票。
-    排名是研究排序，不代表買進建議。
-  </div>
+<option value="10">
+前 10 檔
+</option>
+
+<option value="20" selected>
+前 20 檔
+</option>
+
+<option value="30">
+前 30 檔
+</option>
+
+</select>
+
 </div>
 
-<div id="results"></div>
+</div>
+
+
+<button
+id="scanButton"
+onclick="startScreening()"
+>
+🔍 開始今日自動選股
+</button>
+
+
+<div
+id="status"
+class="status"
+>
+</div>
+
+</div>
+
+
+
+<div
+id="summaryCard"
+class="card"
+style="display:none"
+>
+
+<strong>
+📊 今日掃描結果
+</strong>
+
+
+<div class="summary">
+
+<div class="stat">
+
+<b id="totalCount">
+0
+</b>
+
+市場資料
+
+</div>
+
+
+<div class="stat">
+
+<b id="passCount">
+0
+</b>
+
+通過初篩
+
+</div>
+
+
+<div class="stat">
+
+<b id="resultCount">
+0
+</b>
+
+候選股票
+
+</div>
+
+</div>
+
+
+<div
+id="updated"
+class="updated"
+>
+</div>
+
+</div>
+
+
+
+<div id="results">
+</div>
+
+
 
 <div class="card note">
-<strong>使用說明</strong><br><br>
-本工具會讀取臺灣證券交易所公開市場資料，自動掃描上市股票。
-目前正式版以市場價格、成交量、本益比、股價淨值比及殖利率等
-可直接取得的客觀資料進行初篩與排序。<br><br>
 
-你原本設定的「獲利成長、營收動能、產業趨勢」屬於下一層基本面資料。
-在沒有可靠資料時，本程式不會自行假設或捏造分數，因此目前候選結果
-應視為「值得進一步研究的股票」，不是預測未來漲跌。<br><br>
+<strong>
+目前選股邏輯
+</strong>
 
-股數試算未計券商手續費，實際下單金額以券商為準。
+<br><br>
+
+第一階段使用已自動更新的客觀市場資料：
+股價、成交量、本益比（PER）、
+股價淨值比（P/B）及殖利率。
+
+<br><br>
+
+程式會排除成交量過低、估值資料不足及
+部分極端估值股票，再依估值合理度、
+殖利率與市場流動性建立研究候選清單。
+
+<br><br>
+
+這份排序是「研究優先順序」，
+不是預測股價，也不是自動買賣建議。
+
+<br><br>
+
+下一階段加入月營收成長、獲利成長與
+價格趨勢資料後，才能完整執行原設定的
+成長＋基本面＋估值＋趨勢策略。
+
 </div>
 
 </div>
+
+
 
 <script>
 
-const PRICE_API =
-"https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL";
-
-const VALUE_API =
-"https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL";
+let marketData = [];
 
 
-function num(v){
+/* =========================
+   載入 GitHub 自動更新資料
+========================= */
 
-  if(v === null || v === undefined) return null;
+async function loadStockData(){
 
-  const s = String(v)
-    .replace(/,/g,"")
-    .replace(/--/g,"")
-    .trim();
+  const response =
+    await fetch(
+      "./stocks.json?t=" + Date.now()
+    );
 
-  if(!s) return null;
+  if(!response.ok){
 
-  const n = Number(s);
-
-  return Number.isFinite(n) ? n : null;
-}
-
-
-function get(obj,names){
-
-  for(const name of names){
-
-    if(obj[name] !== undefined &&
-       obj[name] !== null &&
-       obj[name] !== ""){
-
-      return obj[name];
-    }
+    throw new Error(
+      "stocks.json 無法讀取"
+    );
 
   }
 
-  return null;
+  return await response.json();
+
 }
 
 
-function stockCode(obj){
 
-  return String(
-    get(obj,[
-      "Code",
-      "股票代號",
-      "證券代號"
-    ]) || ""
-  ).trim();
+/* =========================
+   數字處理
+========================= */
+
+function number(v){
+
+  if(
+    v === null ||
+    v === undefined ||
+    v === ""
+  ){
+    return null;
+  }
+
+  const n =
+    Number(v);
+
+  return Number.isFinite(n)
+    ? n
+    : null;
+
 }
 
 
-function stockName(obj){
 
-  return String(
-    get(obj,[
-      "Name",
-      "股票名稱",
-      "證券名稱"
-    ]) || ""
-  ).trim();
-}
+/* =========================
+   股票評分
+========================= */
 
-
-function scoreStock(s){
+function evaluate(stock){
 
   let score = 0;
+
   const reasons = [];
+
   const warnings = [];
 
+
+  const pe =
+    number(stock.pe);
+
+  const pbr =
+    number(stock.pbr);
+
+  const yieldRate =
+    number(stock.yield);
+
+  const volume =
+    number(stock.volume) || 0;
+
+
+
   /*
-    估值 40
+    PER
+    最高 40
   */
 
-  if(s.pe !== null){
+  if(pe !== null && pe > 0){
 
-    if(s.pe > 0 && s.pe <= 12){
+    if(pe <= 12){
+
       score += 40;
-      reasons.push("本益比較低");
+
+      reasons.push(
+        "本益比較低"
+      );
+
     }
-    else if(s.pe <= 18){
+
+    else if(pe <= 18){
+
       score += 34;
-      reasons.push("本益比合理");
+
+      reasons.push(
+        "本益比合理"
+      );
+
     }
-    else if(s.pe <= 25){
+
+    else if(pe <= 25){
+
       score += 25;
-      reasons.push("本益比尚可");
+
+      reasons.push(
+        "本益比尚可"
+      );
+
     }
-    else if(s.pe <= 35){
+
+    else if(pe <= 35){
+
       score += 14;
+
     }
+
     else{
+
       score += 4;
-      warnings.push("本益比較高");
+
+      warnings.push(
+        "本益比較高"
+      );
+
     }
 
   }
 
 
+
   /*
-    PBR 25
+    P/B
+    最高 25
   */
 
-  if(s.pbr !== null){
+  if(pbr !== null && pbr > 0){
 
-    if(s.pbr > 0 && s.pbr <= 1.2){
+    if(pbr <= 1.2){
+
       score += 25;
-      reasons.push("股價淨值比偏低");
+
+      reasons.push(
+        "P/B 偏低"
+      );
+
     }
-    else if(s.pbr <= 2){
+
+    else if(pbr <= 2){
+
       score += 20;
-      reasons.push("股價淨值比合理");
+
+      reasons.push(
+        "P/B 合理"
+      );
+
     }
-    else if(s.pbr <= 3){
+
+    else if(pbr <= 3){
+
       score += 13;
+
     }
-    else if(s.pbr <= 5){
+
+    else if(pbr <= 5){
+
       score += 6;
+
     }
+
     else{
-      warnings.push("股價淨值比偏高");
+
+      warnings.push(
+        "P/B 偏高"
+      );
+
     }
 
   }
 
 
+
   /*
-    殖利率 20
+    殖利率
+    最高 20
   */
 
-  if(s.yield !== null){
+  if(yieldRate !== null){
 
-    if(s.yield >= 5){
+    if(yieldRate >= 5){
+
       score += 20;
-      reasons.push("殖利率較高");
+
+      reasons.push(
+        "殖利率較高"
+      );
+
     }
-    else if(s.yield >= 3){
+
+    else if(yieldRate >= 3){
+
       score += 15;
-      reasons.push("具一定殖利率");
+
+      reasons.push(
+        "具一定殖利率"
+      );
+
     }
-    else if(s.yield >= 1.5){
+
+    else if(yieldRate >= 1.5){
+
       score += 9;
+
     }
+
     else{
+
       score += 3;
+
     }
 
   }
+
 
 
   /*
-    流動性 15
+    流動性
+    最高 15
   */
 
-  if(s.volume >= 5000000){
+  if(volume >= 5000000){
+
     score += 15;
-    reasons.push("成交活絡");
+
+    reasons.push(
+      "成交活絡"
+    );
+
   }
-  else if(s.volume >= 1000000){
+
+  else if(volume >= 1000000){
+
     score += 12;
+
   }
-  else if(s.volume >= 300000){
+
+  else if(volume >= 300000){
+
     score += 7;
+
   }
+
   else{
+
     score += 2;
+
   }
+
 
 
   return {
@@ -328,452 +690,617 @@ function scoreStock(s){
     reasons,
     warnings
   };
+
 }
 
 
-async function scanMarket(){
 
-  const btn =
-    document.getElementById("scanBtn");
+/* =========================
+   開始選股
+========================= */
+
+async function startScreening(){
+
+  const button =
+    document.getElementById(
+      "scanButton"
+    );
 
   const status =
-    document.getElementById("status");
+    document.getElementById(
+      "status"
+    );
 
   const results =
-    document.getElementById("results");
+    document.getElementById(
+      "results"
+    );
 
-  const summary =
-    document.getElementById("summaryCard");
 
-  btn.disabled = true;
+  button.disabled = true;
 
   results.innerHTML = "";
 
-  summary.style.display = "none";
+  status.style.display =
+    "block";
 
-  status.style.display = "block";
-
-  status.className = "status";
+  status.className =
+    "status";
 
   status.innerHTML =
-    "正在讀取證交所公開資料並掃描上市股票…";
+    "正在讀取今日台股資料並執行選股…";
 
 
   try{
 
-    const responses =
-      await Promise.all([
-        fetch(PRICE_API),
-        fetch(VALUE_API)
-      ]);
 
-    if(!responses[0].ok ||
-       !responses[1].ok){
+    const data =
+      await loadStockData();
 
-      throw new Error("證交所資料目前無法讀取");
+
+    marketData =
+      Array.isArray(data.stocks)
+      ? data.stocks
+      : [];
+
+
+    if(
+      marketData.length === 0
+    ){
+
+      throw new Error(
+        "股票資料為空"
+      );
+
     }
 
 
-    const priceData =
-      await responses[0].json();
 
-    const valueData =
-      await responses[1].json();
+    const candidates = [];
 
 
-    const valueMap = new Map();
-
-
-    valueData.forEach(x => {
-
-      const code =
-        stockCode(x);
-
-      if(!code) return;
-
-
-      valueMap.set(code,{
-
-        pe:num(
-          get(x,[
-            "PEratio",
-            "本益比"
-          ])
-        ),
-
-        pbr:num(
-          get(x,[
-            "PBratio",
-            "股價淨值比"
-          ])
-        ),
-
-        yield:num(
-          get(x,[
-            "DividendYield",
-            "殖利率(%)",
-            "殖利率"
-          ])
-        )
-
-      });
-
-    });
-
-
-    const stocks = [];
-
-
-    priceData.forEach(x => {
-
-      const code =
-        stockCode(x);
-
-      const name =
-        stockName(x);
-
-
-      /*
-        普通上市股票代號通常為四碼
-      */
-
-      if(!/^[0-9]{4}$/.test(code))
-        return;
+    marketData.forEach(stock=>{
 
 
       const price =
-        num(
-          get(x,[
-            "ClosingPrice",
-            "收盤價"
-          ])
-        );
+        number(stock.price);
 
 
       const volume =
-        num(
-          get(x,[
-            "TradeVolume",
-            "成交股數"
-          ])
-        ) || 0;
+        number(stock.volume) || 0;
 
 
-      if(!price || price <= 0)
-        return;
+      const pe =
+        number(stock.pe);
 
 
-      /*
-        避免流動性過低
-      */
+      const pbr =
+        number(stock.pbr);
 
-      if(volume < 100000)
-        return;
-
-
-      const valuation =
-        valueMap.get(code) || {
-          pe:null,
-          pbr:null,
-          yield:null
-        };
 
 
       /*
-        至少要有基本估值資料
+        基本排除條件
       */
 
       if(
-        valuation.pe === null &&
-        valuation.pbr === null
+        price === null ||
+        price <= 0
       ){
         return;
       }
 
 
-      const stock = {
-        code,
-        name,
-        price,
-        volume,
-        pe:valuation.pe,
-        pbr:valuation.pbr,
-        yield:valuation.yield
-      };
+      if(volume < 100000){
 
-
-      const evaluated =
-        scoreStock(stock);
-
-
-      stock.score =
-        evaluated.score;
-
-      stock.reasons =
-        evaluated.reasons;
-
-      stock.warnings =
-        evaluated.warnings;
-
-
-      /*
-        過度昂貴的估值先排除
-      */
-
-      if(
-        stock.pe !== null &&
-        stock.pe > 60
-      ){
         return;
+
       }
 
 
-      stocks.push(stock);
+      if(
+        pe === null &&
+        pbr === null
+      ){
+
+        return;
+
+      }
+
+
+      /*
+        排除極端 PER
+      */
+
+      if(
+        pe !== null &&
+        pe > 60
+      ){
+
+        return;
+
+      }
+
+
+
+      const evaluation =
+        evaluate(stock);
+
+
+      candidates.push({
+
+        ...stock,
+
+        score:
+          evaluation.score,
+
+        reasons:
+          evaluation.reasons,
+
+        warnings:
+          evaluation.warnings
+
+      });
+
 
     });
 
 
-    stocks.sort((a,b)=>
-      b.score - a.score
+
+    candidates.sort(
+      (a,b)=>
+        b.score - a.score
     );
+
 
 
     const limit =
       Number(
-        document.getElementById("limit").value
+        document.getElementById(
+          "limit"
+        ).value
       );
 
 
     const selected =
-      stocks.slice(0,limit);
+      candidates.slice(
+        0,
+        limit
+      );
 
 
-    document.getElementById("marketCount")
-      .textContent =
-      priceData.length.toLocaleString();
+
+    document.getElementById(
+      "totalCount"
+    ).textContent =
+      marketData.length
+        .toLocaleString();
 
 
-    document.getElementById("passCount")
-      .textContent =
-      stocks.length.toLocaleString();
+
+    document.getElementById(
+      "passCount"
+    ).textContent =
+      candidates.length
+        .toLocaleString();
 
 
-    document.getElementById("showCount")
-      .textContent =
-      selected.length.toLocaleString();
+
+    document.getElementById(
+      "resultCount"
+    ).textContent =
+      selected.length
+        .toLocaleString();
 
 
-    summary.style.display = "block";
+
+    document.getElementById(
+      "updated"
+    ).textContent =
+
+      data.updated
+      ? "資料更新時間：" +
+        data.updated
+      : "";
+
+
+
+    document.getElementById(
+      "summaryCard"
+    ).style.display =
+      "block";
+
+
+
+    status.className =
+      "status success";
 
 
     status.innerHTML =
-      "✅ 掃描完成。以下為依目前公開資料產生的研究候選清單。";
+      "✅ 選股完成。以下為今日研究候選清單。";
 
 
-    renderStocks(selected);
+
+    renderResults(
+      selected
+    );
 
 
   }
-  catch(err){
 
-    console.error(err);
+  catch(error){
+
+
+    console.error(error);
+
 
     status.className =
       "status error";
 
+
     status.innerHTML =
-      "目前無法取得證交所資料。可能是資料服務暫時無回應或瀏覽器限制。請稍後重新按「開始今日自動選股」。";
+      "❌ 無法讀取 stocks.json。請確認 GitHub 自動更新資料已成功產生。";
+
 
   }
+
   finally{
 
-    btn.disabled = false;
+
+    button.disabled =
+      false;
+
 
   }
 
 }
 
 
-function renderStocks(stocks){
 
-  const results =
-    document.getElementById("results");
+/* =========================
+   顯示結果
+========================= */
+
+function renderResults(stocks){
+
+
+  const container =
+    document.getElementById(
+      "results"
+    );
+
 
   const budget =
     Number(
-      document.getElementById("budget").value
+      document.getElementById(
+        "budget"
+      ).value
     ) || 50000;
 
 
-  if(!stocks.length){
 
-    results.innerHTML =
-      '<div class="card">目前沒有符合條件的股票。</div>';
+  if(stocks.length === 0){
+
+    container.innerHTML =
+      '<div class="card">今天沒有符合條件的股票。</div>';
 
     return;
 
   }
 
 
-  stocks.forEach((s,index)=>{
 
-    const theoreticalShares =
-      Math.floor(
-        budget / s.price
-      );
+  stocks.forEach(
+    (stock,index)=>{
 
 
-    const lots =
-      Math.floor(
-        theoreticalShares / 1000
-      );
+      const price =
+        number(stock.price) || 0;
 
 
-    const odd =
-      theoreticalShares % 1000;
+      const shares =
+        Math.floor(
+          budget / price
+        );
 
 
-    const card =
-      document.createElement("div");
+      const lots =
+        Math.floor(
+          shares / 1000
+        );
 
 
-    card.className =
-      "card stock";
+      const odd =
+        shares % 1000;
 
 
-    const reasons =
-      s.reasons.length
-      ? s.reasons
-      : ["估值資料完整"];
+
+      const card =
+        document.createElement(
+          "div"
+        );
 
 
-    const warningText =
-      s.warnings.length
-      ? s.warnings.join("、")
-      : "目前未出現明顯估值警示";
+      card.className =
+        "card stock";
 
 
-    card.innerHTML = `
 
-      <div class="stockHead">
+      const reasons =
+        stock.reasons.length
+        ? stock.reasons
+        : [
+          "估值資料完整"
+        ];
+
+
+
+      const warnings =
+        stock.warnings.length
+        ? stock.warnings
+        : [
+          "目前無明顯估值警示"
+        ];
+
+
+
+      card.innerHTML = `
+
+      <div class="stockTop">
 
         <div>
+
+          <div class="rank">
+            候選 #${index + 1}
+          </div>
+
           <div class="name">
-            ${index + 1}. ${escapeHtml(s.name)}
+            ${escapeHtml(stock.name)}
           </div>
 
           <div class="code">
-            ${escapeHtml(s.code)}
+            ${escapeHtml(stock.code)}
           </div>
+
+          <div class="score">
+            研究分數 ${stock.score}
+          </div>
+
         </div>
 
+
         <div class="price">
-          $${formatNumber(s.price)}
+
+          $${format(stock.price)}
+
         </div>
 
       </div>
+
 
 
       <div class="metrics">
 
-        <div class="metric">
-          <small>研究分數</small>
-          <strong>${s.score}</strong>
-        </div>
 
         <div class="metric">
-          <small>本益比</small>
-          <strong>${displayValue(s.pe)}</strong>
-        </div>
 
-        <div class="metric">
-          <small>P/B</small>
-          <strong>${displayValue(s.pbr)}</strong>
-        </div>
+          <small>
+            PER
+          </small>
 
-        <div class="metric">
-          <small>殖利率</small>
           <strong>
-            ${s.yield !== null
-              ? formatNumber(s.yield) + "%"
-              : "—"}
+            ${show(stock.pe)}
           </strong>
+
         </div>
 
+
+
+        <div class="metric">
+
+          <small>
+            P/B
+          </small>
+
+          <strong>
+            ${show(stock.pbr)}
+          </strong>
+
+        </div>
+
+
+
+        <div class="metric">
+
+          <small>
+            殖利率
+          </small>
+
+          <strong>
+
+            ${
+              stock.yield !== null &&
+              stock.yield !== undefined
+
+              ? format(stock.yield) + "%"
+
+              : "—"
+            }
+
+          </strong>
+
+        </div>
+
+
+
+        <div class="metric">
+
+          <small>
+            成交量
+          </small>
+
+          <strong>
+
+            ${
+              Math.round(
+                stock.volume / 1000
+              ).toLocaleString()
+            } 張
+
+          </strong>
+
+        </div>
+
+
       </div>
 
 
-      <div class="reason">
 
-        <strong>入選原因：</strong><br>
+      <div class="tags">
 
-        ${reasons.map(r =>
-          `<span class="tag good">${escapeHtml(r)}</span>`
-        ).join("")}
+        <strong>
+          入選原因：
+        </strong>
 
-        <br><br>
+        <br>
 
-        <strong>風險提醒：</strong>
-        ${escapeHtml(warningText)}
+        ${
+          reasons.map(
+            x=>
+            `<span class="tag">${escapeHtml(x)}</span>`
+          ).join("")
+        }
 
       </div>
 
 
-      <div class="buycalc">
 
-        💰 預算 NT$${budget.toLocaleString()}：
-        理論上最多約
-        <strong>${theoreticalShares.toLocaleString()} 股</strong>
+      <div class="tags">
+
+        <strong>
+          注意：
+        </strong>
+
+        ${
+          warnings.map(
+            x=>
+            `<span class="tag warning">${escapeHtml(x)}</span>`
+          ).join("")
+        }
+
+      </div>
+
+
+
+      <div class="money">
+
+        💰 預算
+        NT$${budget.toLocaleString()}
+
+        <br>
+
+        理論最多約可買
+
+        <strong>
+        ${shares.toLocaleString()} 股
+        </strong>
 
         （${lots} 張 + ${odd} 股零股）
 
         <br>
 
-        ※ 未計券商手續費。
+        ※ 尚未計入券商手續費。
 
       </div>
 
-    `;
+      `;
 
 
-    results.appendChild(card);
+      container.appendChild(
+        card
+      );
 
-  });
+
+    }
+  );
 
 }
 
 
-function displayValue(v){
 
-  if(v === null)
+/* =========================
+   顯示工具
+========================= */
+
+function show(v){
+
+  if(
+    v === null ||
+    v === undefined
+  ){
+
     return "—";
 
-  return formatNumber(v);
+  }
+
+  return format(v);
 
 }
 
 
-function formatNumber(v){
 
-  return Number(v)
-    .toLocaleString(
-      "zh-TW",
-      {
-        maximumFractionDigits:2
-      }
-    );
+function format(v){
+
+  const n =
+    Number(v);
+
+  if(!Number.isFinite(n)){
+
+    return "—";
+
+  }
+
+  return n.toLocaleString(
+    "zh-TW",
+    {
+      maximumFractionDigits:2
+    }
+  );
 
 }
+
 
 
 function escapeHtml(value){
 
-  return String(value)
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
+  return String(
+    value ?? ""
+  )
+
+  .replace(
+    /&/g,
+    "&amp;"
+  )
+
+  .replace(
+    /</g,
+    "&lt;"
+  )
+
+  .replace(
+    />/g,
+    "&gt;"
+  )
+
+  .replace(
+    /"/g,
+    "&quot;"
+  )
+
+  .replace(
+    /'/g,
+    "&#039;"
+  );
 
 }
 
